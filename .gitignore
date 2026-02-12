@@ -1,0 +1,15 @@
+.godot/
+.import/
+export.cfg
+export_presets.cfg
+
+.mono/
+.vscode/
+*.sln
+*.csproj
+bin/
+obj/
+
+
+*.log
+*.tmp
