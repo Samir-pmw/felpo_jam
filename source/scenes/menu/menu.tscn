@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://dchls1eesqd44"]
+
+[ext_resource type="Script" uid="uid://dgscdvpmnvtx1" path="res://scripts/menu/menu.gd" id="1_klgdb"]
+
+[node name="Control" type="Control" unique_id=1171797119]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_klgdb")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1729330666]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1214448477]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=574482646]
+layout_mode = 2
+text = "Jogo do Carimbo TOP"
+horizontal_alignment = 1
+
+[node name="Control" type="Control" parent="CenterContainer/VBoxContainer" unique_id=1270301458]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="NewGame" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1574117391]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Novo Jogo"
+
+[node name="Load" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1190427984]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Continuar"
+
+[node name="Config" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1180962990]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Configurações"
+
+[node name="Credits" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1098548449]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Créditos"
+
+[node name="Quit" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1862023595]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Sair"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Config" to="." method="_on_config_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_leave_pressed"]

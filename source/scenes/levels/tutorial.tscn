@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b1ceo1yi112ss"]
+
+[node name="Tutorial" type="Node2D" unique_id=1051806547]
+
+[node name="Label" type="Label" parent="." unique_id=715088775]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Jogo!!!"

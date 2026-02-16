@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dcd6x20d73llx"]
+
+[ext_resource type="Script" uid="uid://d01qacvbxguyr" path="res://scripts/menu/credits.gd" id="1_4y82v"]
+
+[node name="Credits" type="Control" unique_id=832980660]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4y82v")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=979434025]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=889167796]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=644659564]
+layout_mode = 2
+text = "Créditos"
+horizontal_alignment = 1
+
+[node name="Return" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1587100948]
+layout_mode = 2
+text = "Voltar"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Return" to="." method="_on_return_pressed"]
