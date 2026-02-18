@@ -72,4 +72,3 @@ text = "Sair"
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Config" to="." method="_on_config_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_leave_pressed"]
