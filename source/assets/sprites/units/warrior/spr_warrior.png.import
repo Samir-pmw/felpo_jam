@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4akadq57nrni"
-path="res://.godot/imported/placeholder_bg.jpg-1671e18b060a1f16eaf7ba1c6bd7fcf6.ctex"
+uid="uid://d7v6650wewo1"
+path="res://.godot/imported/spr_warrior.png-74143888d9ad39f4f09b3f217f940a72.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map/placeholder_bg.jpg"
-dest_files=["res://.godot/imported/placeholder_bg.jpg-1671e18b060a1f16eaf7ba1c6bd7fcf6.ctex"]
+source_file="res://assets/sprites/units/warrior/spr_warrior.png"
+dest_files=["res://.godot/imported/spr_warrior.png-74143888d9ad39f4f09b3f217f940a72.ctex"]
 
 [params]
 
