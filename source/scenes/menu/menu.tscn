@@ -11,64 +11,62 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_klgdb")
 
-[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1729330666]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1214448477]
-layout_mode = 2
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1214448477]
+layout_mode = 0
+offset_left = 856.00006
+offset_top = 424.00003
+offset_right = 1006.00006
+offset_bottom = 670.00006
+scale = Vector2(2.847789, 2.847789)
+pivot_offset = Vector2(74.32, 124.945)
 theme_override_constants/separation = 8
 
-[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=574482646]
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=574482646]
 layout_mode = 2
-text = "Jogo do Carimbo TOP"
+text = "Jogo do Carimbo"
 horizontal_alignment = 1
 
-[node name="Control" type="Control" parent="CenterContainer/VBoxContainer" unique_id=1270301458]
+[node name="Control" type="Control" parent="VBoxContainer" unique_id=1270301458]
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 
-[node name="NewGame" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1574117391]
+[node name="NewGame" type="Button" parent="VBoxContainer" unique_id=1574117391]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Novo Jogo"
 
-[node name="Load" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1190427984]
+[node name="Load" type="Button" parent="VBoxContainer" unique_id=1190427984]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Continuar"
 
-[node name="Config" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1180962990]
+[node name="Config" type="Button" parent="VBoxContainer" unique_id=1180962990]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Configurações"
 
-[node name="Credits" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1098548449]
+[node name="Credits" type="Button" parent="VBoxContainer" unique_id=1098548449]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Créditos"
 
-[node name="Quit" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1862023595]
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=1862023595]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Sair"
 
-[connection signal="pressed" from="CenterContainer/VBoxContainer/NewGame" to="." method="_on_new_game_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Load" to="." method="_on_load_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Config" to="." method="_on_config_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/Load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="VBoxContainer/Config" to="." method="_on_config_pressed"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
