@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://btb3rqn7gdvqo"]
+
+[ext_resource type="Texture2D" uid="uid://dyyh611mwwrkk" path="res://assets/sprites/ui/spr_cursor.png" id="1_4r2xs"]
+[ext_resource type="Script" uid="uid://chnwrnrqvwyv5" path="res://scripts/ui/cursor.gd" id="1_qi3ym"]
+
+[node name="Cursor" type="CanvasLayer" unique_id=1154376895]
+script = ExtResource("1_qi3ym")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1908196293]
+texture = ExtResource("1_4r2xs")
