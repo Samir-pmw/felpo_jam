@@ -1,41 +1,14 @@
 [gd_scene format=3 uid="uid://b1ceo1yi112ss"]
 
 [ext_resource type="Texture2D" uid="uid://4akadq57nrni" path="res://assets/sprites/map/placeholder_bg.jpg" id="1_u4f7j"]
-[ext_resource type="Texture2D" uid="uid://d7v6650wewo1" path="res://assets/sprites/units/warrior/spr_warrior.png" id="2_1wklo"]
-[ext_resource type="Texture2D" uid="uid://b0us8s7aso0fc" path="res://assets/sprites/units/wizard/spr_wizard.png" id="3_7ac3l"]
-[ext_resource type="Texture2D" uid="uid://2pk3ielsg7ul" path="res://assets/sprites/units/ranger/spr_ranger.png" id="4_iig34"]
-[ext_resource type="PackedScene" uid="uid://d3hea2pbqgvwm" path="res://scenes/units/unit.tscn" id="5_1wklo"]
-[ext_resource type="Script" uid="uid://qg3725w3fdb0" path="res://scripts/tiles/tilemap_manager.gd" id="5_iig34"]
-[ext_resource type="Script" uid="uid://hrnih2d32cmm" path="res://scripts/resources/ability_data.gd" id="7_3e81p"]
+[ext_resource type="PackedScene" uid="uid://cjmax75bip67h" path="res://scenes/core/tilemap_manager.tscn" id="3_1r3rq"]
+[ext_resource type="Resource" uid="uid://57sfiijqtra2" path="res://resources/enemies/zombie.tres" id="5_1wklo"]
+[ext_resource type="PackedScene" uid="uid://d3hea2pbqgvwm" path="res://scenes/units/unit.tscn" id="6_iig34"]
+[ext_resource type="Resource" uid="uid://b46yc5wlk8ueq" path="res://resources/characters/wizard.tres" id="7_3e81p"]
+[ext_resource type="Resource" uid="uid://cvl81b4khfkka" path="res://resources/characters/warrior.tres" id="8_4a02d"]
 [ext_resource type="Script" uid="uid://cqunt3hgnbqu0" path="res://scripts/resources/unit_data.gd" id="8_g7bfq"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7ac3l"]
-texture = ExtResource("4_iig34")
-texture_region_size = Vector2i(128, 127)
-0:0/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iig34"]
-texture = ExtResource("2_1wklo")
-texture_region_size = Vector2i(127, 127)
-0:0/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3e81p"]
-texture = ExtResource("3_7ac3l")
-texture_region_size = Vector2i(128, 128)
-0:0/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_g7bfq"]
-tile_shape = 1
-tile_size = Vector2i(128, 128)
-sources/0 = SubResource("TileSetAtlasSource_7ac3l")
-sources/1 = SubResource("TileSetAtlasSource_iig34")
-sources/2 = SubResource("TileSetAtlasSource_3e81p")
-
-[sub_resource type="Resource" id="Resource_4a02d"]
-script = ExtResource("8_g7bfq")
-job_name = "Wizard"
-texture = ExtResource("3_7ac3l")
-metadata/_custom_type_script = "uid://cqunt3hgnbqu0"
+[ext_resource type="Script" uid="uid://fdbseq3w0wcy" path="res://scripts/ui/camera.gd" id="9_g7bfq"]
+[ext_resource type="Resource" uid="uid://87mp8wpafulm" path="res://resources/characters/ranger.tres" id="9_uu0hj"]
 
 [node name="Tutorial" type="Node2D" unique_id=1051806547]
 
@@ -46,13 +19,18 @@ position = Vector2(959, 538.7184)
 scale = Vector2(0.957, 0.8040204)
 texture = ExtResource("1_u4f7j")
 
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1402106443]
-tile_set = SubResource("TileSet_g7bfq")
-rendering_quadrant_size = 128
-script = ExtResource("5_iig34")
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1281894416 node_paths=PackedStringArray("tilemap")]
+script = ExtResource("9_g7bfq")
+tilemap = NodePath("../GridGenerator")
 
-[node name="Unit" parent="TileMapLayer" unique_id=1365658056 instance=ExtResource("5_1wklo")]
-stats = SubResource("Resource_4a02d")
+[node name="GridGenerator" parent="." unique_id=2081218467 instance=ExtResource("3_1r3rq")]
+enemy_pool = Array[ExtResource("8_g7bfq")]([ExtResource("5_1wklo")])
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1281894416]
-enabled = false
+[node name="Unit" parent="GridGenerator" unique_id=1365658056 instance=ExtResource("6_iig34")]
+stats = ExtResource("7_3e81p")
+
+[node name="Unit2" parent="GridGenerator" unique_id=1610209673 instance=ExtResource("6_iig34")]
+stats = ExtResource("8_4a02d")
+
+[node name="Unit3" parent="GridGenerator" unique_id=85267984 instance=ExtResource("6_iig34")]
+stats = ExtResource("9_uu0hj")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UnitData" format=3 uid="uid://b46yc5wlk8ueq"]
+
+[ext_resource type="Script" uid="uid://hrnih2d32cmm" path="res://scripts/resources/ability_data.gd" id="1_6f0rn"]
+[ext_resource type="Script" uid="uid://cqunt3hgnbqu0" path="res://scripts/resources/unit_data.gd" id="2_g5yn7"]
+[ext_resource type="Resource" uid="uid://57yu7004gjyd" path="res://resources/abilities/fireball.tres" id="2_yn26b"]
+[ext_resource type="Texture2D" uid="uid://b0us8s7aso0fc" path="res://assets/sprites/units/wizard/spr_wizard.png" id="3_yn26b"]
+
+[resource]
+script = ExtResource("2_g5yn7")
+job_name = "Mago"
+texture = ExtResource("3_yn26b")
+abilities = Array[ExtResource("1_6f0rn")]([ExtResource("2_yn26b")])
+metadata/_custom_type_script = "uid://cqunt3hgnbqu0"

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cjmax75bip67h"]
+
+[ext_resource type="Script" uid="uid://qg3725w3fdb0" path="res://scripts/core/tilemap_manager.gd" id="1_1fq0p"]
+
+[sub_resource type="TileSet" id="TileSet_1fq0p"]
+tile_shape = 1
+tile_size = Vector2i(128, 128)
+
+[node name="GridGenerator" type="TileMapLayer" unique_id=2081218467]
+tile_set = SubResource("TileSet_1fq0p")
+rendering_quadrant_size = 128
+script = ExtResource("1_1fq0p")

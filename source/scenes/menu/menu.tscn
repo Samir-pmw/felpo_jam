@@ -783,6 +783,7 @@ transform = Transform3D(-0.99999446, -0.0033684548, 1.2896781e-18, 0.0033684548,
 mesh = SubResource("ArrayMesh_rlqyu")
 
 [node name="Object_2" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=706839221]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 10.331959)
 mesh = SubResource("ArrayMesh_iffrf")
 
 [node name="Object_3" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=122089475]
@@ -811,6 +812,15 @@ surface_material_override/0 = SubResource("StandardMaterial3D_fstgh")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=414983930]
 transform = Transform3D(0.024109647, -0.7523884, 0.6582784, 0.12832798, 0.65535146, 0.744343, -0.9914387, 0.06652969, 0.11235278, 12.5267, 8.394211, -15.648401)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1031157070]
+transform = Transform3D(1, 0, 0, 0, -0.027921667, 0.9996101, 0, -0.9996101, -0.027921667, 10.294161, 7.444623, -16.01522)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1335702384]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.314747, 12.607154, -16.828377)
+light_energy = 16.0
+light_size = 1.0
+omni_range = 70.0
 
 [connection signal="pressed" from="SubViewport/Control/VBoxContainer/NewGame" to="SubViewport/Control" method="_on_new_game_pressed"]
 [connection signal="pressed" from="SubViewport/Control/VBoxContainer/Load" to="SubViewport/Control" method="_on_load_pressed"]

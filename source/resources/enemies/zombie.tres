@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UnitData" format=3 uid="uid://57sfiijqtra2"]
+
+[ext_resource type="Script" uid="uid://hrnih2d32cmm" path="res://scripts/resources/ability_data.gd" id="1_v7am5"]
+[ext_resource type="Script" uid="uid://cqunt3hgnbqu0" path="res://scripts/resources/unit_data.gd" id="2_2liaa"]
+[ext_resource type="Resource" uid="uid://cksoom7yytei6" path="res://resources/abilities/chomp.tres" id="2_kekpa"]
+[ext_resource type="Texture2D" uid="uid://d7v6650wewo1" path="res://assets/sprites/units/warrior/spr_warrior.png" id="3_2liaa"]
+
+[resource]
+script = ExtResource("2_2liaa")
+job_name = "Zumbi"
+texture = ExtResource("3_2liaa")
+is_enemy = true
+abilities = Array[ExtResource("1_v7am5")]([ExtResource("2_kekpa")])
+metadata/_custom_type_script = "uid://cqunt3hgnbqu0"

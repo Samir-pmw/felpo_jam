@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UnitData" format=3 uid="uid://87mp8wpafulm"]
+
+[ext_resource type="Script" uid="uid://hrnih2d32cmm" path="res://scripts/resources/ability_data.gd" id="1_4flqh"]
+[ext_resource type="Script" uid="uid://cqunt3hgnbqu0" path="res://scripts/resources/unit_data.gd" id="2_k0531"]
+[ext_resource type="Texture2D" uid="uid://2pk3ielsg7ul" path="res://assets/sprites/units/ranger/spr_ranger.png" id="3_k0531"]
+
+[resource]
+script = ExtResource("2_k0531")
+job_name = "Arqueiro"
+texture = ExtResource("3_k0531")
+move_range = 1
+metadata/_custom_type_script = "uid://cqunt3hgnbqu0"
