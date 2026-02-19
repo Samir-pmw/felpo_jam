@@ -747,7 +747,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.096596, 1.8214883, 3.017883
 mesh = SubResource("ArrayMesh_g68jo")
 
 [node name="defaultMaterial23" type="MeshInstance3D" parent="mesa/Sketchfab_model/Collada visual scene group/defaultobject" unique_id=440051661]
-transform = Transform3D(0.9999913, 0.004171325, -1.8233441e-10, -0.004171325, 0.9999913, 3.8014036e-13, 1.8233441e-10, 3.8014036e-13, 1, 0.5581554, 1.9152268, 1.6674857)
+transform = Transform3D(0.9999711, 0.004171241, 0.0063529573, -0.0041713254, 0.9999913, -5.023412e-13, -0.0063529033, -2.650026e-05, 0.99997985, 0.5581541, 1.9152268, 1.6674867)
 mesh = SubResource("ArrayMesh_iuvur")
 
 [node name="ambiente" type="Node3D" parent="." unique_id=2025471621]
@@ -808,6 +808,9 @@ mesh = SubResource("ArrayMesh_fps0k")
 transform = Transform3D(0.16298547, 0, 1.3371493, 0, 1, 0, -2.4946814, 0, 0.08736022, 10.225509, 5.015132, -16.14264)
 mesh = SubResource("PlaneMesh_fqr1d")
 surface_material_override/0 = SubResource("StandardMaterial3D_fstgh")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=414983930]
+transform = Transform3D(0.024109647, -0.7523884, 0.6582784, 0.12832798, 0.65535146, 0.744343, -0.9914387, 0.06652969, 0.11235278, 12.5267, 8.394211, -15.648401)
 
 [connection signal="pressed" from="SubViewport/Control/VBoxContainer/NewGame" to="SubViewport/Control" method="_on_new_game_pressed"]
 [connection signal="pressed" from="SubViewport/Control/VBoxContainer/Load" to="SubViewport/Control" method="_on_load_pressed"]
