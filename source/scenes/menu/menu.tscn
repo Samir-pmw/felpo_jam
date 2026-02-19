@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://bg1sk2rpyj8br" path="res://assets/sprites/menu/map/masmorra_pack/tablemetalwood01.gltf" id="6_r8yej"]
 [ext_resource type="PackedScene" uid="uid://bt71k62s8852c" path="res://assets/sprites/menu/map/masmorra_pack/chestTop_uncommon.gltf.glb" id="7_t0a87"]
 [ext_resource type="PackedScene" uid="uid://1yiy3t4ucs7n" path="res://assets/sprites/menu/map/masmorra_pack/chest_uncommon.gltf.glb" id="8_qo0fc"]
+[ext_resource type="PackedScene" uid="uid://haikd2oquhc6" path="res://assets/sprites/menu/map/masmorra_pack/coinsMedium.gltf.glb" id="9_qo0fc"]
+[ext_resource type="PackedScene" uid="uid://bvn2fumoval6g" path="res://assets/sprites/menu/map/masmorra_pack/chair.gltf.glb" id="10_k48pe"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_fqr1d"]
 
@@ -28,12 +30,12 @@ albedo_texture = SubResource("ViewportTexture_fqr1d")
 [node name="Menu" type="Node3D" unique_id=474760015]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=414983930]
-transform = Transform3D(6.778611e-08, -0.5169219, 0.8560326, -1.12255115e-07, 0.8560326, 0.5169219, -1, -1.3113417e-07, -3.9081033e-15, 11.720937, 6.8852925, -16.194126)
+transform = Transform3D(1.0151167e-07, -0.7741055, 0.63305664, -8.3015365e-08, 0.63305664, 0.7741055, -1, -1.3113417e-07, -1.4210855e-14, 11.345914, 2.90202, -16.30698)
 attributes = SubResource("CameraAttributesPractical_fqr1d")
 fov = 88.3
 
 [node name="Iluminação Mesa" type="SpotLight3D" parent="." unique_id=1031157070]
-transform = Transform3D(1, 0, 0, 0, -0.027921667, 0.9996101, 0, -0.9996101, -0.027921667, 10.133231, 6.9316864, -16.537096)
+transform = Transform3D(1, 0, 0, 0, -0.027921667, 0.9996101, 0, -0.9996101, -0.027921667, 10.133231, 3.198349, -16.537096)
 light_color = Color(0.9971284, 0.6681249, 0.42354268, 1)
 light_energy = 7.107
 shadow_enabled = true
@@ -45,15 +47,15 @@ environment = SubResource("Environment_fstgh")
 camera_attributes = SubResource("CameraAttributesPractical_wshxo")
 
 [node name="Luz Indireta Parede" type="SpotLight3D" parent="." unique_id=754480788]
-transform = Transform3D(0.5953138, -0.08971788, 0.7984687, -0.8034934, -0.06647261, 0.59159094, 1.3038516e-08, -0.9937465, -0.11165978, 6.600127, 5.2968626, -16.158245)
+transform = Transform3D(0.95663583, -0.032524996, 0.2894651, -0.29128668, -0.10681775, 0.9506535, 1.3038515e-08, -0.9937465, -0.11165978, 3.750114, 3.042182, -9.827488)
 light_color = Color(0.9971284, 0.6681249, 0.42354268, 1)
-light_energy = 0.338
+light_energy = 0.18
 shadow_enabled = true
 spot_range = 105.267
 spot_angle = 52.13
 
 [node name="mapa_menu" type="MeshInstance3D" parent="." unique_id=1196624874]
-transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 10.01981, 5.214013, -16.445412)
+transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 10.01981, 1.4806757, -16.445412)
 cast_shadow = 0
 mesh = SubResource("PlaneMesh_fqr1d")
 surface_material_override/0 = SubResource("StandardMaterial3D_fstgh")
@@ -64,7 +66,7 @@ size = Vector2i(1920, 1080)
 [node name="Control" parent="mapa_menu/MapaNaMesa" unique_id=1015759968 instance=ExtResource("1_fqr1d")]
 
 [node name="Masmorra" type="Node3D" parent="." unique_id=396424721]
-transform = Transform3D(-9.878774e-08, 0, 2.8, 0, 2.26, 0, -2.26, 0, -1.2239188e-07, 10.019961, 3.326024, -16.495197)
+transform = Transform3D(-9.878774e-08, 0, 2.8, 0, 2.26, 0, -2.26, 0, -1.2239188e-07, 10.019961, -0.40731335, -16.495197)
 
 [node name="floorDecoration_wood_gltf" parent="Masmorra" unique_id=1941687419 instance=ExtResource("5_y1o0p")]
 transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.222837, -0.045425177, -2.7539766)
@@ -823,28 +825,34 @@ transform = Transform3D(-0.005320768, 0, 0.4424459, 0, 0.721239, 0, -0.35711703,
 transform = Transform3D(-0.005320768, 0, 0.4424459, 0, 0.721239, 0, -0.35711703, 0, -0.0042946194, 3.7370682, -0.011737585, -2.9865832)
 
 [node name="wall_gltf13" parent="Masmorra" unique_id=2064816053 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(0.4424459, 0, 0.005320773, 0, 0.721239, 0, -0.0042946236, 0, 0.35711703, -3.0079122, -0.019528985, 2.694614)
+transform = Transform3D(0.44244593, 0, 0.005320773, 0, 0.72123903, 0, -0.004294623, 0, 0.35711703, -3.0079126, -0.019528985, 2.621674)
 
 [node name="wall_gltf14" parent="Masmorra" unique_id=1839881215 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(0.4424459, 0, 0.005320773, 0, 0.721239, 0, -0.0042946236, 0, 0.35711703, -1.2920027, -0.019528985, 2.677958)
+transform = Transform3D(0.44244593, 0, 0.005320773, 0, 0.72123903, 0, -0.004294623, 0, 0.35711703, -1.2920032, -0.019528985, 2.6050181)
 
 [node name="wall_gltf15" parent="Masmorra" unique_id=142572282 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(0.4424459, 0, 0.005320773, 0, 0.721239, 0, -0.0042946236, 0, 0.35711703, 0.38225937, -0.019528985, 2.661707)
+transform = Transform3D(0.44244593, 0, 0.005320773, 0, 0.72123903, 0, -0.004294623, 0, 0.35711703, 0.38225937, -0.019528985, 2.588767)
 
 [node name="wall_gltf16" parent="Masmorra" unique_id=1486698311 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(0.4424459, 0, 0.005320773, 0, 0.721239, 0, -0.0042946236, 0, 0.35711703, 2.058753, -0.019528985, 2.645052)
+transform = Transform3D(0.44244593, 0, 0.005320773, 0, 0.72123903, 0, -0.004294623, 0, 0.35711703, 2.058754, -0.019528985, 2.5721126)
 
 [node name="wallCorner_gltf2" parent="Masmorra" unique_id=2060607406 instance=ExtResource("3_e0arn")]
-transform = Transform3D(0.005320808, 0, -0.4424459, 0, 0.721239, 0, 0.35711703, 0, 0.004294652, 3.8193617, -0.018148303, 2.6312132)
+transform = Transform3D(0.005320808, 0, -0.44244593, 0, 0.72123903, 0, 0.35711703, 0, 0.004294652, 3.8193626, -0.018148303, 2.5582733)
 
 [node name="wall_gateDoor_gltf" parent="Masmorra" unique_id=1410009060 instance=ExtResource("4_037ec")]
 transform = Transform3D(0.4424779, 0, 0, 0, 0.721239, 0, 1.7763568e-15, 0, 0.35714287, -0.18158627, -0.019528985, -3.4278927)
 
 [node name="mesa" parent="." unique_id=452371482 instance=ExtResource("6_r8yej")]
-transform = Transform3D(-9.878774e-08, 0, 2.8, 0, 2.26, 0, -2.26, 0, -1.2239188e-07, 10.019961, 3.326024, -16.495197)
+transform = Transform3D(-9.878774e-08, 0, 2.8, 0, 2.26, 0, -2.26, 0, -1.2239188e-07, 10.019961, -0.40731335, -16.495197)
 
 [node name="bau_cima" parent="." unique_id=960542841 instance=ExtResource("7_t0a87")]
-transform = Transform3D(-0.690087, 0, 0.7237264, 0, 1, 0, -0.7237264, 0, -0.690087, 2.0509357, 3.9048371, -8.666332)
+transform = Transform3D(-0.7386989, -0.66494536, -0.11032471, -0.07514223, -0.0814178, 0.99384356, -0.66983455, 0.74244124, 0.01017742, 1.9107976, 0.12802613, -8.582149)
 
 [node name="bau_baixo" parent="." unique_id=311831647 instance=ExtResource("8_qo0fc")]
-transform = Transform3D(-0.690087, 0, 0.7237264, 0, 1, 0, -0.7237264, 0, -0.690087, 2.3754263, 3.2981367, -9.009998)
+transform = Transform3D(-0.690087, 0, 0.7237264, 0, 1, 0, -0.7237264, 0, -0.690087, 2.3754263, -0.4352007, -9.009998)
+
+[node name="coinsMedium_gltf" parent="." unique_id=2097388704 instance=ExtResource("9_qo0fc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8850012, -0.38969988, -8.527012)
+
+[node name="chair_gltf" parent="." unique_id=214993877 instance=ExtResource("10_k48pe")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 2, 0, -1, 0, -4.371139e-08, 11.551246, -0.40864992, -16.391384)
