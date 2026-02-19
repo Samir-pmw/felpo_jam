@@ -13,7 +13,6 @@ func _process(_delta):
 func _input(event):
 	if event is InputEventMouseButton:
 		if event.pressed:
-			sprite.scale = Vector2(0.9, 0.9)
+			sprite.scale = Vector2(0.7, 0.7)
 		else:
-			# Pop back to normal size
-			sprite.scale = Vector2(1.0, 1.0)
+			sprite.scale = Vector2(0.8, 0.8)

@@ -1,0 +1,321 @@
+[gd_scene format=3 uid="uid://oy48j3tyjomt"]
+
+[ext_resource type="Texture2D" uid="uid://brj2oo5cat5hu" path="res://assets/sprites/menu/map/masmorra_pack/textura_papiro.jpg" id="1_mukjo"]
+[ext_resource type="Shader" uid="uid://bmpngd3qdfgij" path="res://scenes/menu/raios.gdshader" id="2_lmal0"]
+[ext_resource type="Shader" uid="uid://17e3h6futfhs" path="res://scenes/menu/wobble.gdshader" id="3_kjot6"]
+[ext_resource type="Texture2D" uid="uid://ksntyve4cwh0" path="res://assets/sprites/menu/fundo/background.png" id="4_mtttx"]
+[ext_resource type="Texture2D" uid="uid://ltowf5qjpxkj" path="res://assets/sprites/menu/botoes/spr_botao_sem_carimbo.png" id="5_2yt8g"]
+[ext_resource type="FontFile" uid="uid://btcq5rh80tfiy" path="res://assets/fontes/This Cafe.ttf" id="6_fvlrg"]
+[ext_resource type="Shader" uid="uid://1x17xb863qd7" path="res://scenes/menu/trasicao_menu.gdshader" id="7_2vl8l"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l7yvs"]
+shader = ExtResource("2_lmal0")
+shader_parameter/lightning_color = Color(0, 0, 0, 0.6509804)
+shader_parameter/size = 0.0070000003325
+shader_parameter/width = 0.12400000589
+shader_parameter/speed = 1.0
+shader_parameter/cycle = 0.12
+shader_parameter/ratio = 3.0
+shader_parameter/time_shift = 0.055
+shader_parameter/strike_count = 1
+shader_parameter/strike_delay = 0.25
+shader_parameter/glow_intensity = 0.9
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_08xm1"]
+shader = ExtResource("3_kjot6")
+shader_parameter/interval = 0.5
+shader_parameter/timeDelay = 0.0
+shader_parameter/intensityX = 20.0
+shader_parameter/intensityY = 20.0
+shader_parameter/seed = 42.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nbwqm"]
+shader = ExtResource("3_kjot6")
+shader_parameter/interval = 0.5
+shader_parameter/timeDelay = 0.0
+shader_parameter/intensityX = 0.0
+shader_parameter/intensityY = 0.0
+shader_parameter/seed = 44.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0f0fm"]
+shader = ExtResource("7_2vl8l")
+shader_parameter/base_color = Color(0, 0, 0, 1)
+shader_parameter/node_resolution = Vector2(0, 0)
+shader_parameter/factor = 0.54
+shader_parameter/width = 0.4
+shader_parameter/gradient_fixed = false
+shader_parameter/shape_tiling = 32.0
+shader_parameter/shape_rotation = 0.0
+shader_parameter/shape_scroll = Vector2(0, 0)
+shader_parameter/shape_feathering = 0.0
+shader_parameter/shape_treshold = 1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mukjo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lmal0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kjot6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mtttx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2yt8g"]
+
+[node name="MenuAjustes" type="Control" unique_id=81484272]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Parchment" type="Sprite2D" parent="." unique_id=1146907950]
+position = Vector2(944, 544)
+scale = Vector2(2.505, 1.93)
+texture = ExtResource("1_mukjo")
+
+[node name="raios" type="ColorRect" parent="." unique_id=1681436171]
+material = SubResource("ShaderMaterial_l7yvs")
+layout_mode = 0
+offset_left = 1220.0
+offset_top = 29.0
+offset_right = 2053.0
+offset_bottom = 1123.0
+
+[node name="Background" type="Sprite2D" parent="." unique_id=197259601]
+material = SubResource("ShaderMaterial_08xm1")
+position = Vector2(1148.9495, 878.15)
+scale = Vector2(1.2457806, 1.1978703)
+texture = ExtResource("4_mtttx")
+
+[node name="btn_voltar" type="Sprite2D" parent="." unique_id=1258050590]
+modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_nbwqm")
+position = Vector2(970.8791, 735.83966)
+scale = Vector2(0.51999754, 0.51999754)
+texture = ExtResource("5_2yt8g")
+
+[node name="sair" type="Label" parent="." unique_id=1463479376]
+layout_mode = 0
+offset_left = 855.0
+offset_top = 708.0
+offset_right = 1086.0
+offset_bottom = 779.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_fvlrg")
+theme_override_font_sizes/font_size = 48
+text = "VOLTAR"
+horizontal_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1349011615]
+material = SubResource("ShaderMaterial_0f0fm")
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.005
+anchor_bottom = 1.0350001
+offset_left = 48.0
+offset_top = 32.0
+offset_right = 52.400024
+offset_bottom = 32.0
+
+[node name="btn_resolucao" type="Sprite2D" parent="." unique_id=602377875]
+modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_nbwqm")
+position = Vector2(730.879, 185.8396)
+scale = Vector2(0.51999754, 0.51999754)
+texture = ExtResource("5_2yt8g")
+
+[node name="sair2" type="Label" parent="." unique_id=648384240]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 69.0
+offset_right = 862.0
+offset_bottom = 140.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_fvlrg")
+theme_override_font_sizes/font_size = 48
+text = "Resolucao"
+horizontal_alignment = 1
+
+[node name="resolucao" type="Label" parent="." unique_id=1276823696]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 164.0
+offset_right = 862.0
+offset_bottom = 235.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_fvlrg")
+theme_override_font_sizes/font_size = 36
+text = "1920 x 1080"
+horizontal_alignment = 1
+
+[node name="btn_volume" type="Sprite2D" parent="." unique_id=1490984890]
+modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_nbwqm")
+position = Vector2(727.879, 375.8396)
+scale = Vector2(0.51999754, 0.51999754)
+texture = ExtResource("5_2yt8g")
+
+[node name="volume" type="Label" parent="." unique_id=1709742316]
+layout_mode = 0
+offset_left = 597.0
+offset_top = 259.0
+offset_right = 859.0
+offset_bottom = 330.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_fvlrg")
+theme_override_font_sizes/font_size = 48
+text = "Volume"
+horizontal_alignment = 1
+
+[node name="volume_value" type="Label" parent="." unique_id=1916580259]
+layout_mode = 0
+offset_left = 597.0
+offset_top = 354.0
+offset_right = 859.0
+offset_bottom = 425.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_fvlrg")
+theme_override_font_sizes/font_size = 36
+text = "100"
+horizontal_alignment = 1
+
+[node name="volume_up" type="Button" parent="." unique_id=1062034277]
+layout_mode = 0
+offset_left = 905.0
+offset_top = 316.0
+offset_right = 948.0
+offset_bottom = 429.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_fvlrg")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mukjo")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_lmal0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_kjot6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mtttx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2yt8g")
+text = "+"
+
+[node name="volume_down" type="Button" parent="." unique_id=324475509]
+layout_mode = 0
+offset_left = 493.0
+offset_top = 319.0
+offset_right = 536.0
+offset_bottom = 432.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_fvlrg")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mukjo")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_lmal0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_kjot6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mtttx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2yt8g")
+text = "-"
+
+[node name="btn_brilho" type="Sprite2D" parent="." unique_id=1407598624]
+modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_nbwqm")
+position = Vector2(722.879, 569.8396)
+scale = Vector2(0.51999754, 0.51999754)
+texture = ExtResource("5_2yt8g")
+
+[node name="brilho" type="Label" parent="." unique_id=588310039]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 453.0
+offset_right = 854.0
+offset_bottom = 524.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_fvlrg")
+theme_override_font_sizes/font_size = 48
+text = "Brilho"
+horizontal_alignment = 1
+
+[node name="brilho_value" type="Label" parent="." unique_id=1429669742]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 548.0
+offset_right = 854.0
+offset_bottom = 619.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_fvlrg")
+theme_override_font_sizes/font_size = 36
+text = "100"
+horizontal_alignment = 1
+
+[node name="brilho_up" type="Button" parent="." unique_id=1032473663]
+layout_mode = 0
+offset_left = 900.0
+offset_top = 510.0
+offset_right = 943.0
+offset_bottom = 623.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_fvlrg")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mukjo")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_lmal0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_kjot6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mtttx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2yt8g")
+text = "+"
+
+[node name="brilho_down" type="Button" parent="." unique_id=1236374609]
+layout_mode = 0
+offset_left = 488.0
+offset_top = 513.0
+offset_right = 531.0
+offset_bottom = 626.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_fvlrg")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mukjo")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_lmal0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_kjot6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mtttx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2yt8g")
+text = "-"
+
+[node name="full_screen" type="Sprite2D" parent="." unique_id=1899042494]
+modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_nbwqm")
+position = Vector2(1146.8792, 373.83966)
+scale = Vector2(0.51999754, 0.51999754)
+texture = ExtResource("5_2yt8g")
+
+[node name="full_screen2" type="Label" parent="." unique_id=1809422189]
+layout_mode = 0
+offset_left = 1023.0
+offset_top = 347.00006
+offset_right = 1270.0
+offset_bottom = 418.00006
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_fvlrg")
+theme_override_font_sizes/font_size = 48
+text = "Tela Cheia"
+horizontal_alignment = 1
+
+[node name="output" type="Sprite2D" parent="." unique_id=1243955433]
+modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_nbwqm")
+position = Vector2(1143.8792, 183.83963)
+scale = Vector2(0.51999754, 0.51999754)
+texture = ExtResource("5_2yt8g")
+
+[node name="output2" type="Label" parent="." unique_id=832396913]
+layout_mode = 0
+offset_left = 1019.9999
+offset_top = 157.00006
+offset_right = 1267.0
+offset_bottom = 228.00006
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_fvlrg")
+theme_override_font_sizes/font_size = 48
+text = "Edifier..."
+horizontal_alignment = 1
+
+[node name="output3" type="Label" parent="." unique_id=355680177]
+layout_mode = 0
+offset_left = 1003.0
+offset_top = 72.0
+offset_right = 1282.0
+offset_bottom = 143.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_fvlrg")
+theme_override_font_sizes/font_size = 48
+text = "Saida audio"
+horizontal_alignment = 1
