@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stylized Dungeon
+* source:	https://sketchfab.com/3d-models/stylized-dungeon-53b49aa25d094bfbaf47b3650e90e8dc
+* author:	Aleksandr (https://sketchfab.com/xa3apg)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stylized Dungeon" (https://sketchfab.com/3d-models/stylized-dungeon-53b49aa25d094bfbaf47b3650e90e8dc) by Aleksandr (https://sketchfab.com/xa3apg) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
