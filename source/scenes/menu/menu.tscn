@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dchls1eesqd44"]
 
 [ext_resource type="PackedScene" uid="uid://cisvi0epafkn6" path="res://scenes/menu/menu_da_mesa.tscn" id="1_fqr1d"]
+[ext_resource type="Script" uid="uid://dgscdvpmnvtx1" path="res://scripts/menu/menu_3d.gd" id="1_rcuxh"]
+[ext_resource type="Texture2D" uid="uid://ciruejttbfu3i" path="res://assets/sprites/menu/fundo/w.png" id="1_y4i35"]
 [ext_resource type="PackedScene" uid="uid://cx6dierunhul3" path="res://assets/sprites/menu/map/masmorra_pack/wall.gltf.glb" id="2_mcvr8"]
 [ext_resource type="PackedScene" uid="uid://dic1h507853tv" path="res://assets/sprites/menu/map/masmorra_pack/wallCorner.gltf.glb" id="3_e0arn"]
 [ext_resource type="PackedScene" uid="uid://8bhyt7q1t6e3" path="res://assets/sprites/menu/map/masmorra_pack/wall_gateDoor.gltf.glb" id="4_037ec"]
@@ -36,9 +38,10 @@ func _on_area_3d_input_event(camera: Node, event: InputEvent, event_position: Ve
 "
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_y4i35"]
-size = Vector3(0.2980194, 0.27441406, 0.13601685)
+size = Vector3(0.2980194, 0.27441406, 0.16419983)
 
 [node name="Menu" type="Node3D" unique_id=474760015]
+script = ExtResource("1_rcuxh")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=414983930]
 transform = Transform3D(1.0151167e-07, -0.7741055, 0.63305664, -8.3015365e-08, 0.63305664, 0.7741055, -1, -1.3113417e-07, -1.4210855e-14, 10.907754, 3.0030787, -16.30698)
@@ -75,13 +78,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_fstgh")
 size = Vector2i(1920, 1080)
 
 [node name="Control" parent="mapa_menu/MapaNaMesa" unique_id=1015759968 instance=ExtResource("1_fqr1d")]
-
-[node name="StartGame" type="Area3D" parent="mapa_menu" unique_id=827329834]
-script = SubResource("GDScript_f2fum")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="mapa_menu/StartGame" unique_id=602486841]
-transform = Transform3D(1.0000002, 0, 0, 0, 0.9999999, 0, 1.2079227e-13, 0, 1, -0.027942657, 0.1294334, -0.27355576)
-shape = SubResource("BoxShape3D_y4i35")
 
 [node name="Masmorra" type="Node3D" parent="." unique_id=396424721]
 transform = Transform3D(-9.878774e-08, 0, 2.8, 0, 2.26, 0, -2.26, 0, -1.2239188e-07, 10.019961, -0.40731335, -16.495197)
@@ -888,4 +884,51 @@ transform = Transform3D(0.4424779, 0, 0, 0, 0.8849558, 0, 1.7763568e-15, 0, 0.35
 [node name="Top_Hat" parent="." unique_id=1382448515 instance=ExtResource("11_f2fum")]
 transform = Transform3D(1, 0, 0, 0, 0.9965742, 0.08270385, 0, -0.08270385, 0.9965742, 1.840318, 1.2374139, -8.602751)
 
-[connection signal="input_event" from="mapa_menu/StartGame" to="mapa_menu/MapaNaMesa/Control" method="_on_start_game_input_event"]
+[node name="MainPage" type="Node3D" parent="." unique_id=1710968854]
+
+[node name="StartGame" type="Area3D" parent="MainPage" unique_id=827329834]
+transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 9.929587, 1.4806757, -16.445412)
+script = SubResource("GDScript_f2fum")
+
+[node name="StartGame" type="CollisionShape3D" parent="MainPage/StartGame" unique_id=602486841]
+transform = Transform3D(1.0000002, 0, 0, 0, 0.9999999, 0, 1.2079227e-13, 0, 1, -0.027942657, 0.1294334, -0.27355576)
+shape = SubResource("BoxShape3D_y4i35")
+
+[node name="Ajustes" type="Area3D" parent="MainPage" unique_id=866005344]
+transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 9.929587, 1.4806757, -16.445412)
+script = SubResource("GDScript_f2fum")
+
+[node name="Ajustes" type="CollisionShape3D" parent="MainPage/Ajustes" unique_id=1440023342]
+transform = Transform3D(1.0000002, 0, 0, 0, 0.9999999, 0, 1.2079227e-13, 0, 1, -0.027942657, 0.1294334, -0.06570339)
+shape = SubResource("BoxShape3D_y4i35")
+
+[node name="Credits" type="Area3D" parent="MainPage" unique_id=901604591]
+transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 9.929587, 1.4806757, -16.445412)
+script = SubResource("GDScript_f2fum")
+
+[node name="Credits" type="CollisionShape3D" parent="MainPage/Credits" unique_id=728383110]
+transform = Transform3D(1.0000002, 0, 0, 0, 0.9999999, 0, 1.2079227e-13, 0, 1, -0.027942657, 0.1294334, 0.1432581)
+shape = SubResource("BoxShape3D_y4i35")
+
+[node name="Sair" type="Area3D" parent="MainPage" unique_id=1754292003]
+transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 9.929587, 1.4806757, -16.445412)
+script = SubResource("GDScript_f2fum")
+
+[node name="Sair" type="CollisionShape3D" parent="MainPage/Sair" unique_id=1992241640]
+transform = Transform3D(1.0000002, 0, 0, 0, 0.9999999, 0, 1.2079227e-13, 0, 1, -0.027942657, 0.1294334, 0.3460636)
+shape = SubResource("BoxShape3D_y4i35")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=428813361]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = -342.0
+offset_right = 325.0
+offset_bottom = -14.0
+grow_vertical = 0
+texture = ExtResource("1_y4i35")
+expand_mode = 1
+
+[connection signal="input_event" from="MainPage/StartGame" to="mapa_menu/MapaNaMesa/Control" method="_on_start_game_input_event"]
+[connection signal="input_event" from="MainPage/Ajustes" to="mapa_menu/MapaNaMesa/Control" method="_on_ajustes_input_event"]
