@@ -18,92 +18,32 @@ position = Vector2(957, 538)
 scale = Vector2(0.99999994, 0.99999994)
 texture = ExtResource("2_oy362")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=259114559]
-layout_mode = 0
-offset_left = 856.00006
-offset_top = 424.00003
-offset_right = 1006.00006
-offset_bottom = 670.00006
-scale = Vector2(2.847789, 2.847789)
-pivot_offset = Vector2(74.32, 124.945)
-theme_override_constants/separation = 8
-
-[node name="Label" type="Label" parent="VBoxContainer" unique_id=1713867618]
-layout_mode = 2
-text = "Jogo do Carimbo"
-horizontal_alignment = 1
-
-[node name="Control" type="Control" parent="VBoxContainer" unique_id=1336330097]
-custom_minimum_size = Vector2(0, 20)
-layout_mode = 2
-
-[node name="NewGame" type="Button" parent="VBoxContainer" unique_id=690087095]
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Novo Jogo"
-
-[node name="Load" type="Button" parent="VBoxContainer" unique_id=719786964]
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Continuar"
-
-[node name="Config" type="Button" parent="VBoxContainer" unique_id=916517439]
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Configurações"
-
-[node name="Credits" type="Button" parent="VBoxContainer" unique_id=891234169]
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Créditos"
-
-[node name="Quit" type="Button" parent="VBoxContainer" unique_id=1209099442]
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Sair"
-
-[node name="btn_novo_jogo" type="Sprite2D" parent="VBoxContainer" unique_id=1488941180]
-position = Vector2(76.314514, 75.4522)
-scale = Vector2(0.18259694, 0.18259694)
+[node name="btn_novo_jogo" type="Sprite2D" parent="." unique_id=1488941180]
+modulate = Color(1, 1, 1, 0.40784314)
+position = Vector2(936, 407.99997)
+scale = Vector2(0.51999754, 0.51999754)
 texture = ExtResource("3_oy362")
 
-[node name="btn_continuar" type="Sprite2D" parent="VBoxContainer" unique_id=988664220]
-position = Vector2(76.314514, 114.78097)
-scale = Vector2(0.18259694, 0.18259694)
+[node name="btn_continuar" type="Sprite2D" parent="." unique_id=988664220]
+modulate = Color(1, 1, 1, 0.40784314)
+position = Vector2(936, 520)
+scale = Vector2(0.51999754, 0.51999754)
 texture = ExtResource("3_oy362")
 
-[node name="btn_config" type="Sprite2D" parent="VBoxContainer" unique_id=515018880]
-position = Vector2(76.314514, 154.10971)
-scale = Vector2(0.18259694, 0.18259694)
+[node name="btn_config" type="Sprite2D" parent="." unique_id=515018880]
+modulate = Color(1, 1, 1, 0.40784314)
+position = Vector2(936, 632)
+scale = Vector2(0.51999754, 0.51999754)
 texture = ExtResource("3_oy362")
 
-[node name="btn_creditos" type="Sprite2D" parent="VBoxContainer" unique_id=2012035833]
-position = Vector2(76.314514, 193.43845)
-scale = Vector2(0.18259694, 0.18259694)
+[node name="btn_creditos" type="Sprite2D" parent="." unique_id=2012035833]
+modulate = Color(1, 1, 1, 0.40784314)
+position = Vector2(936, 743.9999)
+scale = Vector2(0.51999754, 0.51999754)
 texture = ExtResource("3_oy362")
 
-[node name="btn_sair" type="Sprite2D" parent="VBoxContainer" unique_id=647874241]
-position = Vector2(76.314514, 232.76721)
-scale = Vector2(0.18259694, 0.18259694)
+[node name="btn_sair" type="Sprite2D" parent="." unique_id=647874241]
+modulate = Color(1, 1, 1, 0.40784314)
+position = Vector2(936, 855.9999)
+scale = Vector2(0.51999754, 0.51999754)
 texture = ExtResource("3_oy362")
-
-[node name="TextureRect" type="TextureRect" parent="." unique_id=794700693]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[connection signal="pressed" from="VBoxContainer/NewGame" to="." method="_on_new_game_pressed"]
-[connection signal="pressed" from="VBoxContainer/Load" to="." method="_on_load_pressed"]
-[connection signal="pressed" from="VBoxContainer/Config" to="." method="_on_config_pressed"]
-[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
-[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
