@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://dchls1eesqd44"]
 
 [ext_resource type="PackedScene" uid="uid://cisvi0epafkn6" path="res://scenes/menu/menu_da_mesa.tscn" id="1_fqr1d"]
-[ext_resource type="PackedScene" uid="uid://ca66oebgpyebc" path="res://assets/sprites/menu/map/fantasy_table_low-poly_stylised/scene.gltf" id="16_pjdsv"]
+[ext_resource type="PackedScene" uid="uid://ca66oebgpyebc" path="res://assets/sprites/menu/map/mesa/scene.gltf" id="16_pjdsv"]
 [ext_resource type="Texture2D" uid="uid://crlovbeb4sop7" path="res://assets/sprites/menu/map/stylized_dungeon/textures/lambert2SG_diffuse.png" id="23_o1rbw"]
 [ext_resource type="Texture2D" uid="uid://rwmtb7pmhyue" path="res://assets/sprites/menu/map/stylized_dungeon/textures/lambert2SG_normal.png" id="24_h4wt8"]
 [ext_resource type="Texture2D" uid="uid://dy716nx1dc5g0" path="res://assets/sprites/menu/map/stylized_dungeon/textures/lambert3SG_diffuse.png" id="25_njbmb"]
@@ -260,15 +260,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_jk4i2")
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_fqr1d"]
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_fqr1d"]
-viewport_path = NodePath("SubViewport")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fstgh"]
-resource_local_to_scene = true
-albedo_texture = SubResource("ViewportTexture_fqr1d")
-
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_fqr1d"]
 
 [sub_resource type="Environment" id="Environment_fstgh"]
@@ -276,12 +267,16 @@ background_mode = 2
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_wshxo"]
 
-[node name="Node3D" type="Node3D" unique_id=474760015]
+[sub_resource type="PlaneMesh" id="PlaneMesh_fqr1d"]
 
-[node name="SubViewport" type="SubViewport" parent="." unique_id=975325004]
-size = Vector2i(1920, 1080)
+[sub_resource type="ViewportTexture" id="ViewportTexture_fqr1d"]
+viewport_path = NodePath("mapa/MapaNaMesa")
 
-[node name="Control" parent="SubViewport" unique_id=1015759968 instance=ExtResource("1_fqr1d")]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fstgh"]
+resource_local_to_scene = true
+albedo_texture = SubResource("ViewportTexture_fqr1d")
+
+[node name="Menu" type="Node3D" unique_id=474760015]
 
 [node name="casa" type="Node3D" parent="." unique_id=2025471621]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -6.6988635, 1.1705942, 4.2472525)
@@ -327,12 +322,6 @@ mesh = SubResource("ArrayMesh_5jsre")
 [node name="Object_10" type="MeshInstance3D" parent="casa/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=1825517834]
 mesh = SubResource("ArrayMesh_fps0k")
 
-[node name="mapa" type="MeshInstance3D" parent="." unique_id=1196624874]
-transform = Transform3D(-1.09278474e-07, 0, 1.3400002, 0, 0.99999994, 0, -2.5, 0, -5.8573267e-08, 9.705228, 4.9039416, -16.13686)
-cast_shadow = 0
-mesh = SubResource("PlaneMesh_fqr1d")
-surface_material_override/0 = SubResource("StandardMaterial3D_fstgh")
-
 [node name="Camera3D" type="Camera3D" parent="." unique_id=414983930]
 transform = Transform3D(-2.432406e-08, -0.55646974, 0.83086795, 3.631839e-08, 0.83086795, 0.55646974, -1, 4.3711392e-08, 2.0565685e-15, 12.655468, 7.223669, -16.169239)
 attributes = SubResource("CameraAttributesPractical_fqr1d")
@@ -363,3 +352,14 @@ light_energy = 0.338
 shadow_enabled = true
 spot_range = 105.267
 spot_angle = 52.13
+
+[node name="mapa" type="MeshInstance3D" parent="." unique_id=1196624874]
+transform = Transform3D(-1.09278474e-07, 0, 1.3400002, 0, 0.99999994, 0, -2.5, 0, -5.8573267e-08, 9.705228, 4.9039416, -16.13686)
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_fqr1d")
+surface_material_override/0 = SubResource("StandardMaterial3D_fstgh")
+
+[node name="MapaNaMesa" type="SubViewport" parent="mapa" unique_id=975325004]
+size = Vector2i(1920, 1080)
+
+[node name="Control" parent="mapa/MapaNaMesa" unique_id=1015759968 instance=ExtResource("1_fqr1d")]
