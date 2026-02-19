@@ -12,16 +12,14 @@ var ja_subiu: bool = false
 
 func _ready():
 	if w_icon:
-		# Reset de escala para garantir que não cresça
 		w_icon.scale = Vector2(1, 1)
 		var tween = create_tween().set_loops()
 		tween.tween_property(w_icon, "modulate:a", 0.3, 1.5).set_trans(Tween.TRANS_SINE)
 		tween.tween_property(w_icon, "modulate:a", 1.0, 1.5).set_trans(Tween.TRANS_SINE)
 
 func _process(_delta):
-	# 2. Só deixa apertar se ainda não subiu
 	if Input.is_action_just_pressed("press_w") and not ja_subiu:
-		ja_subiu = true # Bloqueia futuras execuções
+		ja_subiu = true 
 		subir_camera()
 		if w_icon:
 			w_icon.hide()
@@ -55,5 +53,3 @@ func ir_para_ajustes():
 		mat.albedo_texture = textura_ajustes
 	
 	var tween = create_tween()
-	tween.tween_property(camera, "position", Vector3(camera.position.x, 5.0, camera.position.z), 0.8).set_trans(Tween.TRANS_SINE)
-	tween.parallel().tween_property(camera, "rotation_degrees", Vector3(-90, 90, 0), 0.8)

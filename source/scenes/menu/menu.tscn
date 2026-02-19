@@ -30,15 +30,15 @@ viewport_path = NodePath("mapa_menu/MapaNaMesa")
 resource_local_to_scene = true
 albedo_texture = SubResource("ViewportTexture_fqr1d")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_y4i35"]
+size = Vector3(0.2980194, 0.27441406, 0.16419983)
+
 [sub_resource type="GDScript" id="GDScript_f2fum"]
 script/source = "extends Area3D
 
 func _on_area_3d_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
 	pass # Replace with function body.
 "
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_y4i35"]
-size = Vector3(0.2980194, 0.27441406, 0.16419983)
 
 [node name="Menu" type="Node3D" unique_id=474760015]
 script = ExtResource("1_rcuxh")
@@ -888,7 +888,6 @@ transform = Transform3D(1, 0, 0, 0, 0.9965742, 0.08270385, 0, -0.08270385, 0.996
 
 [node name="StartGame" type="Area3D" parent="MainPage" unique_id=827329834]
 transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 9.929587, 1.4806757, -16.445412)
-script = SubResource("GDScript_f2fum")
 
 [node name="StartGame" type="CollisionShape3D" parent="MainPage/StartGame" unique_id=602486841]
 transform = Transform3D(1.0000002, 0, 0, 0, 0.9999999, 0, 1.2079227e-13, 0, 1, -0.027942657, 0.1294334, -0.27355576)
@@ -930,5 +929,5 @@ grow_vertical = 0
 texture = ExtResource("1_y4i35")
 expand_mode = 1
 
-[connection signal="input_event" from="MainPage/StartGame" to="mapa_menu/MapaNaMesa/Control" method="_on_start_game_input_event"]
-[connection signal="input_event" from="MainPage/Ajustes" to="mapa_menu/MapaNaMesa/Control" method="_on_ajustes_input_event"]
+[connection signal="input_event" from="MainPage/StartGame" to="." method="_on_start_game_input_event"]
+[connection signal="input_event" from="MainPage/Ajustes" to="." method="_on_ajustes_input_event"]
