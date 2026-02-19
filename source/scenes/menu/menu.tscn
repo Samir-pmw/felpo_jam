@@ -28,6 +28,16 @@ viewport_path = NodePath("mapa_menu/MapaNaMesa")
 resource_local_to_scene = true
 albedo_texture = SubResource("ViewportTexture_fqr1d")
 
+[sub_resource type="GDScript" id="GDScript_f2fum"]
+script/source = "extends Area3D
+
+func _on_area_3d_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
+	pass # Replace with function body.
+"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y4i35"]
+size = Vector3(0.2980194, 0.27441406, 0.13601685)
+
 [node name="Menu" type="Node3D" unique_id=474760015]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=414983930]
@@ -65,6 +75,13 @@ surface_material_override/0 = SubResource("StandardMaterial3D_fstgh")
 size = Vector2i(1920, 1080)
 
 [node name="Control" parent="mapa_menu/MapaNaMesa" unique_id=1015759968 instance=ExtResource("1_fqr1d")]
+
+[node name="StartGame" type="Area3D" parent="mapa_menu" unique_id=827329834]
+script = SubResource("GDScript_f2fum")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="mapa_menu/StartGame" unique_id=602486841]
+transform = Transform3D(1.0000002, 0, 0, 0, 0.9999999, 0, 1.2079227e-13, 0, 1, -0.027942657, 0.1294334, -0.27355576)
+shape = SubResource("BoxShape3D_y4i35")
 
 [node name="Masmorra" type="Node3D" parent="." unique_id=396424721]
 transform = Transform3D(-9.878774e-08, 0, 2.8, 0, 2.26, 0, -2.26, 0, -1.2239188e-07, 10.019961, -0.40731335, -16.495197)
@@ -870,3 +887,5 @@ transform = Transform3D(0.4424779, 0, 0, 0, 0.8849558, 0, 1.7763568e-15, 0, 0.35
 
 [node name="Top_Hat" parent="." unique_id=1382448515 instance=ExtResource("11_f2fum")]
 transform = Transform3D(1, 0, 0, 0, 0.9965742, 0.08270385, 0, -0.08270385, 0.9965742, 1.840318, 1.2374139, -8.602751)
+
+[connection signal="input_event" from="mapa_menu/StartGame" to="mapa_menu/MapaNaMesa/Control" method="_on_start_game_input_event"]

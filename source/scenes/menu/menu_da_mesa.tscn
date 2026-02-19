@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cisvi0epafkn6"]
 
-[ext_resource type="Script" uid="uid://dgscdvpmnvtx1" path="res://scripts/menu/menu.gd" id="1_uclcv"]
+[ext_resource type="Script" uid="uid://dgscdvpmnvtx1" path="res://scripts/menu/menu_3d.gd" id="1_uclcv"]
 [ext_resource type="Texture2D" uid="uid://brj2oo5cat5hu" path="res://assets/sprites/menu/map/masmorra_pack/textura_papiro.jpg" id="2_7s6iw"]
 [ext_resource type="Texture2D" uid="uid://ksntyve4cwh0" path="res://assets/sprites/menu/fundo/background.png" id="2_oy362"]
 [ext_resource type="Texture2D" uid="uid://ltowf5qjpxkj" path="res://assets/sprites/menu/botoes/spr_botao_sem_carimbo.png" id="3_oy362"]
