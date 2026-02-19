@@ -5,15 +5,92 @@
 [ext_resource type="Texture2D" uid="uid://ksntyve4cwh0" path="res://assets/sprites/menu/fundo/background.png" id="2_oy362"]
 [ext_resource type="Texture2D" uid="uid://ltowf5qjpxkj" path="res://assets/sprites/menu/botoes/spr_botao_sem_carimbo.png" id="3_oy362"]
 [ext_resource type="FontFile" uid="uid://btcq5rh80tfiy" path="res://assets/fontes/This Cafe.ttf" id="5_7s6iw"]
+[ext_resource type="Shader" uid="uid://17e3h6futfhs" path="res://scenes/menu/wobble.gdshader" id="5_vgo3q"]
+[ext_resource type="Shader" uid="uid://bmpngd3qdfgij" path="res://scenes/menu/raios.gdshader" id="6_w7q3v"]
+[ext_resource type="Shader" uid="uid://1x17xb863qd7" path="res://scenes/menu/trasicao_menu.gdshader" id="8_611ge"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vgo3q"]
+shader = ExtResource("6_w7q3v")
+shader_parameter/lightning_color = Color(0, 0, 0, 0.6509804)
+shader_parameter/size = 0.0070000003325
+shader_parameter/width = 0.12400000589
+shader_parameter/speed = 1.0
+shader_parameter/cycle = 0.12
+shader_parameter/ratio = 3.0
+shader_parameter/time_shift = 0.055
+shader_parameter/strike_count = 1
+shader_parameter/strike_delay = 0.25
+shader_parameter/glow_intensity = 0.9
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bljw6"]
+shader = ExtResource("5_vgo3q")
+shader_parameter/interval = 0.5
+shader_parameter/timeDelay = 0.0
+shader_parameter/intensityX = 20.0
+shader_parameter/intensityY = 20.0
+shader_parameter/seed = 42.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_611ge"]
+shader = ExtResource("5_vgo3q")
+shader_parameter/interval = 0.5
+shader_parameter/timeDelay = 0.0
+shader_parameter/intensityX = 20.0
+shader_parameter/intensityY = 20.0
+shader_parameter/seed = 42.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_aht5v"]
+shader = ExtResource("5_vgo3q")
+shader_parameter/interval = 0.5
+shader_parameter/timeDelay = 0.0
+shader_parameter/intensityX = 20.0
+shader_parameter/intensityY = 20.0
+shader_parameter/seed = 43.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nfinc"]
+shader = ExtResource("5_vgo3q")
+shader_parameter/interval = 0.5
+shader_parameter/timeDelay = 0.0
+shader_parameter/intensityX = 20.0
+shader_parameter/intensityY = 20.0
+shader_parameter/seed = 43.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mknoy"]
+shader = ExtResource("5_vgo3q")
+shader_parameter/interval = 0.5
+shader_parameter/timeDelay = 0.0
+shader_parameter/intensityX = 20.0
+shader_parameter/intensityY = 20.0
+shader_parameter/seed = 44.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_w7q3v"]
 font_size = 48
 font_color = Color(0, 0, 0, 0.29411766)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a7dlx"]
+shader = ExtResource("5_vgo3q")
+shader_parameter/interval = 0.5
+shader_parameter/timeDelay = 0.0
+shader_parameter/intensityX = 7.0
+shader_parameter/intensityY = 4.0
+shader_parameter/seed = 42.0
+
 [sub_resource type="LabelSettings" id="LabelSettings_7s6iw"]
 font = ExtResource("5_7s6iw")
 font_size = 102
 font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7utqo"]
+shader = ExtResource("8_611ge")
+shader_parameter/base_color = Color(0, 0, 0, 1)
+shader_parameter/node_resolution = Vector2(0, 0)
+shader_parameter/factor = 0.54
+shader_parameter/width = 0.4
+shader_parameter/gradient_fixed = false
+shader_parameter/shape_tiling = 32.0
+shader_parameter/shape_rotation = 0.0
+shader_parameter/shape_scroll = Vector2(0, 0)
+shader_parameter/shape_feathering = 0.0
+shader_parameter/shape_treshold = 1.0
 
 [node name="Control" type="Control" unique_id=1015759968]
 layout_mode = 3
@@ -29,31 +106,44 @@ position = Vector2(944, 544)
 scale = Vector2(2.505, 1.93)
 texture = ExtResource("2_7s6iw")
 
+[node name="raios" type="ColorRect" parent="." unique_id=703383523]
+material = SubResource("ShaderMaterial_vgo3q")
+layout_mode = 0
+offset_left = 1123.0
+offset_top = -4.0
+offset_right = 1956.0
+offset_bottom = 1090.0
+
 [node name="Background" type="Sprite2D" parent="." unique_id=329837545]
+material = SubResource("ShaderMaterial_bljw6")
 position = Vector2(1040, 848)
 scale = Vector2(1.0799974, 1.16)
 texture = ExtResource("2_oy362")
 
 [node name="btn_ajustes" type="Sprite2D" parent="." unique_id=1488941180]
 modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_611ge")
 position = Vector2(935.8791, 393.83966)
 scale = Vector2(0.51999754, 0.51999754)
 texture = ExtResource("3_oy362")
 
 [node name="btn_continuar" type="Sprite2D" parent="." unique_id=988664220]
 modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_aht5v")
 position = Vector2(935.8791, 505.83972)
 scale = Vector2(0.51999754, 0.51999754)
 texture = ExtResource("3_oy362")
 
 [node name="btn_creditos" type="Sprite2D" parent="." unique_id=515018880]
 modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_nfinc")
 position = Vector2(935.8791, 617.83966)
 scale = Vector2(0.51999754, 0.51999754)
 texture = ExtResource("3_oy362")
 
 [node name="btn_sair" type="Sprite2D" parent="." unique_id=2012035833]
 modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_mknoy")
 position = Vector2(935.8791, 729.83954)
 scale = Vector2(0.51999754, 0.51999754)
 texture = ExtResource("3_oy362")
@@ -111,6 +201,7 @@ label_settings = SubResource("LabelSettings_w7q3v")
 horizontal_alignment = 1
 
 [node name="título" type="Label" parent="." unique_id=156687104]
+material = SubResource("ShaderMaterial_a7dlx")
 layout_mode = 0
 offset_left = 384.0
 offset_top = 144.0
@@ -120,3 +211,12 @@ text = "EM TERRA DE CARIMBO"
 label_settings = SubResource("LabelSettings_7s6iw")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=284375422]
+material = SubResource("ShaderMaterial_7utqo")
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.005
+anchor_bottom = 1.0350001
+offset_right = 4.4000244
+offset_bottom = -23.800049
