@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://1yiy3t4ucs7n" path="res://assets/sprites/menu/map/masmorra_pack/chest_uncommon.gltf.glb" id="8_qo0fc"]
 [ext_resource type="PackedScene" uid="uid://haikd2oquhc6" path="res://assets/sprites/menu/map/masmorra_pack/coinsMedium.gltf.glb" id="9_qo0fc"]
 [ext_resource type="PackedScene" uid="uid://bvn2fumoval6g" path="res://assets/sprites/menu/map/masmorra_pack/chair.gltf.glb" id="10_k48pe"]
+[ext_resource type="PackedScene" uid="uid://cub5xqhoil5wv" path="res://assets/sprites/menu/map/hat/Top_Hat.fbx" id="11_f2fum"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_fqr1d"]
 
@@ -35,7 +36,7 @@ attributes = SubResource("CameraAttributesPractical_fqr1d")
 fov = 88.3
 
 [node name="Iluminação Mesa" type="SpotLight3D" parent="." unique_id=1031157070]
-transform = Transform3D(1, 0, 0, 0, -0.027921667, 0.9996101, 0, -0.9996101, -0.027921667, 10.133231, 3.198349, -16.537096)
+transform = Transform3D(1, 0, 0, 0, -0.027921667, 0.9996101, 0, -0.9996101, -0.027921667, 9.670309, 3.198349, -16.561668)
 light_color = Color(0.9971284, 0.6681249, 0.42354268, 1)
 light_energy = 7.107
 shadow_enabled = true
@@ -55,7 +56,7 @@ spot_range = 105.267
 spot_angle = 52.13
 
 [node name="mapa_menu" type="MeshInstance3D" parent="." unique_id=1196624874]
-transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 9.983423, 1.4806757, -16.445412)
+transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 9.929587, 1.4806757, -16.445412)
 cast_shadow = 0
 mesh = SubResource("PlaneMesh_fqr1d")
 surface_material_override/0 = SubResource("StandardMaterial3D_fstgh")
@@ -866,3 +867,6 @@ transform = Transform3D(0.46021175, -0.075142115, 0.88462317, 0.881338, -0.08141
 
 [node name="cadeira" parent="Cenário" unique_id=214993877 instance=ExtResource("10_k48pe")]
 transform = Transform3D(0.4424779, 0, 0, 0, 0.8849558, 0, 1.7763568e-15, 0, 0.35714287, -0.045935154, -0.0005913973, 0.5468874)
+
+[node name="Top_Hat" parent="." unique_id=1382448515 instance=ExtResource("11_f2fum")]
+transform = Transform3D(1, 0, 0, 0, 0.9965742, 0.08270385, 0, -0.08270385, 0.9965742, 1.840318, 1.2374139, -8.602751)
