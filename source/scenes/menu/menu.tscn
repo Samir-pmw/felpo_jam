@@ -1,8 +1,7 @@
 [gd_scene format=4 uid="uid://dchls1eesqd44"]
 
-[ext_resource type="Script" uid="uid://dgscdvpmnvtx1" path="res://scripts/menu/menu.gd" id="1_klgdb"]
+[ext_resource type="PackedScene" uid="uid://cisvi0epafkn6" path="res://scenes/menu/menu_da_mesa.tscn" id="1_fqr1d"]
 [ext_resource type="Texture2D" uid="uid://belbjbolntgog" path="res://assets/sprites/menu/map/wizard_table/textures/Material.015.00_scrolls.dds_baseColor.jpeg" id="2_fqr1d"]
-[ext_resource type="Texture2D" uid="uid://ksntyve4cwh0" path="res://assets/sprites/menu/fundo/background.png" id="2_fstgh"]
 [ext_resource type="Texture2D" uid="uid://jmioi6455rac" path="res://assets/sprites/menu/map/wizard_table/textures/Material.015.00_scrolls.dds_metallicRoughness.png" id="3_fstgh"]
 [ext_resource type="Texture2D" uid="uid://b3x38o53ltap4" path="res://assets/sprites/menu/map/wizard_table/textures/Material.015.00_scrolls.dds_normal.png" id="4_wshxo"]
 [ext_resource type="Texture2D" uid="uid://dofhf3ivli10l" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.007_tx_hr_book_001.dds_baseColor.jpeg" id="5_ojs8s"]
@@ -656,78 +655,7 @@ background_mode = 2
 [node name="SubViewport" type="SubViewport" parent="." unique_id=975325004]
 size = Vector2i(1920, 1080)
 
-[node name="Control" type="Control" parent="SubViewport" unique_id=1171797119]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_klgdb")
-
-[node name="Background" type="Sprite2D" parent="SubViewport/Control" unique_id=1120803989]
-position = Vector2(957, 538)
-scale = Vector2(0.99999994, 0.99999994)
-texture = ExtResource("2_fstgh")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="SubViewport/Control" unique_id=1214448477]
-layout_mode = 0
-offset_left = 856.00006
-offset_top = 424.00003
-offset_right = 1006.00006
-offset_bottom = 670.00006
-scale = Vector2(2.847789, 2.847789)
-pivot_offset = Vector2(74.32, 124.945)
-theme_override_constants/separation = 8
-
-[node name="Label" type="Label" parent="SubViewport/Control/VBoxContainer" unique_id=574482646]
-layout_mode = 2
-text = "Jogo do Carimbo"
-horizontal_alignment = 1
-
-[node name="Control" type="Control" parent="SubViewport/Control/VBoxContainer" unique_id=1270301458]
-custom_minimum_size = Vector2(0, 20)
-layout_mode = 2
-
-[node name="NewGame" type="Button" parent="SubViewport/Control/VBoxContainer" unique_id=1574117391]
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Novo Jogo"
-
-[node name="Load" type="Button" parent="SubViewport/Control/VBoxContainer" unique_id=1190427984]
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Continuar"
-
-[node name="Config" type="Button" parent="SubViewport/Control/VBoxContainer" unique_id=1180962990]
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Configurações"
-
-[node name="Credits" type="Button" parent="SubViewport/Control/VBoxContainer" unique_id=1098548449]
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Créditos"
-
-[node name="Quit" type="Button" parent="SubViewport/Control/VBoxContainer" unique_id=1862023595]
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Sair"
-
-[node name="TextureRect" type="TextureRect" parent="SubViewport/Control" unique_id=771481082]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Control" parent="SubViewport" unique_id=1015759968 instance=ExtResource("1_fqr1d")]
 
 [node name="mesa" type="Node3D" parent="." unique_id=735146095]
 transform = Transform3D(0.029474378, 0, 0.9995655, 0, 1, 0, -0.9995655, 0, 0.029474378, 7.984122, 1.0895967, -15.691231)
@@ -825,17 +753,20 @@ mesh = SubResource("ArrayMesh_fps0k")
 
 [node name="menu" type="MeshInstance3D" parent="." unique_id=1196624874]
 transform = Transform3D(-1.09278474e-07, 0, 1.3400002, 0, 0.99999994, 0, -2.5, 0, -5.8573267e-08, 10.466791, 5.0234923, -16.156332)
+cast_shadow = 0
+gi_mode = 0
 mesh = SubResource("PlaneMesh_fqr1d")
 surface_material_override/0 = SubResource("StandardMaterial3D_fstgh")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=414983930]
-transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, 10.410805, 6.598816, -15.999829)
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, 10.453908, 6.712737, -16.169239)
 attributes = SubResource("CameraAttributesPractical_fqr1d")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1031157070]
 transform = Transform3D(1, 0, 0, 0, -0.027921667, 0.9996101, 0, -0.9996101, -0.027921667, 10.294161, 6.510692, -16.01522)
 light_color = Color(1, 0.54901963, 0.03137255, 1)
 light_energy = 2.0
+shadow_enabled = true
 spot_range = 5.895
 spot_angle = 84.21
 
@@ -848,9 +779,3 @@ omni_range = 26.027864
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1316488788]
 environment = SubResource("Environment_fstgh")
 camera_attributes = SubResource("CameraAttributesPractical_wshxo")
-
-[connection signal="pressed" from="SubViewport/Control/VBoxContainer/NewGame" to="SubViewport/Control" method="_on_new_game_pressed"]
-[connection signal="pressed" from="SubViewport/Control/VBoxContainer/Load" to="SubViewport/Control" method="_on_load_pressed"]
-[connection signal="pressed" from="SubViewport/Control/VBoxContainer/Config" to="SubViewport/Control" method="_on_config_pressed"]
-[connection signal="pressed" from="SubViewport/Control/VBoxContainer/Credits" to="SubViewport/Control" method="_on_credits_pressed"]
-[connection signal="pressed" from="SubViewport/Control/VBoxContainer/Quit" to="SubViewport/Control" method="_on_quit_pressed"]
