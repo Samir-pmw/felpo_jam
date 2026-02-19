@@ -1,41 +1,42 @@
 [gd_scene format=4 uid="uid://dchls1eesqd44"]
 
 [ext_resource type="Script" uid="uid://dgscdvpmnvtx1" path="res://scripts/menu/menu.gd" id="1_klgdb"]
-[ext_resource type="Texture2D" uid="uid://belbjbolntgog" path="res://assets/sprites/map/wizard_table/textures/Material.015.00_scrolls.dds_baseColor.jpeg" id="2_fqr1d"]
-[ext_resource type="Texture2D" uid="uid://jmioi6455rac" path="res://assets/sprites/map/wizard_table/textures/Material.015.00_scrolls.dds_metallicRoughness.png" id="3_fstgh"]
-[ext_resource type="Texture2D" uid="uid://b3x38o53ltap4" path="res://assets/sprites/map/wizard_table/textures/Material.015.00_scrolls.dds_normal.png" id="4_wshxo"]
-[ext_resource type="Texture2D" uid="uid://dofhf3ivli10l" path="res://assets/sprites/map/wizard_table/textures/Material__4127.007_tx_hr_book_001.dds_baseColor.jpeg" id="5_ojs8s"]
-[ext_resource type="Texture2D" uid="uid://dgk15tkvno0h7" path="res://assets/sprites/map/wizard_table/textures/Material__4127.007_tx_hr_book_001.dds_metallicRoughness.png" id="6_l53yv"]
-[ext_resource type="Texture2D" uid="uid://ca6jai4h2jq5r" path="res://assets/sprites/map/wizard_table/textures/Material__4127.007_tx_hr_book_001.dds_normal.png" id="7_wy1p8"]
-[ext_resource type="Texture2D" uid="uid://b501u41vvjftw" path="res://assets/sprites/map/wizard_table/textures/Material__4127.006_tx_hr_book_003.dds_baseColor.jpeg" id="8_5jtk7"]
-[ext_resource type="Texture2D" uid="uid://2wbyk4bbulfs" path="res://assets/sprites/map/wizard_table/textures/Material__4127.006_tx_hr_book_003.dds_metallicRoughness.png" id="9_rhal1"]
-[ext_resource type="Texture2D" uid="uid://bg1swaob7y2mj" path="res://assets/sprites/map/wizard_table/textures/Material__4127.006_tx_hr_book_003.dds_normal.png" id="10_pjaa3"]
-[ext_resource type="Texture2D" uid="uid://b5brrab4ds2sy" path="res://assets/sprites/map/wizard_table/textures/Material__4127.005_tx_hr_book_004.dds_baseColor.jpeg" id="11_n7cc5"]
-[ext_resource type="Texture2D" uid="uid://cjyshejwvhmpr" path="res://assets/sprites/map/wizard_table/textures/Material__4127.005_tx_hr_book_004.dds_metallicRoughness.png" id="12_7e7pp"]
-[ext_resource type="Texture2D" uid="uid://sa55008oqgp1" path="res://assets/sprites/map/wizard_table/textures/Material__4127.005_tx_hr_book_004.dds_normal.png" id="13_vu0bd"]
-[ext_resource type="Texture2D" uid="uid://fbta8vp64apu" path="res://assets/sprites/map/wizard_table/textures/Material__4127.004_tx_hr_book_005.dds_baseColor.jpeg" id="14_2j2ur"]
-[ext_resource type="Texture2D" uid="uid://drsb2sux73aig" path="res://assets/sprites/map/wizard_table/textures/Material__4127.004_tx_hr_book_005.dds_metallicRoughness.png" id="15_tatpe"]
-[ext_resource type="Texture2D" uid="uid://kea8xgsmfsq0" path="res://assets/sprites/map/wizard_table/textures/Material__4127.004_tx_hr_book_005.dds_normal.png" id="16_dsh75"]
-[ext_resource type="Texture2D" uid="uid://svlif42dsaii" path="res://assets/sprites/map/wizard_table/textures/Material__4127.003_tx_hr_book_002.dds_baseColor.jpeg" id="17_874ao"]
-[ext_resource type="Texture2D" uid="uid://bpsiffq6bcsnr" path="res://assets/sprites/map/wizard_table/textures/Material__4127.003_tx_hr_book_002.dds_metallicRoughness.png" id="18_5fstc"]
-[ext_resource type="Texture2D" uid="uid://bfa3kvf3yn58k" path="res://assets/sprites/map/wizard_table/textures/Material__4127.003_tx_hr_book_002.dds_normal.png" id="19_1m55m"]
-[ext_resource type="Texture2D" uid="uid://cakpixwgg4a03" path="res://assets/sprites/map/wizard_table/textures/Material.00_Material_2D_View.dds_baseColor.jpeg" id="20_6c2bo"]
-[ext_resource type="Texture2D" uid="uid://bpovpfth04rsu" path="res://assets/sprites/map/wizard_table/textures/Material.00_Material_2D_View.dds_metallicRoughness.png" id="21_cnt6c"]
-[ext_resource type="Texture2D" uid="uid://crpi5ujkj6axe" path="res://assets/sprites/map/wizard_table/textures/Material.00_Material_2D_View.dds_normal.png" id="22_jrnmg"]
-[ext_resource type="Texture2D" uid="uid://crlovbeb4sop7" path="res://assets/sprites/map/stylized_dungeon/textures/lambert2SG_diffuse.png" id="23_o1rbw"]
-[ext_resource type="Texture2D" uid="uid://rwmtb7pmhyue" path="res://assets/sprites/map/stylized_dungeon/textures/lambert2SG_normal.png" id="24_h4wt8"]
-[ext_resource type="Texture2D" uid="uid://dy716nx1dc5g0" path="res://assets/sprites/map/stylized_dungeon/textures/lambert3SG_diffuse.png" id="25_njbmb"]
-[ext_resource type="Texture2D" uid="uid://dwbxpqdlb0rpe" path="res://assets/sprites/map/stylized_dungeon/textures/lambert3SG_normal.png" id="26_27fuh"]
-[ext_resource type="Texture2D" uid="uid://ctsebacgg81gt" path="res://assets/sprites/map/stylized_dungeon/textures/blinn1SG_diffuse.png" id="27_6ucwt"]
-[ext_resource type="Texture2D" uid="uid://bluao7v4icf1h" path="res://assets/sprites/map/stylized_dungeon/textures/blinn1SG_normal.png" id="28_nq8vv"]
-[ext_resource type="Texture2D" uid="uid://d20wvgi168wll" path="res://assets/sprites/map/stylized_dungeon/textures/blinn2SG_diffuse.png" id="29_a3iyp"]
-[ext_resource type="Texture2D" uid="uid://ce6wu2vv6oh35" path="res://assets/sprites/map/stylized_dungeon/textures/blinn2SG_normal.png" id="30_lqhxe"]
-[ext_resource type="Texture2D" uid="uid://cvhx7dikhays" path="res://assets/sprites/map/stylized_dungeon/textures/lambert4SG_diffuse.png" id="31_kr7it"]
-[ext_resource type="Texture2D" uid="uid://84o4sc0pmkn6" path="res://assets/sprites/map/stylized_dungeon/textures/lambert4SG_normal.png" id="32_016ct"]
-[ext_resource type="Texture2D" uid="uid://ds5cmned5rdit" path="res://assets/sprites/map/stylized_dungeon/textures/phong3SG_diffuse.png" id="33_k8afw"]
-[ext_resource type="Texture2D" uid="uid://ckrrx7qg8466j" path="res://assets/sprites/map/stylized_dungeon/textures/phong3SG_normal.png" id="34_r1fte"]
-[ext_resource type="Texture2D" uid="uid://coo1f1k1qpl6a" path="res://assets/sprites/map/stylized_dungeon/textures/phong5SG_diffuse.png" id="35_xtjqh"]
-[ext_resource type="Texture2D" uid="uid://bqahiuxhkc65j" path="res://assets/sprites/map/stylized_dungeon/textures/phong5SG_normal.png" id="36_5l07i"]
+[ext_resource type="Texture2D" uid="uid://belbjbolntgog" path="res://assets/sprites/menu/map/wizard_table/textures/Material.015.00_scrolls.dds_baseColor.jpeg" id="2_fqr1d"]
+[ext_resource type="Texture2D" uid="uid://ksntyve4cwh0" path="res://assets/sprites/menu/fundo/background.png" id="2_fstgh"]
+[ext_resource type="Texture2D" uid="uid://jmioi6455rac" path="res://assets/sprites/menu/map/wizard_table/textures/Material.015.00_scrolls.dds_metallicRoughness.png" id="3_fstgh"]
+[ext_resource type="Texture2D" uid="uid://b3x38o53ltap4" path="res://assets/sprites/menu/map/wizard_table/textures/Material.015.00_scrolls.dds_normal.png" id="4_wshxo"]
+[ext_resource type="Texture2D" uid="uid://dofhf3ivli10l" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.007_tx_hr_book_001.dds_baseColor.jpeg" id="5_ojs8s"]
+[ext_resource type="Texture2D" uid="uid://dgk15tkvno0h7" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.007_tx_hr_book_001.dds_metallicRoughness.png" id="6_l53yv"]
+[ext_resource type="Texture2D" uid="uid://ca6jai4h2jq5r" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.007_tx_hr_book_001.dds_normal.png" id="7_wy1p8"]
+[ext_resource type="Texture2D" uid="uid://b501u41vvjftw" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.006_tx_hr_book_003.dds_baseColor.jpeg" id="8_5jtk7"]
+[ext_resource type="Texture2D" uid="uid://2wbyk4bbulfs" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.006_tx_hr_book_003.dds_metallicRoughness.png" id="9_rhal1"]
+[ext_resource type="Texture2D" uid="uid://bg1swaob7y2mj" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.006_tx_hr_book_003.dds_normal.png" id="10_pjaa3"]
+[ext_resource type="Texture2D" uid="uid://b5brrab4ds2sy" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.005_tx_hr_book_004.dds_baseColor.jpeg" id="11_n7cc5"]
+[ext_resource type="Texture2D" uid="uid://cjyshejwvhmpr" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.005_tx_hr_book_004.dds_metallicRoughness.png" id="12_7e7pp"]
+[ext_resource type="Texture2D" uid="uid://sa55008oqgp1" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.005_tx_hr_book_004.dds_normal.png" id="13_vu0bd"]
+[ext_resource type="Texture2D" uid="uid://fbta8vp64apu" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.004_tx_hr_book_005.dds_baseColor.jpeg" id="14_2j2ur"]
+[ext_resource type="Texture2D" uid="uid://drsb2sux73aig" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.004_tx_hr_book_005.dds_metallicRoughness.png" id="15_tatpe"]
+[ext_resource type="Texture2D" uid="uid://kea8xgsmfsq0" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.004_tx_hr_book_005.dds_normal.png" id="16_dsh75"]
+[ext_resource type="Texture2D" uid="uid://svlif42dsaii" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.003_tx_hr_book_002.dds_baseColor.jpeg" id="17_874ao"]
+[ext_resource type="Texture2D" uid="uid://bpsiffq6bcsnr" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.003_tx_hr_book_002.dds_metallicRoughness.png" id="18_5fstc"]
+[ext_resource type="Texture2D" uid="uid://bfa3kvf3yn58k" path="res://assets/sprites/menu/map/wizard_table/textures/Material__4127.003_tx_hr_book_002.dds_normal.png" id="19_1m55m"]
+[ext_resource type="Texture2D" uid="uid://cakpixwgg4a03" path="res://assets/sprites/menu/map/wizard_table/textures/Material.00_Material_2D_View.dds_baseColor.jpeg" id="20_6c2bo"]
+[ext_resource type="Texture2D" uid="uid://bpovpfth04rsu" path="res://assets/sprites/menu/map/wizard_table/textures/Material.00_Material_2D_View.dds_metallicRoughness.png" id="21_cnt6c"]
+[ext_resource type="Texture2D" uid="uid://crpi5ujkj6axe" path="res://assets/sprites/menu/map/wizard_table/textures/Material.00_Material_2D_View.dds_normal.png" id="22_jrnmg"]
+[ext_resource type="Texture2D" uid="uid://crlovbeb4sop7" path="res://assets/sprites/menu/map/stylized_dungeon/textures/lambert2SG_diffuse.png" id="23_o1rbw"]
+[ext_resource type="Texture2D" uid="uid://rwmtb7pmhyue" path="res://assets/sprites/menu/map/stylized_dungeon/textures/lambert2SG_normal.png" id="24_h4wt8"]
+[ext_resource type="Texture2D" uid="uid://dy716nx1dc5g0" path="res://assets/sprites/menu/map/stylized_dungeon/textures/lambert3SG_diffuse.png" id="25_njbmb"]
+[ext_resource type="Texture2D" uid="uid://dwbxpqdlb0rpe" path="res://assets/sprites/menu/map/stylized_dungeon/textures/lambert3SG_normal.png" id="26_27fuh"]
+[ext_resource type="Texture2D" uid="uid://ctsebacgg81gt" path="res://assets/sprites/menu/map/stylized_dungeon/textures/blinn1SG_diffuse.png" id="27_6ucwt"]
+[ext_resource type="Texture2D" uid="uid://bluao7v4icf1h" path="res://assets/sprites/menu/map/stylized_dungeon/textures/blinn1SG_normal.png" id="28_nq8vv"]
+[ext_resource type="Texture2D" uid="uid://d20wvgi168wll" path="res://assets/sprites/menu/map/stylized_dungeon/textures/blinn2SG_diffuse.png" id="29_a3iyp"]
+[ext_resource type="Texture2D" uid="uid://ce6wu2vv6oh35" path="res://assets/sprites/menu/map/stylized_dungeon/textures/blinn2SG_normal.png" id="30_lqhxe"]
+[ext_resource type="Texture2D" uid="uid://cvhx7dikhays" path="res://assets/sprites/menu/map/stylized_dungeon/textures/lambert4SG_diffuse.png" id="31_kr7it"]
+[ext_resource type="Texture2D" uid="uid://84o4sc0pmkn6" path="res://assets/sprites/menu/map/stylized_dungeon/textures/lambert4SG_normal.png" id="32_016ct"]
+[ext_resource type="Texture2D" uid="uid://ds5cmned5rdit" path="res://assets/sprites/menu/map/stylized_dungeon/textures/phong3SG_diffuse.png" id="33_k8afw"]
+[ext_resource type="Texture2D" uid="uid://ckrrx7qg8466j" path="res://assets/sprites/menu/map/stylized_dungeon/textures/phong3SG_normal.png" id="34_r1fte"]
+[ext_resource type="Texture2D" uid="uid://coo1f1k1qpl6a" path="res://assets/sprites/menu/map/stylized_dungeon/textures/phong5SG_diffuse.png" id="35_xtjqh"]
+[ext_resource type="Texture2D" uid="uid://bqahiuxhkc65j" path="res://assets/sprites/menu/map/stylized_dungeon/textures/phong5SG_normal.png" id="36_5l07i"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lfvmm"]
 resource_name = "Material.015.00_scrolls.dds"
@@ -643,6 +644,13 @@ viewport_path = NodePath("SubViewport")
 resource_local_to_scene = true
 albedo_texture = SubResource("ViewportTexture_fqr1d")
 
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_fqr1d"]
+
+[sub_resource type="Environment" id="Environment_fstgh"]
+background_mode = 2
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_wshxo"]
+
 [node name="Node3D" type="Node3D" unique_id=474760015]
 
 [node name="SubViewport" type="SubViewport" parent="." unique_id=975325004]
@@ -656,6 +664,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_klgdb")
+
+[node name="Background" type="Sprite2D" parent="SubViewport/Control" unique_id=1120803989]
+position = Vector2(957, 538)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("2_fstgh")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="SubViewport/Control" unique_id=1214448477]
 layout_mode = 0
@@ -711,6 +724,11 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Sair"
 
+[node name="TextureRect" type="TextureRect" parent="SubViewport/Control" unique_id=771481082]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="mesa" type="Node3D" parent="." unique_id=735146095]
 transform = Transform3D(0.029474378, 0, 0.9995655, 0, 1, 0, -0.9995655, 0, 0.029474378, 7.984122, 1.0895967, -15.691231)
 
@@ -747,84 +765,89 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.096596, 1.8214883, 3.017883
 mesh = SubResource("ArrayMesh_g68jo")
 
 [node name="defaultMaterial23" type="MeshInstance3D" parent="mesa/Sketchfab_model/Collada visual scene group/defaultobject" unique_id=440051661]
-transform = Transform3D(0.9999711, 0.004171241, 0.0063529573, -0.0041713254, 0.9999913, -5.023412e-13, -0.0063529033, -2.650026e-05, 0.99997985, 0.5581541, 1.9152268, 1.6674867)
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 1, 0.5581541, 1.9152268, 1.6674867)
 mesh = SubResource("ArrayMesh_iuvur")
 
-[node name="ambiente" type="Node3D" parent="." unique_id=2025471621]
+[node name="casa" type="Node3D" parent="." unique_id=2025471621]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -6.6988635, 1.1705942, 4.2472525)
 
-[node name="Sketchfab_model" type="Node3D" parent="ambiente" unique_id=451381927]
+[node name="Sketchfab_model" type="Node3D" parent="casa" unique_id=451381927]
 transform = Transform3D(0.0056244815, 0, 0, 0, 2.1533714e-18, 0.0056244815, 0, -0.0056244815, 2.1533714e-18, 0, -8.526513e-14, -1.8932662e-29)
 
-[node name="scene_for_marmoset_obj_cleaner_materialmerger_gles" type="Node3D" parent="ambiente/Sketchfab_model" unique_id=1743749970]
+[node name="scene_for_marmoset_obj_cleaner_materialmerger_gles" type="Node3D" parent="casa/Sketchfab_model" unique_id=1743749970]
 
-[node name="Object_4" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=1658815241]
+[node name="Object_4" type="MeshInstance3D" parent="casa/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=1658815241]
 transform = Transform3D(-0.99999446, -0.0033684548, 1.289678e-18, 0.0033684548, -0.99999446, 7.657113e-16, -1.2895869e-18, 7.6571164e-16, 0.99999976, 897.0137, 1169.101, 0)
 mesh = SubResource("ArrayMesh_iffrf")
 
-[node name="Object_9" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=957362257]
+[node name="Object_9" type="MeshInstance3D" parent="casa/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=957362257]
 transform = Transform3D(-0.99999446, -0.0033684548, 1.289678e-18, 0.0033684548, -0.99999446, 7.657113e-16, -1.2895869e-18, 7.6571164e-16, 0.99999976, 897.0137, 1169.101, 0)
 mesh = SubResource("ArrayMesh_hndr0")
 
-[node name="Object_11" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=2063550937]
+[node name="Object_11" type="MeshInstance3D" parent="casa/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=2063550937]
 transform = Transform3D(-0.99999446, -0.0033684548, 1.289678e-18, 0.0033684548, -0.99999446, 7.657113e-16, -1.2895869e-18, 7.6571164e-16, 0.99999976, 897.0137, 1169.101, 0)
 mesh = SubResource("ArrayMesh_rlqyu")
 
-[node name="Object_4" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles/Object_11" unique_id=1582924271]
+[node name="Object_4" type="MeshInstance3D" parent="casa/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles/Object_11" unique_id=1582924271]
 transform = Transform3D(-0.99999446, -0.0033684548, 1.2896784e-18, 0.0033684548, -0.99999446, 7.6571143e-16, -1.2895873e-18, 7.6571175e-16, 0.9999998, 895.7766, 632.4267, 0)
 mesh = SubResource("ArrayMesh_iffrf")
 
-[node name="Object_9" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles/Object_11" unique_id=952253836]
+[node name="Object_9" type="MeshInstance3D" parent="casa/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles/Object_11" unique_id=952253836]
 transform = Transform3D(-0.99999446, -0.0033684548, 1.2896781e-18, 0.0033684548, -0.99999446, 7.657114e-16, -1.2895871e-18, 7.657117e-16, 0.9999998, 898.8214, 632.4369, 0)
 mesh = SubResource("ArrayMesh_hndr0")
 
-[node name="Object_11" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles/Object_11" unique_id=1305165763]
+[node name="Object_11" type="MeshInstance3D" parent="casa/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles/Object_11" unique_id=1305165763]
 transform = Transform3D(-0.99999446, -0.0033684548, 1.2896781e-18, 0.0033684548, -0.99999446, 7.657114e-16, -1.2895871e-18, 7.657117e-16, 0.9999998, 898.8214, 632.4369, 0)
 mesh = SubResource("ArrayMesh_rlqyu")
 
-[node name="Object_2" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=706839221]
+[node name="Object_2" type="MeshInstance3D" parent="casa/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=706839221]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 10.331959)
 mesh = SubResource("ArrayMesh_iffrf")
 
-[node name="Object_3" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=122089475]
+[node name="Object_3" type="MeshInstance3D" parent="casa/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=122089475]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -8.589279, 0, 0)
 mesh = SubResource("ArrayMesh_hndr0")
 
-[node name="Object_5" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=2006863823]
+[node name="Object_5" type="MeshInstance3D" parent="casa/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=2006863823]
 mesh = SubResource("ArrayMesh_rlqyu")
 
-[node name="Object_6" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=1842695236]
+[node name="Object_6" type="MeshInstance3D" parent="casa/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=1842695236]
 mesh = SubResource("ArrayMesh_wgln8")
 
-[node name="Object_7" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=282951920]
+[node name="Object_7" type="MeshInstance3D" parent="casa/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=282951920]
 mesh = SubResource("ArrayMesh_5jsre")
 
-[node name="Object_8" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=1636854364]
+[node name="Object_8" type="MeshInstance3D" parent="casa/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=1636854364]
 mesh = SubResource("ArrayMesh_kyqv3")
 
-[node name="Object_10" type="MeshInstance3D" parent="ambiente/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=1825517834]
+[node name="Object_10" type="MeshInstance3D" parent="casa/Sketchfab_model/scene_for_marmoset_obj_cleaner_materialmerger_gles" unique_id=1825517834]
 mesh = SubResource("ArrayMesh_fps0k")
 
 [node name="menu" type="MeshInstance3D" parent="." unique_id=1196624874]
-transform = Transform3D(0.16298547, 0, 1.3371493, 0, 1, 0, -2.4946814, 0, 0.08736022, 10.225509, 5.015132, -16.14264)
+transform = Transform3D(-1.09278474e-07, 0, 1.3400002, 0, 0.99999994, 0, -2.5, 0, -5.8573267e-08, 10.466791, 5.0234923, -16.156332)
 mesh = SubResource("PlaneMesh_fqr1d")
 surface_material_override/0 = SubResource("StandardMaterial3D_fstgh")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=414983930]
-transform = Transform3D(0.024109647, -0.7523884, 0.6582784, 0.12832798, 0.65535146, 0.744343, -0.9914387, 0.06652969, 0.11235278, 12.5267, 8.394211, -15.648401)
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, 10.410805, 6.598816, -15.999829)
+attributes = SubResource("CameraAttributesPractical_fqr1d")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1031157070]
-transform = Transform3D(1, 0, 0, 0, -0.027921667, 0.9996101, 0, -0.9996101, -0.027921667, 10.294161, 7.444623, -16.01522)
-light_color = Color(1, 0.9098039, 0.03137255, 1)
+transform = Transform3D(1, 0, 0, 0, -0.027921667, 0.9996101, 0, -0.9996101, -0.027921667, 10.294161, 6.510692, -16.01522)
+light_color = Color(1, 0.54901963, 0.03137255, 1)
 light_energy = 2.0
 spot_range = 5.895
 spot_angle = 84.21
 
-[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1335702384]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.314747, 12.607154, -16.828377)
-light_energy = 16.0
-light_size = 1.0
-omni_range = 5.45
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1809242593]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.786709, 17.952251, -14.685072)
+light_color = Color(1, 0.69411767, 0, 1)
+light_energy = 1.728
+omni_range = 26.027864
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1316488788]
+environment = SubResource("Environment_fstgh")
+camera_attributes = SubResource("CameraAttributesPractical_wshxo")
 
 [connection signal="pressed" from="SubViewport/Control/VBoxContainer/NewGame" to="SubViewport/Control" method="_on_new_game_pressed"]
 [connection signal="pressed" from="SubViewport/Control/VBoxContainer/Load" to="SubViewport/Control" method="_on_load_pressed"]

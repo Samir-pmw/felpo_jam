@@ -23,7 +23,7 @@ Cursor="*uid://btb3rqn7gdvqo"
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/mode=3
+window/size/borderless=true
 
 [dotnet]
 
@@ -36,6 +36,5 @@ project/assembly_name="source"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="mobile"
 2d/snap/snap_2d_transforms_to_pixel=true
 2d/snap/snap_2d_vertices_to_pixel=true

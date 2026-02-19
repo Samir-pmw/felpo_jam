@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b1ceo1yi112ss"]
 
-[ext_resource type="Texture2D" uid="uid://4akadq57nrni" path="res://assets/sprites/map/placeholder_bg.jpg" id="1_u4f7j"]
+[ext_resource type="Texture2D" uid="uid://4akadq57nrni" path="res://assets/sprites/menu/map/placeholder_bg.jpg" id="1_u4f7j"]
 [ext_resource type="PackedScene" uid="uid://cjmax75bip67h" path="res://scenes/core/tilemap_manager.tscn" id="3_1r3rq"]
 [ext_resource type="Resource" uid="uid://57sfiijqtra2" path="res://resources/enemies/zombie.tres" id="5_1wklo"]
 [ext_resource type="PackedScene" uid="uid://d3hea2pbqgvwm" path="res://scenes/units/unit.tscn" id="6_iig34"]
