@@ -55,7 +55,7 @@ spot_range = 105.267
 spot_angle = 52.13
 
 [node name="mapa_menu" type="MeshInstance3D" parent="." unique_id=1196624874]
-transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 10.01981, 1.4806757, -16.445412)
+transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 9.983423, 1.4806757, -16.445412)
 cast_shadow = 0
 mesh = SubResource("PlaneMesh_fqr1d")
 surface_material_override/0 = SubResource("StandardMaterial3D_fstgh")
@@ -68,791 +68,801 @@ size = Vector2i(1920, 1080)
 [node name="Masmorra" type="Node3D" parent="." unique_id=396424721]
 transform = Transform3D(-9.878774e-08, 0, 2.8, 0, 2.26, 0, -2.26, 0, -1.2239188e-07, 10.019961, -0.40731335, -16.495197)
 
-[node name="floorDecoration_wood_gltf" parent="Masmorra" unique_id=1941687419 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.222837, -0.045425177, -2.7539766)
-
-[node name="floorDecoration_wood_gltf2" parent="Masmorra" unique_id=608663046 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.352556, -0.045425177, -2.7539766)
-
-[node name="floorDecoration_wood_gltf3" parent="Masmorra" unique_id=1766848288 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.222837, -0.045425177, -2.0429397)
-
-[node name="floorDecoration_wood_gltf4" parent="Masmorra" unique_id=857547907 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.352556, -0.045425177, -2.0429397)
-
-[node name="floorDecoration_wood_gltf17" parent="Masmorra" unique_id=1087949254 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.222837, -0.045425177, -4.171181)
-
-[node name="floorDecoration_wood_gltf18" parent="Masmorra" unique_id=1040077863 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.352556, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf19" parent="Masmorra" unique_id=933114195 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.222837, -0.045425177, -3.460144)
-
-[node name="floorDecoration_wood_gltf20" parent="Masmorra" unique_id=1782206141 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.352556, -0.045425177, -3.460144)
-
-[node name="floorDecoration_wood_gltf5" parent="Masmorra" unique_id=1524842773 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.2228374, -0.045425177, -1.3736298)
-
-[node name="floorDecoration_wood_gltf6" parent="Masmorra" unique_id=589057100 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.3525567, -0.045425177, -1.3736298)
-
-[node name="floorDecoration_wood_gltf7" parent="Masmorra" unique_id=363004227 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.2228374, -0.045425177, -0.66259265)
-
-[node name="floorDecoration_wood_gltf8" parent="Masmorra" unique_id=758927084 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.3525567, -0.045425177, -0.66259265)
-
-[node name="floorDecoration_wood_gltf9" parent="Masmorra" unique_id=1235829703 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.2228374, -0.045425177, 0.04368925)
-
-[node name="floorDecoration_wood_gltf10" parent="Masmorra" unique_id=960762363 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.3525567, -0.045425177, 0.04368925)
-
-[node name="floorDecoration_wood_gltf11" parent="Masmorra" unique_id=1182251921 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.2228374, -0.045425177, 0.7547264)
-
-[node name="floorDecoration_wood_gltf12" parent="Masmorra" unique_id=1589875154 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.3525567, -0.045425177, 0.7547264)
-
-[node name="floorDecoration_wood_gltf13" parent="Masmorra" unique_id=595998533 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.2228374, -0.045425177, 1.424036)
-
-[node name="floorDecoration_wood_gltf14" parent="Masmorra" unique_id=2000329729 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.3525567, -0.045425177, 1.424036)
-
-[node name="floorDecoration_wood_gltf15" parent="Masmorra" unique_id=1206764020 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.2228374, -0.045425177, 2.1350732)
-
-[node name="floorDecoration_wood_gltf16" parent="Masmorra" unique_id=1870378149 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.3525567, -0.045425177, 2.1350732)
-
-[node name="floorDecoration_wood_gltf21" parent="Masmorra" unique_id=13212485 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.4796948, -0.045425177, -2.7539766)
-
-[node name="floorDecoration_wood_gltf22" parent="Masmorra" unique_id=2065533187 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf23" parent="Masmorra" unique_id=1271083467 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.4796948, -0.045425177, -2.0429397)
-
-[node name="floorDecoration_wood_gltf24" parent="Masmorra" unique_id=1837820884 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, -2.0429397)
-
-[node name="floorDecoration_wood_gltf25" parent="Masmorra" unique_id=143478895 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.4796948, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf26" parent="Masmorra" unique_id=304571674 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf27" parent="Masmorra" unique_id=1380608656 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.4796948, -0.045425177, -3.460144)
-
-[node name="floorDecoration_wood_gltf28" parent="Masmorra" unique_id=1113258948 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, -3.4601438)
-
-[node name="floorDecoration_wood_gltf29" parent="Masmorra" unique_id=797137635 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.479695, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf30" parent="Masmorra" unique_id=677431584 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf31" parent="Masmorra" unique_id=810100800 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.479695, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf32" parent="Masmorra" unique_id=1947310380 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf33" parent="Masmorra" unique_id=964006005 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.479695, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf34" parent="Masmorra" unique_id=2023027867 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf35" parent="Masmorra" unique_id=666082051 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.479695, -0.045425177, 0.7547264)
-
-[node name="floorDecoration_wood_gltf36" parent="Masmorra" unique_id=1475339174 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, 0.7547264)
-
-[node name="floorDecoration_wood_gltf37" parent="Masmorra" unique_id=1512304286 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.479695, -0.045425177, 1.424036)
-
-[node name="floorDecoration_wood_gltf38" parent="Masmorra" unique_id=929019119 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.6094146, -0.045425177, 1.424036)
-
-[node name="floorDecoration_wood_gltf39" parent="Masmorra" unique_id=826681750 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.479695, -0.045425177, 2.1350732)
-
-[node name="floorDecoration_wood_gltf40" parent="Masmorra" unique_id=1366350963 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.6094146, -0.045425177, 2.1350732)
-
-[node name="floorDecoration_wood_gltf41" parent="Masmorra" unique_id=365171803 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.222837, -0.045425177, -2.7539766)
-
-[node name="floorDecoration_wood_gltf42" parent="Masmorra" unique_id=202728850 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.352556, -0.045425177, -2.7539766)
-
-[node name="floorDecoration_wood_gltf43" parent="Masmorra" unique_id=658484443 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.222837, -0.045425177, -2.0429397)
-
-[node name="floorDecoration_wood_gltf44" parent="Masmorra" unique_id=1934816077 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.352556, -0.045425177, -2.0429397)
-
-[node name="floorDecoration_wood_gltf45" parent="Masmorra" unique_id=1615734499 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.222837, -0.045425177, -4.171181)
-
-[node name="floorDecoration_wood_gltf46" parent="Masmorra" unique_id=221699833 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.352556, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf47" parent="Masmorra" unique_id=1235226344 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.222837, -0.045425177, -3.460144)
-
-[node name="floorDecoration_wood_gltf48" parent="Masmorra" unique_id=764665739 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.352556, -0.045425177, -3.460144)
-
-[node name="floorDecoration_wood_gltf49" parent="Masmorra" unique_id=406525255 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.2228374, -0.045425177, -1.3736298)
-
-[node name="floorDecoration_wood_gltf50" parent="Masmorra" unique_id=1732699494 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.3525567, -0.045425177, -1.3736298)
-
-[node name="floorDecoration_wood_gltf51" parent="Masmorra" unique_id=1886943301 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.2228374, -0.045425177, -0.66259265)
-
-[node name="floorDecoration_wood_gltf52" parent="Masmorra" unique_id=1694055071 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.3525567, -0.045425177, -0.66259265)
-
-[node name="floorDecoration_wood_gltf53" parent="Masmorra" unique_id=370204180 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.2228374, -0.045425177, 0.04368925)
-
-[node name="floorDecoration_wood_gltf54" parent="Masmorra" unique_id=913159957 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.3525567, -0.045425177, 0.04368925)
-
-[node name="floorDecoration_wood_gltf55" parent="Masmorra" unique_id=1078735589 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.2228374, -0.045425177, 0.7547264)
-
-[node name="floorDecoration_wood_gltf56" parent="Masmorra" unique_id=1497973479 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.3525567, -0.045425177, 0.7547264)
-
-[node name="floorDecoration_wood_gltf57" parent="Masmorra" unique_id=2107504228 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.2228374, -0.045425177, 1.424036)
-
-[node name="floorDecoration_wood_gltf58" parent="Masmorra" unique_id=2035975309 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.3525567, -0.045425177, 1.424036)
-
-[node name="floorDecoration_wood_gltf59" parent="Masmorra" unique_id=1028529028 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -5.2228374, -0.045425177, 2.1350732)
-
-[node name="floorDecoration_wood_gltf60" parent="Masmorra" unique_id=1296900171 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -4.3525567, -0.045425177, 2.1350732)
-
-[node name="floorDecoration_wood_gltf61" parent="Masmorra" unique_id=1750228479 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.4796948, -0.045425177, -2.7539766)
-
-[node name="floorDecoration_wood_gltf62" parent="Masmorra" unique_id=234289427 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf63" parent="Masmorra" unique_id=966204817 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.4796948, -0.045425177, -2.0429397)
-
-[node name="floorDecoration_wood_gltf64" parent="Masmorra" unique_id=1595407358 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, -2.0429397)
-
-[node name="floorDecoration_wood_gltf65" parent="Masmorra" unique_id=1214162319 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.4796948, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf66" parent="Masmorra" unique_id=1146637615 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf67" parent="Masmorra" unique_id=448835288 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.4796948, -0.045425177, -3.460144)
-
-[node name="floorDecoration_wood_gltf68" parent="Masmorra" unique_id=1780090936 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, -3.4601438)
-
-[node name="floorDecoration_wood_gltf69" parent="Masmorra" unique_id=943469518 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.479695, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf70" parent="Masmorra" unique_id=506948154 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf71" parent="Masmorra" unique_id=1876429023 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.479695, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf72" parent="Masmorra" unique_id=1349866157 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf73" parent="Masmorra" unique_id=771553711 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.479695, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf74" parent="Masmorra" unique_id=160129870 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf75" parent="Masmorra" unique_id=1173545398 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.479695, -0.045425177, 0.7547264)
-
-[node name="floorDecoration_wood_gltf76" parent="Masmorra" unique_id=188985183 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.609414, -0.045425177, 0.7547264)
-
-[node name="floorDecoration_wood_gltf77" parent="Masmorra" unique_id=1193521722 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.479695, -0.045425177, 1.424036)
-
-[node name="floorDecoration_wood_gltf78" parent="Masmorra" unique_id=1290205614 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.6094146, -0.045425177, 1.424036)
-
-[node name="floorDecoration_wood_gltf79" parent="Masmorra" unique_id=1526927335 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -3.479695, -0.045425177, 2.1350732)
-
-[node name="floorDecoration_wood_gltf80" parent="Masmorra" unique_id=1583252907 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -2.6094146, -0.045425177, 2.1350732)
-
-[node name="floorDecoration_wood_gltf81" parent="Masmorra" unique_id=397854191 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf82" parent="Masmorra" unique_id=874135204 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf83" parent="Masmorra" unique_id=79610946 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, -2.0429394)
-
-[node name="floorDecoration_wood_gltf84" parent="Masmorra" unique_id=1713810235 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, -2.0429394)
-
-[node name="floorDecoration_wood_gltf85" parent="Masmorra" unique_id=742849536 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf86" parent="Masmorra" unique_id=858804459 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf87" parent="Masmorra" unique_id=1210882399 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, -3.4601438)
-
-[node name="floorDecoration_wood_gltf88" parent="Masmorra" unique_id=1565959557 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, -3.4601438)
-
-[node name="floorDecoration_wood_gltf89" parent="Masmorra" unique_id=1512310628 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf90" parent="Masmorra" unique_id=1247736181 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf91" parent="Masmorra" unique_id=1932068487 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf92" parent="Masmorra" unique_id=581946845 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf93" parent="Masmorra" unique_id=316336772 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf94" parent="Masmorra" unique_id=1779558208 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf95" parent="Masmorra" unique_id=200697636 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, 0.7547264)
-
-[node name="floorDecoration_wood_gltf96" parent="Masmorra" unique_id=1484392794 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, 0.7547264)
-
-[node name="floorDecoration_wood_gltf97" parent="Masmorra" unique_id=300016139 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226567, -0.045425177, 1.424036)
-
-[node name="floorDecoration_wood_gltf98" parent="Masmorra" unique_id=1942134939 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.85237646, -0.045425177, 1.424036)
-
-[node name="floorDecoration_wood_gltf99" parent="Masmorra" unique_id=1166878868 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226567, -0.045425177, 2.1350732)
-
-[node name="floorDecoration_wood_gltf100" parent="Masmorra" unique_id=332869166 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.85237646, -0.045425177, 2.1350732)
-
-[node name="floorDecoration_wood_gltf101" parent="Masmorra" unique_id=196138297 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf102" parent="Masmorra" unique_id=62654440 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf103" parent="Masmorra" unique_id=607319212 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, -2.0429394)
-
-[node name="floorDecoration_wood_gltf104" parent="Masmorra" unique_id=1721751661 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, -2.0429394)
-
-[node name="floorDecoration_wood_gltf105" parent="Masmorra" unique_id=1817689080 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf106" parent="Masmorra" unique_id=518768880 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf107" parent="Masmorra" unique_id=881140020 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, -3.4601438)
-
-[node name="floorDecoration_wood_gltf108" parent="Masmorra" unique_id=1982662196 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, -3.4601438)
-
-[node name="floorDecoration_wood_gltf109" parent="Masmorra" unique_id=1674163149 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf110" parent="Masmorra" unique_id=1138824671 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf111" parent="Masmorra" unique_id=771585776 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf112" parent="Masmorra" unique_id=1579846213 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf113" parent="Masmorra" unique_id=1194488941 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf114" parent="Masmorra" unique_id=1321870773 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf115" parent="Masmorra" unique_id=492338997 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, 0.7547269)
-
-[node name="floorDecoration_wood_gltf116" parent="Masmorra" unique_id=1036049661 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, 0.7547269)
-
-[node name="floorDecoration_wood_gltf117" parent="Masmorra" unique_id=1616675917 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020485878, -0.045425177, 1.4240365)
-
-[node name="floorDecoration_wood_gltf118" parent="Masmorra" unique_id=1370774452 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, 1.4240365)
-
-[node name="floorDecoration_wood_gltf119" parent="Masmorra" unique_id=1271031395 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020485878, -0.045425177, 2.1350737)
-
-[node name="floorDecoration_wood_gltf120" parent="Masmorra" unique_id=763494082 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, 2.1350737)
-
-[node name="floorDecoration_wood_gltf121" parent="Masmorra" unique_id=402345667 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf122" parent="Masmorra" unique_id=726348213 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf123" parent="Masmorra" unique_id=1870726842 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, -2.0429394)
-
-[node name="floorDecoration_wood_gltf124" parent="Masmorra" unique_id=1840579688 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, -2.0429394)
-
-[node name="floorDecoration_wood_gltf125" parent="Masmorra" unique_id=918891850 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf126" parent="Masmorra" unique_id=553355835 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf127" parent="Masmorra" unique_id=896550204 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, -3.4601438)
-
-[node name="floorDecoration_wood_gltf128" parent="Masmorra" unique_id=681840454 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, -3.4601438)
-
-[node name="floorDecoration_wood_gltf129" parent="Masmorra" unique_id=1092914127 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf130" parent="Masmorra" unique_id=740927776 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf131" parent="Masmorra" unique_id=620227701 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf132" parent="Masmorra" unique_id=1780507064 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf133" parent="Masmorra" unique_id=1158105602 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf134" parent="Masmorra" unique_id=890715384 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf135" parent="Masmorra" unique_id=1256647420 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226563, -0.045425177, 0.7547264)
-
-[node name="floorDecoration_wood_gltf136" parent="Masmorra" unique_id=2021393040 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.852376, -0.045425177, 0.7547264)
-
-[node name="floorDecoration_wood_gltf137" parent="Masmorra" unique_id=1047904395 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226567, -0.045425177, 1.424036)
-
-[node name="floorDecoration_wood_gltf138" parent="Masmorra" unique_id=1243576315 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.85237646, -0.045425177, 1.424036)
-
-[node name="floorDecoration_wood_gltf139" parent="Masmorra" unique_id=37676608 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -1.7226567, -0.045425177, 2.1350732)
-
-[node name="floorDecoration_wood_gltf140" parent="Masmorra" unique_id=1525159471 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, -0.85237646, -0.045425177, 2.1350732)
-
-[node name="floorDecoration_wood_gltf141" parent="Masmorra" unique_id=493026309 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf142" parent="Masmorra" unique_id=1352077431 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf143" parent="Masmorra" unique_id=1351763145 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, -2.0429394)
-
-[node name="floorDecoration_wood_gltf144" parent="Masmorra" unique_id=1757273300 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, -2.0429394)
-
-[node name="floorDecoration_wood_gltf145" parent="Masmorra" unique_id=940971835 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf146" parent="Masmorra" unique_id=1886550756 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf147" parent="Masmorra" unique_id=943744909 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, -3.4601438)
-
-[node name="floorDecoration_wood_gltf148" parent="Masmorra" unique_id=609873319 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, -3.4601438)
-
-[node name="floorDecoration_wood_gltf149" parent="Masmorra" unique_id=470220115 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf150" parent="Masmorra" unique_id=2122245655 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf151" parent="Masmorra" unique_id=709482909 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf152" parent="Masmorra" unique_id=515589846 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf153" parent="Masmorra" unique_id=309223920 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf154" parent="Masmorra" unique_id=1121752043 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf155" parent="Masmorra" unique_id=712422343 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020486355, -0.045425177, 0.7547269)
-
-[node name="floorDecoration_wood_gltf156" parent="Masmorra" unique_id=531543710 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, 0.7547269)
-
-[node name="floorDecoration_wood_gltf157" parent="Masmorra" unique_id=56784562 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020485878, -0.045425177, 1.4240365)
-
-[node name="floorDecoration_wood_gltf158" parent="Masmorra" unique_id=1923927027 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, 1.4240365)
-
-[node name="floorDecoration_wood_gltf159" parent="Masmorra" unique_id=571008968 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.020485878, -0.045425177, 2.1350737)
-
-[node name="floorDecoration_wood_gltf160" parent="Masmorra" unique_id=355175887 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 0.8907671, -0.045425177, 2.1350737)
-
-[node name="floorDecoration_wood_gltf161" parent="Masmorra" unique_id=670091309 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf162" parent="Masmorra" unique_id=909902505 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf163" parent="Masmorra" unique_id=1653088094 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, -2.0429392)
-
-[node name="floorDecoration_wood_gltf164" parent="Masmorra" unique_id=1373412116 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, -2.0429392)
-
-[node name="floorDecoration_wood_gltf165" parent="Masmorra" unique_id=1723610002 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf166" parent="Masmorra" unique_id=1776235340 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf167" parent="Masmorra" unique_id=1555437298 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, -3.4601438)
-
-[node name="floorDecoration_wood_gltf168" parent="Masmorra" unique_id=1501908260 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, -3.4601438)
-
-[node name="floorDecoration_wood_gltf169" parent="Masmorra" unique_id=319065983 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf170" parent="Masmorra" unique_id=1154388907 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf171" parent="Masmorra" unique_id=207896279 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf172" parent="Masmorra" unique_id=2072590973 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf173" parent="Masmorra" unique_id=1584762449 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf174" parent="Masmorra" unique_id=780807842 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf175" parent="Masmorra" unique_id=1521279365 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, 0.7547269)
-
-[node name="floorDecoration_wood_gltf176" parent="Masmorra" unique_id=1787464541 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, 0.7547269)
-
-[node name="floorDecoration_wood_gltf177" parent="Masmorra" unique_id=482390191 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, 1.4240365)
-
-[node name="floorDecoration_wood_gltf178" parent="Masmorra" unique_id=22836564 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, 1.4240365)
-
-[node name="floorDecoration_wood_gltf179" parent="Masmorra" unique_id=1248818529 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, 2.1350737)
-
-[node name="floorDecoration_wood_gltf180" parent="Masmorra" unique_id=1425246895 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, 2.1350737)
-
-[node name="floorDecoration_wood_gltf181" parent="Masmorra" unique_id=459847544 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf182" parent="Masmorra" unique_id=1222239773 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf183" parent="Masmorra" unique_id=455688519 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, -2.0429392)
-
-[node name="floorDecoration_wood_gltf184" parent="Masmorra" unique_id=1066048774 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, -2.0429392)
-
-[node name="floorDecoration_wood_gltf185" parent="Masmorra" unique_id=723446630 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf186" parent="Masmorra" unique_id=1119996566 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf187" parent="Masmorra" unique_id=1815260524 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, -3.4601436)
-
-[node name="floorDecoration_wood_gltf188" parent="Masmorra" unique_id=827426996 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, -3.4601436)
-
-[node name="floorDecoration_wood_gltf189" parent="Masmorra" unique_id=671408222 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, -1.3736293)
-
-[node name="floorDecoration_wood_gltf190" parent="Masmorra" unique_id=1632935460 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, -1.3736293)
-
-[node name="floorDecoration_wood_gltf191" parent="Masmorra" unique_id=1224282998 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, -0.6625922)
-
-[node name="floorDecoration_wood_gltf192" parent="Masmorra" unique_id=7158003 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, -0.6625922)
-
-[node name="floorDecoration_wood_gltf193" parent="Masmorra" unique_id=595321236 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, 0.043689728)
-
-[node name="floorDecoration_wood_gltf194" parent="Masmorra" unique_id=608024752 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, 0.043689728)
-
-[node name="floorDecoration_wood_gltf195" parent="Masmorra" unique_id=1159408873 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, 0.7547269)
-
-[node name="floorDecoration_wood_gltf196" parent="Masmorra" unique_id=1462163760 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, 0.7547269)
-
-[node name="floorDecoration_wood_gltf197" parent="Masmorra" unique_id=510896311 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, 1.4240365)
-
-[node name="floorDecoration_wood_gltf198" parent="Masmorra" unique_id=67450302 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, 1.4240365)
-
-[node name="floorDecoration_wood_gltf199" parent="Masmorra" unique_id=649922883 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, 2.1350737)
-
-[node name="floorDecoration_wood_gltf200" parent="Masmorra" unique_id=79875942 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, 2.1350737)
-
-[node name="floorDecoration_wood_gltf201" parent="Masmorra" unique_id=413228003 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf202" parent="Masmorra" unique_id=763845804 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf203" parent="Masmorra" unique_id=810469765 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, -2.0429392)
-
-[node name="floorDecoration_wood_gltf204" parent="Masmorra" unique_id=21919898 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, -2.0429392)
-
-[node name="floorDecoration_wood_gltf205" parent="Masmorra" unique_id=858289966 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf206" parent="Masmorra" unique_id=1234776185 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf207" parent="Masmorra" unique_id=1088338098 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, -3.4601438)
-
-[node name="floorDecoration_wood_gltf208" parent="Masmorra" unique_id=1766676465 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, -3.4601438)
-
-[node name="floorDecoration_wood_gltf209" parent="Masmorra" unique_id=1196689014 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf210" parent="Masmorra" unique_id=223237345 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, -1.3736296)
-
-[node name="floorDecoration_wood_gltf211" parent="Masmorra" unique_id=320524923 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf212" parent="Masmorra" unique_id=284418123 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, -0.6625924)
-
-[node name="floorDecoration_wood_gltf213" parent="Masmorra" unique_id=90224628 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf214" parent="Masmorra" unique_id=403066300 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, 0.04368949)
-
-[node name="floorDecoration_wood_gltf215" parent="Masmorra" unique_id=415178022 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, 0.7547269)
-
-[node name="floorDecoration_wood_gltf216" parent="Masmorra" unique_id=996221432 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, 0.7547269)
-
-[node name="floorDecoration_wood_gltf217" parent="Masmorra" unique_id=676791149 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, 1.4240365)
-
-[node name="floorDecoration_wood_gltf218" parent="Masmorra" unique_id=1851365567 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, 1.4240365)
-
-[node name="floorDecoration_wood_gltf219" parent="Masmorra" unique_id=1852083352 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 1.77775, -0.045425177, 2.1350737)
-
-[node name="floorDecoration_wood_gltf220" parent="Masmorra" unique_id=1666140547 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 2.6480293, -0.045425177, 2.1350737)
-
-[node name="floorDecoration_wood_gltf221" parent="Masmorra" unique_id=975952937 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf222" parent="Masmorra" unique_id=896242713 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, -2.7539763)
-
-[node name="floorDecoration_wood_gltf223" parent="Masmorra" unique_id=738331461 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, -2.0429392)
-
-[node name="floorDecoration_wood_gltf224" parent="Masmorra" unique_id=2036674055 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, -2.0429392)
-
-[node name="floorDecoration_wood_gltf225" parent="Masmorra" unique_id=1668894524 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf226" parent="Masmorra" unique_id=1201957888 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, -4.1711807)
-
-[node name="floorDecoration_wood_gltf227" parent="Masmorra" unique_id=192336238 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, -3.4601436)
-
-[node name="floorDecoration_wood_gltf228" parent="Masmorra" unique_id=660049905 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, -3.4601436)
-
-[node name="floorDecoration_wood_gltf229" parent="Masmorra" unique_id=657934486 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, -1.3736293)
-
-[node name="floorDecoration_wood_gltf230" parent="Masmorra" unique_id=1775547086 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, -1.3736293)
-
-[node name="floorDecoration_wood_gltf231" parent="Masmorra" unique_id=964050673 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, -0.6625922)
-
-[node name="floorDecoration_wood_gltf232" parent="Masmorra" unique_id=15985428 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, -0.6625922)
-
-[node name="floorDecoration_wood_gltf233" parent="Masmorra" unique_id=1538788582 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, 0.043689728)
-
-[node name="floorDecoration_wood_gltf234" parent="Masmorra" unique_id=887403253 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, 0.043689728)
-
-[node name="floorDecoration_wood_gltf235" parent="Masmorra" unique_id=95369000 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, 0.7547269)
-
-[node name="floorDecoration_wood_gltf236" parent="Masmorra" unique_id=1276298514 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, 0.7547269)
-
-[node name="floorDecoration_wood_gltf237" parent="Masmorra" unique_id=1848968438 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, 1.4240365)
-
-[node name="floorDecoration_wood_gltf238" parent="Masmorra" unique_id=371198067 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, 1.4240365)
-
-[node name="floorDecoration_wood_gltf239" parent="Masmorra" unique_id=1195749785 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 3.5208912, -0.045425177, 2.1350737)
-
-[node name="floorDecoration_wood_gltf240" parent="Masmorra" unique_id=871875721 instance=ExtResource("5_y1o0p")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.4424779, 0, 0.35714287, 0, -1.5611212e-08, 4.3911724, -0.045425177, 2.1350737)
-
-[node name="wall_gltf" parent="Masmorra" unique_id=1332507705 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.721239, 0, 0.35714287, 0, -1.5611212e-08, -4.2165203, -0.011737585, -2.461084)
-
-[node name="wall_gltf2" parent="Masmorra" unique_id=370632154 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.721239, 0, 0.35714287, 0, -1.5611212e-08, -4.216521, -0.011737585, -1.0349948)
-
-[node name="wall_gltf3" parent="Masmorra" unique_id=1931599517 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.721239, 0, 0.35714287, 0, -1.5611212e-08, -4.216521, -0.011737585, 0.3564818)
-
-[node name="wall_gltf4" parent="Masmorra" unique_id=2088002779 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(-1.9341323e-08, 0, -0.4424779, 0, 0.721239, 0, 0.35714287, 0, -1.5611212e-08, -4.216521, -0.011737585, 1.7825713)
-
-[node name="wall_gltf5" parent="Masmorra" unique_id=1125252369 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(-0.4424779, 0, 3.8682646e-08, 0, 0.721239, 0, -3.122242e-08, 0, -0.35714287, 2.5214481, -0.019528985, -3.4278927)
-
-[node name="wall_gltf7" parent="Masmorra" unique_id=1943726594 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(-0.4424779, 0, 3.8682646e-08, 0, 0.721239, 0, -3.122242e-08, 0, -0.35714287, 1.5392427, -0.019528985, -3.4278927)
-
-[node name="wall_gltf8" parent="Masmorra" unique_id=454728439 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(-0.4424779, 0, 3.8682646e-08, 0, 0.721239, 0, -3.122242e-08, 0, -0.35714287, -1.9445701, -0.019528985, -3.4278927)
-
-[node name="wall_gltf17" parent="Masmorra" unique_id=1132360636 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(-0.4424779, 0, 3.8682646e-08, 0, 0.721239, 0, -3.122242e-08, 0, -0.35714287, -3.6630704, -0.019528985, -3.4278927)
-
-[node name="wall_gltf9" parent="Masmorra" unique_id=705870993 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(-0.005320768, 0, 0.4424459, 0, 0.721239, 0, -0.35711703, 0, -0.0042946194, 3.800292, -0.011737585, 1.2567654)
-
-[node name="wall_gltf10" parent="Masmorra" unique_id=992565170 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(-0.005320768, 0, 0.4424459, 0, 0.721239, 0, -0.35711703, 0, -0.0042946194, 3.779045, -0.011737585, -0.16922045)
-
-[node name="wall_gltf11" parent="Masmorra" unique_id=1304899251 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(-0.005320768, 0, 0.4424459, 0, 0.721239, 0, -0.35711703, 0, -0.0042946194, 3.758315, -0.011737585, -1.5605965)
-
-[node name="wall_gltf12" parent="Masmorra" unique_id=1427980670 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(-0.005320768, 0, 0.4424459, 0, 0.721239, 0, -0.35711703, 0, -0.0042946194, 3.7370682, -0.011737585, -2.9865832)
-
-[node name="wall_gltf13" parent="Masmorra" unique_id=2064816053 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(0.44244593, 0, 0.005320773, 0, 0.72123903, 0, -0.004294623, 0, 0.35711703, -3.0079126, -0.019528985, 2.621674)
-
-[node name="wall_gltf14" parent="Masmorra" unique_id=1839881215 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(0.44244593, 0, 0.005320773, 0, 0.72123903, 0, -0.004294623, 0, 0.35711703, -1.2920032, -0.019528985, 2.6050181)
-
-[node name="wall_gltf15" parent="Masmorra" unique_id=142572282 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(0.44244593, 0, 0.005320773, 0, 0.72123903, 0, -0.004294623, 0, 0.35711703, 0.38225937, -0.019528985, 2.588767)
-
-[node name="wall_gltf16" parent="Masmorra" unique_id=1486698311 instance=ExtResource("2_mcvr8")]
-transform = Transform3D(0.44244593, 0, 0.005320773, 0, 0.72123903, 0, -0.004294623, 0, 0.35711703, 2.058754, -0.019528985, 2.5721126)
-
-[node name="wallCorner_gltf2" parent="Masmorra" unique_id=2060607406 instance=ExtResource("3_e0arn")]
-transform = Transform3D(0.005320808, 0, -0.44244593, 0, 0.72123903, 0, 0.35711703, 0, 0.004294652, 3.8193626, -0.018148303, 2.5582733)
-
-[node name="wall_gateDoor_gltf" parent="Masmorra" unique_id=1410009060 instance=ExtResource("4_037ec")]
+[node name="porta_masmorra" parent="Masmorra" unique_id=1410009060 instance=ExtResource("4_037ec")]
 transform = Transform3D(0.4424779, 0, 0, 0, 0.721239, 0, 1.7763568e-15, 0, 0.35714287, -0.18158627, -0.019528985, -3.4278927)
 
-[node name="mesa" parent="." unique_id=452371482 instance=ExtResource("6_r8yej")]
+[node name="chao_masmorra" type="Node3D" parent="Masmorra" unique_id=1551480703]
+
+[node name="floorDecoration_wood_gltf" parent="Masmorra/chao_masmorra" unique_id=1941687419 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228374, -0.045425177, -2.7539768)
+
+[node name="floorDecoration_wood_gltf2" parent="Masmorra/chao_masmorra" unique_id=608663046 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352556, -0.045425177, -2.7539766)
+
+[node name="floorDecoration_wood_gltf3" parent="Masmorra/chao_masmorra" unique_id=1766848288 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228374, -0.045425177, -2.0429397)
+
+[node name="floorDecoration_wood_gltf4" parent="Masmorra/chao_masmorra" unique_id=857547907 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352556, -0.045425177, -2.0429397)
+
+[node name="floorDecoration_wood_gltf17" parent="Masmorra/chao_masmorra" unique_id=1087949254 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.222838, -0.045425177, -4.171181)
+
+[node name="floorDecoration_wood_gltf18" parent="Masmorra/chao_masmorra" unique_id=1040077863 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.3525567, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf19" parent="Masmorra/chao_masmorra" unique_id=933114195 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228374, -0.045425177, -3.4601438)
+
+[node name="floorDecoration_wood_gltf20" parent="Masmorra/chao_masmorra" unique_id=1782206141 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352556, -0.045425177, -3.4601443)
+
+[node name="floorDecoration_wood_gltf5" parent="Masmorra/chao_masmorra" unique_id=1524842773 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228384, -0.045425177, -1.3736298)
+
+[node name="floorDecoration_wood_gltf6" parent="Masmorra/chao_masmorra" unique_id=589057100 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352557, -0.045425177, -1.3736298)
+
+[node name="floorDecoration_wood_gltf7" parent="Masmorra/chao_masmorra" unique_id=363004227 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228384, -0.045425177, -0.66259265)
+
+[node name="floorDecoration_wood_gltf8" parent="Masmorra/chao_masmorra" unique_id=758927084 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352557, -0.045425177, -0.66259265)
+
+[node name="floorDecoration_wood_gltf9" parent="Masmorra/chao_masmorra" unique_id=1235829703 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228384, -0.045425177, 0.04368925)
+
+[node name="floorDecoration_wood_gltf10" parent="Masmorra/chao_masmorra" unique_id=960762363 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352557, -0.045425177, 0.04368925)
+
+[node name="floorDecoration_wood_gltf11" parent="Masmorra/chao_masmorra" unique_id=1182251921 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228384, -0.045425177, 0.7547264)
+
+[node name="floorDecoration_wood_gltf12" parent="Masmorra/chao_masmorra" unique_id=1589875154 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352557, -0.045425177, 0.7547264)
+
+[node name="floorDecoration_wood_gltf13" parent="Masmorra/chao_masmorra" unique_id=595998533 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228384, -0.045425177, 1.424036)
+
+[node name="floorDecoration_wood_gltf14" parent="Masmorra/chao_masmorra" unique_id=2000329729 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352557, -0.045425177, 1.424036)
+
+[node name="floorDecoration_wood_gltf15" parent="Masmorra/chao_masmorra" unique_id=1206764020 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228384, -0.045425177, 2.1350732)
+
+[node name="floorDecoration_wood_gltf16" parent="Masmorra/chao_masmorra" unique_id=1870378149 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352557, -0.045425177, 2.1350732)
+
+[node name="floorDecoration_wood_gltf21" parent="Masmorra/chao_masmorra" unique_id=13212485 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796953, -0.045425177, -2.7539766)
+
+[node name="floorDecoration_wood_gltf22" parent="Masmorra/chao_masmorra" unique_id=2065533187 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf23" parent="Masmorra/chao_masmorra" unique_id=1271083467 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796953, -0.045425177, -2.0429397)
+
+[node name="floorDecoration_wood_gltf24" parent="Masmorra/chao_masmorra" unique_id=1837820884 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, -2.0429397)
+
+[node name="floorDecoration_wood_gltf25" parent="Masmorra/chao_masmorra" unique_id=143478895 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796953, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf26" parent="Masmorra/chao_masmorra" unique_id=304571674 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf27" parent="Masmorra/chao_masmorra" unique_id=1380608656 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796953, -0.045425177, -3.4601443)
+
+[node name="floorDecoration_wood_gltf28" parent="Masmorra/chao_masmorra" unique_id=1113258948 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, -3.4601438)
+
+[node name="floorDecoration_wood_gltf29" parent="Masmorra/chao_masmorra" unique_id=797137635 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796956, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf30" parent="Masmorra/chao_masmorra" unique_id=677431584 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf31" parent="Masmorra/chao_masmorra" unique_id=810100800 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796956, -0.045425177, -0.6625922)
+
+[node name="floorDecoration_wood_gltf32" parent="Masmorra/chao_masmorra" unique_id=1947310380 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, -0.6625922)
+
+[node name="floorDecoration_wood_gltf33" parent="Masmorra/chao_masmorra" unique_id=964006005 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796956, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf34" parent="Masmorra/chao_masmorra" unique_id=2023027867 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf35" parent="Masmorra/chao_masmorra" unique_id=666082051 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796956, -0.045425177, 0.7547264)
+
+[node name="floorDecoration_wood_gltf36" parent="Masmorra/chao_masmorra" unique_id=1475339174 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, 0.7547264)
+
+[node name="floorDecoration_wood_gltf37" parent="Masmorra/chao_masmorra" unique_id=1512304286 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796956, -0.045425177, 1.424036)
+
+[node name="floorDecoration_wood_gltf38" parent="Masmorra/chao_masmorra" unique_id=929019119 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609415, -0.045425177, 1.424036)
+
+[node name="floorDecoration_wood_gltf39" parent="Masmorra/chao_masmorra" unique_id=826681750 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796956, -0.045425177, 2.1350732)
+
+[node name="floorDecoration_wood_gltf40" parent="Masmorra/chao_masmorra" unique_id=1366350963 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.6094146, -0.045425177, 2.1350732)
+
+[node name="floorDecoration_wood_gltf41" parent="Masmorra/chao_masmorra" unique_id=365171803 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228374, -0.045425177, -2.7539768)
+
+[node name="floorDecoration_wood_gltf42" parent="Masmorra/chao_masmorra" unique_id=202728850 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352556, -0.045425177, -2.7539766)
+
+[node name="floorDecoration_wood_gltf43" parent="Masmorra/chao_masmorra" unique_id=658484443 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228374, -0.045425177, -2.0429397)
+
+[node name="floorDecoration_wood_gltf44" parent="Masmorra/chao_masmorra" unique_id=1934816077 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352556, -0.045425177, -2.0429397)
+
+[node name="floorDecoration_wood_gltf45" parent="Masmorra/chao_masmorra" unique_id=1615734499 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.222838, -0.045425177, -4.171181)
+
+[node name="floorDecoration_wood_gltf46" parent="Masmorra/chao_masmorra" unique_id=221699833 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.3525567, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf47" parent="Masmorra/chao_masmorra" unique_id=1235226344 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228374, -0.045425177, -3.4601438)
+
+[node name="floorDecoration_wood_gltf48" parent="Masmorra/chao_masmorra" unique_id=764665739 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352556, -0.045425177, -3.4601443)
+
+[node name="floorDecoration_wood_gltf49" parent="Masmorra/chao_masmorra" unique_id=406525255 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228384, -0.045425177, -1.3736298)
+
+[node name="floorDecoration_wood_gltf50" parent="Masmorra/chao_masmorra" unique_id=1732699494 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352557, -0.045425177, -1.3736298)
+
+[node name="floorDecoration_wood_gltf51" parent="Masmorra/chao_masmorra" unique_id=1886943301 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228384, -0.045425177, -0.66259265)
+
+[node name="floorDecoration_wood_gltf52" parent="Masmorra/chao_masmorra" unique_id=1694055071 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352557, -0.045425177, -0.66259265)
+
+[node name="floorDecoration_wood_gltf53" parent="Masmorra/chao_masmorra" unique_id=370204180 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228384, -0.045425177, 0.04368925)
+
+[node name="floorDecoration_wood_gltf54" parent="Masmorra/chao_masmorra" unique_id=913159957 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352557, -0.045425177, 0.04368925)
+
+[node name="floorDecoration_wood_gltf55" parent="Masmorra/chao_masmorra" unique_id=1078735589 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228384, -0.045425177, 0.7547264)
+
+[node name="floorDecoration_wood_gltf56" parent="Masmorra/chao_masmorra" unique_id=1497973479 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352557, -0.045425177, 0.7547264)
+
+[node name="floorDecoration_wood_gltf57" parent="Masmorra/chao_masmorra" unique_id=2107504228 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228384, -0.045425177, 1.424036)
+
+[node name="floorDecoration_wood_gltf58" parent="Masmorra/chao_masmorra" unique_id=2035975309 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352557, -0.045425177, 1.424036)
+
+[node name="floorDecoration_wood_gltf59" parent="Masmorra/chao_masmorra" unique_id=1028529028 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -5.2228384, -0.045425177, 2.1350732)
+
+[node name="floorDecoration_wood_gltf60" parent="Masmorra/chao_masmorra" unique_id=1296900171 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -4.352557, -0.045425177, 2.1350732)
+
+[node name="floorDecoration_wood_gltf61" parent="Masmorra/chao_masmorra" unique_id=1750228479 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796953, -0.045425177, -2.7539766)
+
+[node name="floorDecoration_wood_gltf62" parent="Masmorra/chao_masmorra" unique_id=234289427 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf63" parent="Masmorra/chao_masmorra" unique_id=966204817 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796953, -0.045425177, -2.0429397)
+
+[node name="floorDecoration_wood_gltf64" parent="Masmorra/chao_masmorra" unique_id=1595407358 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, -2.0429397)
+
+[node name="floorDecoration_wood_gltf65" parent="Masmorra/chao_masmorra" unique_id=1214162319 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796953, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf66" parent="Masmorra/chao_masmorra" unique_id=1146637615 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf67" parent="Masmorra/chao_masmorra" unique_id=448835288 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796953, -0.045425177, -3.4601443)
+
+[node name="floorDecoration_wood_gltf68" parent="Masmorra/chao_masmorra" unique_id=1780090936 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, -3.4601438)
+
+[node name="floorDecoration_wood_gltf69" parent="Masmorra/chao_masmorra" unique_id=943469518 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796956, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf70" parent="Masmorra/chao_masmorra" unique_id=506948154 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf71" parent="Masmorra/chao_masmorra" unique_id=1876429023 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796956, -0.045425177, -0.6625922)
+
+[node name="floorDecoration_wood_gltf72" parent="Masmorra/chao_masmorra" unique_id=1349866157 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, -0.6625922)
+
+[node name="floorDecoration_wood_gltf73" parent="Masmorra/chao_masmorra" unique_id=771553711 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796956, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf74" parent="Masmorra/chao_masmorra" unique_id=160129870 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf75" parent="Masmorra/chao_masmorra" unique_id=1173545398 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796956, -0.045425177, 0.7547264)
+
+[node name="floorDecoration_wood_gltf76" parent="Masmorra/chao_masmorra" unique_id=188985183 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609414, -0.045425177, 0.7547264)
+
+[node name="floorDecoration_wood_gltf77" parent="Masmorra/chao_masmorra" unique_id=1193521722 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796956, -0.045425177, 1.424036)
+
+[node name="floorDecoration_wood_gltf78" parent="Masmorra/chao_masmorra" unique_id=1290205614 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.609415, -0.045425177, 1.424036)
+
+[node name="floorDecoration_wood_gltf79" parent="Masmorra/chao_masmorra" unique_id=1526927335 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -3.4796956, -0.045425177, 2.1350732)
+
+[node name="floorDecoration_wood_gltf80" parent="Masmorra/chao_masmorra" unique_id=1583252907 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -2.6094146, -0.045425177, 2.1350732)
+
+[node name="floorDecoration_wood_gltf81" parent="Masmorra/chao_masmorra" unique_id=397854191 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226567, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf82" parent="Masmorra/chao_masmorra" unique_id=874135204 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.852376, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf83" parent="Masmorra/chao_masmorra" unique_id=79610946 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226567, -0.045425177, -2.0429394)
+
+[node name="floorDecoration_wood_gltf84" parent="Masmorra/chao_masmorra" unique_id=1713810235 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.852376, -0.045425177, -2.0429394)
+
+[node name="floorDecoration_wood_gltf85" parent="Masmorra/chao_masmorra" unique_id=742849536 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226567, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf86" parent="Masmorra/chao_masmorra" unique_id=858804459 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.85237646, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf87" parent="Masmorra/chao_masmorra" unique_id=1210882399 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226567, -0.045425177, -3.4601438)
+
+[node name="floorDecoration_wood_gltf88" parent="Masmorra/chao_masmorra" unique_id=1565959557 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.85237646, -0.045425177, -3.4601438)
+
+[node name="floorDecoration_wood_gltf89" parent="Masmorra/chao_masmorra" unique_id=1512310628 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226567, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf90" parent="Masmorra/chao_masmorra" unique_id=1247736181 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.852376, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf91" parent="Masmorra/chao_masmorra" unique_id=1932068487 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226563, -0.045425177, -0.6625924)
+
+[node name="floorDecoration_wood_gltf92" parent="Masmorra/chao_masmorra" unique_id=581946845 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.852376, -0.045425177, -0.6625924)
+
+[node name="floorDecoration_wood_gltf93" parent="Masmorra/chao_masmorra" unique_id=316336772 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226563, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf94" parent="Masmorra/chao_masmorra" unique_id=1779558208 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.852376, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf95" parent="Masmorra/chao_masmorra" unique_id=200697636 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226563, -0.045425177, 0.7547264)
+
+[node name="floorDecoration_wood_gltf96" parent="Masmorra/chao_masmorra" unique_id=1484392794 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.852376, -0.045425177, 0.75472593)
+
+[node name="floorDecoration_wood_gltf97" parent="Masmorra/chao_masmorra" unique_id=300016139 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226572, -0.045425177, 1.424036)
+
+[node name="floorDecoration_wood_gltf98" parent="Masmorra/chao_masmorra" unique_id=1942134939 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.85237694, -0.045425177, 1.424036)
+
+[node name="floorDecoration_wood_gltf99" parent="Masmorra/chao_masmorra" unique_id=1166878868 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226572, -0.045425177, 2.1350727)
+
+[node name="floorDecoration_wood_gltf100" parent="Masmorra/chao_masmorra" unique_id=332869166 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.85237694, -0.045425177, 2.1350727)
+
+[node name="floorDecoration_wood_gltf101" parent="Masmorra/chao_masmorra" unique_id=196138297 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf102" parent="Masmorra/chao_masmorra" unique_id=62654440 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf103" parent="Masmorra/chao_masmorra" unique_id=607319212 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, -2.0429394)
+
+[node name="floorDecoration_wood_gltf104" parent="Masmorra/chao_masmorra" unique_id=1721751661 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, -2.0429394)
+
+[node name="floorDecoration_wood_gltf105" parent="Masmorra/chao_masmorra" unique_id=1817689080 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf106" parent="Masmorra/chao_masmorra" unique_id=518768880 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf107" parent="Masmorra/chao_masmorra" unique_id=881140020 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, -3.4601438)
+
+[node name="floorDecoration_wood_gltf108" parent="Masmorra/chao_masmorra" unique_id=1982662196 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, -3.4601436)
+
+[node name="floorDecoration_wood_gltf109" parent="Masmorra/chao_masmorra" unique_id=1674163149 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf110" parent="Masmorra/chao_masmorra" unique_id=1138824671 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf111" parent="Masmorra/chao_masmorra" unique_id=771585776 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, -0.6625924)
+
+[node name="floorDecoration_wood_gltf112" parent="Masmorra/chao_masmorra" unique_id=1579846213 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, -0.6625924)
+
+[node name="floorDecoration_wood_gltf113" parent="Masmorra/chao_masmorra" unique_id=1194488941 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf114" parent="Masmorra/chao_masmorra" unique_id=1321870773 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf115" parent="Masmorra/chao_masmorra" unique_id=492338997 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, 0.75472736)
+
+[node name="floorDecoration_wood_gltf116" parent="Masmorra/chao_masmorra" unique_id=1036049661 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, 0.75472736)
+
+[node name="floorDecoration_wood_gltf117" parent="Masmorra/chao_masmorra" unique_id=1616675917 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020485878, -0.045425177, 1.4240365)
+
+[node name="floorDecoration_wood_gltf118" parent="Masmorra/chao_masmorra" unique_id=1370774452 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, 1.4240365)
+
+[node name="floorDecoration_wood_gltf119" parent="Masmorra/chao_masmorra" unique_id=1271031395 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020485878, -0.045425177, 2.1350737)
+
+[node name="floorDecoration_wood_gltf120" parent="Masmorra/chao_masmorra" unique_id=763494082 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, 2.1350737)
+
+[node name="floorDecoration_wood_gltf121" parent="Masmorra/chao_masmorra" unique_id=402345667 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226567, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf122" parent="Masmorra/chao_masmorra" unique_id=726348213 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.852376, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf123" parent="Masmorra/chao_masmorra" unique_id=1870726842 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226567, -0.045425177, -2.0429394)
+
+[node name="floorDecoration_wood_gltf124" parent="Masmorra/chao_masmorra" unique_id=1840579688 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.852376, -0.045425177, -2.0429394)
+
+[node name="floorDecoration_wood_gltf125" parent="Masmorra/chao_masmorra" unique_id=918891850 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226567, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf126" parent="Masmorra/chao_masmorra" unique_id=553355835 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.85237646, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf127" parent="Masmorra/chao_masmorra" unique_id=896550204 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226567, -0.045425177, -3.4601438)
+
+[node name="floorDecoration_wood_gltf128" parent="Masmorra/chao_masmorra" unique_id=681840454 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.85237646, -0.045425177, -3.4601438)
+
+[node name="floorDecoration_wood_gltf129" parent="Masmorra/chao_masmorra" unique_id=1092914127 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226567, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf130" parent="Masmorra/chao_masmorra" unique_id=740927776 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.852376, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf131" parent="Masmorra/chao_masmorra" unique_id=620227701 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226563, -0.045425177, -0.6625924)
+
+[node name="floorDecoration_wood_gltf132" parent="Masmorra/chao_masmorra" unique_id=1780507064 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.852376, -0.045425177, -0.6625924)
+
+[node name="floorDecoration_wood_gltf133" parent="Masmorra/chao_masmorra" unique_id=1158105602 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226563, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf134" parent="Masmorra/chao_masmorra" unique_id=890715384 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.852376, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf135" parent="Masmorra/chao_masmorra" unique_id=1256647420 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226563, -0.045425177, 0.7547264)
+
+[node name="floorDecoration_wood_gltf136" parent="Masmorra/chao_masmorra" unique_id=2021393040 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.852376, -0.045425177, 0.75472593)
+
+[node name="floorDecoration_wood_gltf137" parent="Masmorra/chao_masmorra" unique_id=1047904395 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226572, -0.045425177, 1.424036)
+
+[node name="floorDecoration_wood_gltf138" parent="Masmorra/chao_masmorra" unique_id=1243576315 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.85237694, -0.045425177, 1.424036)
+
+[node name="floorDecoration_wood_gltf139" parent="Masmorra/chao_masmorra" unique_id=37676608 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -1.7226572, -0.045425177, 2.1350727)
+
+[node name="floorDecoration_wood_gltf140" parent="Masmorra/chao_masmorra" unique_id=1525159471 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, -0.85237694, -0.045425177, 2.1350727)
+
+[node name="floorDecoration_wood_gltf141" parent="Masmorra/chao_masmorra" unique_id=493026309 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf142" parent="Masmorra/chao_masmorra" unique_id=1352077431 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf143" parent="Masmorra/chao_masmorra" unique_id=1351763145 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, -2.0429394)
+
+[node name="floorDecoration_wood_gltf144" parent="Masmorra/chao_masmorra" unique_id=1757273300 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, -2.0429394)
+
+[node name="floorDecoration_wood_gltf145" parent="Masmorra/chao_masmorra" unique_id=940971835 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf146" parent="Masmorra/chao_masmorra" unique_id=1886550756 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf147" parent="Masmorra/chao_masmorra" unique_id=943744909 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, -3.4601438)
+
+[node name="floorDecoration_wood_gltf148" parent="Masmorra/chao_masmorra" unique_id=609873319 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, -3.4601436)
+
+[node name="floorDecoration_wood_gltf149" parent="Masmorra/chao_masmorra" unique_id=470220115 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf150" parent="Masmorra/chao_masmorra" unique_id=2122245655 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf151" parent="Masmorra/chao_masmorra" unique_id=709482909 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, -0.6625924)
+
+[node name="floorDecoration_wood_gltf152" parent="Masmorra/chao_masmorra" unique_id=515589846 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, -0.6625924)
+
+[node name="floorDecoration_wood_gltf153" parent="Masmorra/chao_masmorra" unique_id=309223920 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf154" parent="Masmorra/chao_masmorra" unique_id=1121752043 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf155" parent="Masmorra/chao_masmorra" unique_id=712422343 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020486355, -0.045425177, 0.75472736)
+
+[node name="floorDecoration_wood_gltf156" parent="Masmorra/chao_masmorra" unique_id=531543710 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, 0.75472736)
+
+[node name="floorDecoration_wood_gltf157" parent="Masmorra/chao_masmorra" unique_id=56784562 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020485878, -0.045425177, 1.4240365)
+
+[node name="floorDecoration_wood_gltf158" parent="Masmorra/chao_masmorra" unique_id=1923927027 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, 1.4240365)
+
+[node name="floorDecoration_wood_gltf159" parent="Masmorra/chao_masmorra" unique_id=571008968 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.020485878, -0.045425177, 2.1350737)
+
+[node name="floorDecoration_wood_gltf160" parent="Masmorra/chao_masmorra" unique_id=355175887 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 0.8907671, -0.045425177, 2.1350737)
+
+[node name="floorDecoration_wood_gltf161" parent="Masmorra/chao_masmorra" unique_id=670091309 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf162" parent="Masmorra/chao_masmorra" unique_id=909902505 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf163" parent="Masmorra/chao_masmorra" unique_id=1653088094 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, -2.0429392)
+
+[node name="floorDecoration_wood_gltf164" parent="Masmorra/chao_masmorra" unique_id=1373412116 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, -2.0429392)
+
+[node name="floorDecoration_wood_gltf165" parent="Masmorra/chao_masmorra" unique_id=1723610002 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf166" parent="Masmorra/chao_masmorra" unique_id=1776235340 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf167" parent="Masmorra/chao_masmorra" unique_id=1555437298 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, -3.4601436)
+
+[node name="floorDecoration_wood_gltf168" parent="Masmorra/chao_masmorra" unique_id=1501908260 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, -3.4601436)
+
+[node name="floorDecoration_wood_gltf169" parent="Masmorra/chao_masmorra" unique_id=319065983 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf170" parent="Masmorra/chao_masmorra" unique_id=1154388907 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf171" parent="Masmorra/chao_masmorra" unique_id=207896279 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, -0.6625924)
+
+[node name="floorDecoration_wood_gltf172" parent="Masmorra/chao_masmorra" unique_id=2072590973 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, -0.6625924)
+
+[node name="floorDecoration_wood_gltf173" parent="Masmorra/chao_masmorra" unique_id=1584762449 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf174" parent="Masmorra/chao_masmorra" unique_id=780807842 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf175" parent="Masmorra/chao_masmorra" unique_id=1521279365 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, 0.7547269)
+
+[node name="floorDecoration_wood_gltf176" parent="Masmorra/chao_masmorra" unique_id=1787464541 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, 0.7547269)
+
+[node name="floorDecoration_wood_gltf177" parent="Masmorra/chao_masmorra" unique_id=482390191 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, 1.4240365)
+
+[node name="floorDecoration_wood_gltf178" parent="Masmorra/chao_masmorra" unique_id=22836564 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, 1.4240365)
+
+[node name="floorDecoration_wood_gltf179" parent="Masmorra/chao_masmorra" unique_id=1248818529 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, 2.1350737)
+
+[node name="floorDecoration_wood_gltf180" parent="Masmorra/chao_masmorra" unique_id=1425246895 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, 2.1350737)
+
+[node name="floorDecoration_wood_gltf181" parent="Masmorra/chao_masmorra" unique_id=459847544 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf182" parent="Masmorra/chao_masmorra" unique_id=1222239773 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf183" parent="Masmorra/chao_masmorra" unique_id=455688519 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, -2.0429392)
+
+[node name="floorDecoration_wood_gltf184" parent="Masmorra/chao_masmorra" unique_id=1066048774 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, -2.0429392)
+
+[node name="floorDecoration_wood_gltf185" parent="Masmorra/chao_masmorra" unique_id=723446630 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf186" parent="Masmorra/chao_masmorra" unique_id=1119996566 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf187" parent="Masmorra/chao_masmorra" unique_id=1815260524 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, -3.4601436)
+
+[node name="floorDecoration_wood_gltf188" parent="Masmorra/chao_masmorra" unique_id=827426996 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, -3.4601436)
+
+[node name="floorDecoration_wood_gltf189" parent="Masmorra/chao_masmorra" unique_id=671408222 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, -1.3736291)
+
+[node name="floorDecoration_wood_gltf190" parent="Masmorra/chao_masmorra" unique_id=1632935460 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, -1.3736293)
+
+[node name="floorDecoration_wood_gltf191" parent="Masmorra/chao_masmorra" unique_id=1224282998 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, -0.66259193)
+
+[node name="floorDecoration_wood_gltf192" parent="Masmorra/chao_masmorra" unique_id=7158003 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, -0.6625922)
+
+[node name="floorDecoration_wood_gltf193" parent="Masmorra/chao_masmorra" unique_id=595321236 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, 0.043689728)
+
+[node name="floorDecoration_wood_gltf194" parent="Masmorra/chao_masmorra" unique_id=608024752 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, 0.043689728)
+
+[node name="floorDecoration_wood_gltf195" parent="Masmorra/chao_masmorra" unique_id=1159408873 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, 0.7547269)
+
+[node name="floorDecoration_wood_gltf196" parent="Masmorra/chao_masmorra" unique_id=1462163760 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, 0.7547269)
+
+[node name="floorDecoration_wood_gltf197" parent="Masmorra/chao_masmorra" unique_id=510896311 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, 1.4240365)
+
+[node name="floorDecoration_wood_gltf198" parent="Masmorra/chao_masmorra" unique_id=67450302 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, 1.4240365)
+
+[node name="floorDecoration_wood_gltf199" parent="Masmorra/chao_masmorra" unique_id=649922883 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, 2.1350737)
+
+[node name="floorDecoration_wood_gltf200" parent="Masmorra/chao_masmorra" unique_id=79875942 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, 2.1350737)
+
+[node name="floorDecoration_wood_gltf201" parent="Masmorra/chao_masmorra" unique_id=413228003 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf202" parent="Masmorra/chao_masmorra" unique_id=763845804 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf203" parent="Masmorra/chao_masmorra" unique_id=810469765 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, -2.0429392)
+
+[node name="floorDecoration_wood_gltf204" parent="Masmorra/chao_masmorra" unique_id=21919898 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, -2.0429392)
+
+[node name="floorDecoration_wood_gltf205" parent="Masmorra/chao_masmorra" unique_id=858289966 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf206" parent="Masmorra/chao_masmorra" unique_id=1234776185 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf207" parent="Masmorra/chao_masmorra" unique_id=1088338098 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, -3.4601436)
+
+[node name="floorDecoration_wood_gltf208" parent="Masmorra/chao_masmorra" unique_id=1766676465 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, -3.4601436)
+
+[node name="floorDecoration_wood_gltf209" parent="Masmorra/chao_masmorra" unique_id=1196689014 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf210" parent="Masmorra/chao_masmorra" unique_id=223237345 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, -1.3736296)
+
+[node name="floorDecoration_wood_gltf211" parent="Masmorra/chao_masmorra" unique_id=320524923 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, -0.6625924)
+
+[node name="floorDecoration_wood_gltf212" parent="Masmorra/chao_masmorra" unique_id=284418123 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, -0.6625924)
+
+[node name="floorDecoration_wood_gltf213" parent="Masmorra/chao_masmorra" unique_id=90224628 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf214" parent="Masmorra/chao_masmorra" unique_id=403066300 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, 0.04368949)
+
+[node name="floorDecoration_wood_gltf215" parent="Masmorra/chao_masmorra" unique_id=415178022 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, 0.7547269)
+
+[node name="floorDecoration_wood_gltf216" parent="Masmorra/chao_masmorra" unique_id=996221432 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, 0.7547269)
+
+[node name="floorDecoration_wood_gltf217" parent="Masmorra/chao_masmorra" unique_id=676791149 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, 1.4240365)
+
+[node name="floorDecoration_wood_gltf218" parent="Masmorra/chao_masmorra" unique_id=1851365567 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, 1.4240365)
+
+[node name="floorDecoration_wood_gltf219" parent="Masmorra/chao_masmorra" unique_id=1852083352 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 1.77775, -0.045425177, 2.1350737)
+
+[node name="floorDecoration_wood_gltf220" parent="Masmorra/chao_masmorra" unique_id=1666140547 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 2.6480293, -0.045425177, 2.1350737)
+
+[node name="floorDecoration_wood_gltf221" parent="Masmorra/chao_masmorra" unique_id=975952937 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf222" parent="Masmorra/chao_masmorra" unique_id=896242713 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, -2.7539763)
+
+[node name="floorDecoration_wood_gltf223" parent="Masmorra/chao_masmorra" unique_id=738331461 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, -2.0429392)
+
+[node name="floorDecoration_wood_gltf224" parent="Masmorra/chao_masmorra" unique_id=2036674055 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, -2.0429392)
+
+[node name="floorDecoration_wood_gltf225" parent="Masmorra/chao_masmorra" unique_id=1668894524 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf226" parent="Masmorra/chao_masmorra" unique_id=1201957888 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, -4.1711807)
+
+[node name="floorDecoration_wood_gltf227" parent="Masmorra/chao_masmorra" unique_id=192336238 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, -3.4601436)
+
+[node name="floorDecoration_wood_gltf228" parent="Masmorra/chao_masmorra" unique_id=660049905 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, -3.4601436)
+
+[node name="floorDecoration_wood_gltf229" parent="Masmorra/chao_masmorra" unique_id=657934486 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, -1.3736291)
+
+[node name="floorDecoration_wood_gltf230" parent="Masmorra/chao_masmorra" unique_id=1775547086 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, -1.3736293)
+
+[node name="floorDecoration_wood_gltf231" parent="Masmorra/chao_masmorra" unique_id=964050673 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, -0.66259193)
+
+[node name="floorDecoration_wood_gltf232" parent="Masmorra/chao_masmorra" unique_id=15985428 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, -0.6625922)
+
+[node name="floorDecoration_wood_gltf233" parent="Masmorra/chao_masmorra" unique_id=1538788582 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, 0.043689728)
+
+[node name="floorDecoration_wood_gltf234" parent="Masmorra/chao_masmorra" unique_id=887403253 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, 0.043689728)
+
+[node name="floorDecoration_wood_gltf235" parent="Masmorra/chao_masmorra" unique_id=95369000 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, 0.7547269)
+
+[node name="floorDecoration_wood_gltf236" parent="Masmorra/chao_masmorra" unique_id=1276298514 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, 0.7547269)
+
+[node name="floorDecoration_wood_gltf237" parent="Masmorra/chao_masmorra" unique_id=1848968438 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, 1.4240365)
+
+[node name="floorDecoration_wood_gltf238" parent="Masmorra/chao_masmorra" unique_id=371198067 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, 1.4240365)
+
+[node name="floorDecoration_wood_gltf239" parent="Masmorra/chao_masmorra" unique_id=1195749785 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 3.5208912, -0.045425177, 2.1350737)
+
+[node name="floorDecoration_wood_gltf240" parent="Masmorra/chao_masmorra" unique_id=871875721 instance=ExtResource("5_y1o0p")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.44247797, 0, 0.35714287, 0, -1.5611214e-08, 4.3911724, -0.045425177, 2.1350737)
+
+[node name="paredes_masmorra" type="Node3D" parent="Masmorra" unique_id=1731296235]
+
+[node name="wall_gltf" parent="Masmorra/paredes_masmorra" unique_id=1332507705 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.72123903, 0, 0.35714287, 0, -1.5611214e-08, -4.2165203, -0.011737585, -2.461084)
+
+[node name="wall_gltf2" parent="Masmorra/paredes_masmorra" unique_id=370632154 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.72123903, 0, 0.35714287, 0, -1.5611214e-08, -4.2165213, -0.011737585, -1.0349948)
+
+[node name="wall_gltf3" parent="Masmorra/paredes_masmorra" unique_id=1931599517 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.72123903, 0, 0.35714287, 0, -1.5611214e-08, -4.2165213, -0.011737585, 0.35648155)
+
+[node name="wall_gltf4" parent="Masmorra/paredes_masmorra" unique_id=2088002779 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(-1.9341325e-08, 0, -0.44247797, 0, 0.72123903, 0, 0.35714287, 0, -1.5611214e-08, -4.2165213, -0.011737585, 1.7825713)
+
+[node name="wall_gltf5" parent="Masmorra/paredes_masmorra" unique_id=1125252369 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(-0.44247797, 0, 3.868265e-08, 0, 0.72123903, 0, -3.122242e-08, 0, -0.35714287, 2.5214481, -0.019528985, -3.4278927)
+
+[node name="wall_gltf7" parent="Masmorra/paredes_masmorra" unique_id=1943726594 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(-0.44247797, 0, 3.868265e-08, 0, 0.72123903, 0, -3.122242e-08, 0, -0.35714287, 1.5392427, -0.019528985, -3.4278927)
+
+[node name="wall_gltf8" parent="Masmorra/paredes_masmorra" unique_id=454728439 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(-0.44247797, 0, 3.868265e-08, 0, 0.72123903, 0, -3.122242e-08, 0, -0.35714287, -1.9445705, -0.019528985, -3.427893)
+
+[node name="wall_gltf17" parent="Masmorra/paredes_masmorra" unique_id=1132360636 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(-0.44247797, 0, 3.868265e-08, 0, 0.72123903, 0, -3.122242e-08, 0, -0.35714287, -3.6630704, -0.019528985, -3.427893)
+
+[node name="wall_gltf9" parent="Masmorra/paredes_masmorra" unique_id=705870993 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(-0.005320768, 0, 0.44244593, 0, 0.72123903, 0, -0.35711703, 0, -0.0042946194, 3.800293, -0.011737585, 1.2567654)
+
+[node name="wall_gltf10" parent="Masmorra/paredes_masmorra" unique_id=992565170 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(-0.005320768, 0, 0.44244593, 0, 0.72123903, 0, -0.35711703, 0, -0.0042946194, 3.779045, -0.011737585, -0.16922045)
+
+[node name="wall_gltf11" parent="Masmorra/paredes_masmorra" unique_id=1304899251 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(-0.005320768, 0, 0.44244593, 0, 0.72123903, 0, -0.35711703, 0, -0.0042946194, 3.758316, -0.011737585, -1.5605965)
+
+[node name="wall_gltf12" parent="Masmorra/paredes_masmorra" unique_id=1427980670 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(-0.005320768, 0, 0.44244593, 0, 0.72123903, 0, -0.35711703, 0, -0.0042946194, 3.7370682, -0.011737585, -2.986583)
+
+[node name="wall_gltf13" parent="Masmorra/paredes_masmorra" unique_id=2064816053 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(0.44244596, 0, 0.005320773, 0, 0.7212391, 0, -0.004294623, 0, 0.35711703, -3.007913, -0.019528985, 2.621674)
+
+[node name="wall_gltf14" parent="Masmorra/paredes_masmorra" unique_id=1839881215 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(0.44244596, 0, 0.005320773, 0, 0.7212391, 0, -0.004294623, 0, 0.35711703, -1.2920036, -0.019528985, 2.6050181)
+
+[node name="wall_gltf15" parent="Masmorra/paredes_masmorra" unique_id=142572282 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(0.44244596, 0, 0.005320773, 0, 0.7212391, 0, -0.004294623, 0, 0.35711703, 0.38225937, -0.019528985, 2.588767)
+
+[node name="wall_gltf16" parent="Masmorra/paredes_masmorra" unique_id=1486698311 instance=ExtResource("2_mcvr8")]
+transform = Transform3D(0.44244596, 0, 0.005320773, 0, 0.7212391, 0, -0.004294623, 0, 0.35711703, 2.058754, -0.019528985, 2.5721126)
+
+[node name="wallCorner_gltf2" parent="Masmorra/paredes_masmorra" unique_id=2060607406 instance=ExtResource("3_e0arn")]
+transform = Transform3D(0.005320808, 0, -0.44244596, 0, 0.7212391, 0, 0.35711703, 0, 0.004294652, 3.8193626, -0.018148303, 2.5582733)
+
+[node name="Cenário" type="Node3D" parent="." unique_id=1441387193]
 transform = Transform3D(-9.878774e-08, 0, 2.8, 0, 2.26, 0, -2.26, 0, -1.2239188e-07, 10.019961, -0.40731335, -16.495197)
 
-[node name="bau_cima" parent="." unique_id=960542841 instance=ExtResource("7_t0a87")]
-transform = Transform3D(-0.7386989, -0.66494536, -0.11032471, -0.07514223, -0.0814178, 0.99384356, -0.66983455, 0.74244124, 0.01017742, 1.9107976, 0.12802613, -8.582149)
+[node name="mesa" parent="Cenário" unique_id=452371482 instance=ExtResource("6_r8yej")]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 3.5527137e-15, 0, 1, 0, 0, 0)
 
-[node name="bau_baixo" parent="." unique_id=311831647 instance=ExtResource("8_qo0fc")]
-transform = Transform3D(-0.690087, 0, 0.7237264, 0, 1, 0, -0.7237264, 0, -0.690087, 2.3754263, -0.4352007, -9.009998)
+[node name="bau" parent="Cenário" unique_id=960542841 instance=ExtResource("7_t0a87")]
+transform = Transform3D(0.296387, -0.32851386, -0.0045032813, -0.033248775, -0.036025576, 0.43975383, -0.26382104, -0.2374805, -0.039401684, -3.5107286, 0.23687589, -2.89613)
 
-[node name="coinsMedium_gltf" parent="." unique_id=2097388704 instance=ExtResource("9_qo0fc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8850012, -0.38969988, -8.527012)
+[node name="bau_baixo" parent="Cenário/bau" unique_id=311831647 instance=ExtResource("8_qo0fc")]
+transform = Transform3D(0.99454266, -0.075142145, -0.07237211, -0.07845357, -0.0814173, -0.9935875, 0.06876799, 0.9938433, -0.08686869, -0.00011205673, -0.596488, -0.61558974)
 
-[node name="chair_gltf" parent="." unique_id=214993877 instance=ExtResource("10_k48pe")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 2, 0, -1, 0, -4.371139e-08, 11.551246, -0.40864992, -16.391384)
+[node name="moedas" parent="Cenário/bau" unique_id=2097388704 instance=ExtResource("9_qo0fc")]
+transform = Transform3D(-0.73869866, -0.07514215, -0.66983384, -0.6649456, -0.081417315, 0.74244094, -0.11032506, 0.99384344, 0.01017776, -1.442174, -1.2453871, -0.73199725)
+
+[node name="moedas2" parent="Cenário/bau" unique_id=829360137 instance=ExtResource("9_qo0fc")]
+transform = Transform3D(0.46021175, -0.075142115, 0.88462317, 0.881338, -0.08141825, -0.46541858, 0.10699663, 0.9938436, 0.028756212, 1.1011314, -1.307066, -0.5447564)
+
+[node name="cadeira" parent="Cenário" unique_id=214993877 instance=ExtResource("10_k48pe")]
+transform = Transform3D(0.4424779, 0, 0, 0, 0.8849558, 0, 1.7763568e-15, 0, 0.35714287, -0.045935154, -0.0005913973, 0.5468874)

@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cisvi0epafkn6"]
 
 [ext_resource type="Script" uid="uid://dgscdvpmnvtx1" path="res://scripts/menu/menu.gd" id="1_uclcv"]
+[ext_resource type="Texture2D" uid="uid://brj2oo5cat5hu" path="res://assets/sprites/menu/map/masmorra_pack/textura_papiro.jpg" id="2_7s6iw"]
 [ext_resource type="Texture2D" uid="uid://ksntyve4cwh0" path="res://assets/sprites/menu/fundo/background.png" id="2_oy362"]
 [ext_resource type="Texture2D" uid="uid://ltowf5qjpxkj" path="res://assets/sprites/menu/botoes/spr_botao_sem_carimbo.png" id="3_oy362"]
-[ext_resource type="Texture2D" uid="uid://dylriq3ma2fhw" path="res://scenes/menu/wooden-floor-background.jpg" id="4_ghmw0"]
 [ext_resource type="FontFile" uid="uid://btcq5rh80tfiy" path="res://assets/fontes/This Cafe.ttf" id="5_7s6iw"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_w7q3v"]
@@ -24,10 +24,10 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_uclcv")
 
-[node name="spr_textura_papel" type="Sprite2D" parent="." unique_id=579949604]
-position = Vector2(955.73895, 550.58514)
-scale = Vector2(0.955739, 0.82970744)
-texture = ExtResource("4_ghmw0")
+[node name="Parchment" type="Sprite2D" parent="." unique_id=1939458041]
+position = Vector2(944, 544)
+scale = Vector2(2.505, 1.93)
+texture = ExtResource("2_7s6iw")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=329837545]
 position = Vector2(1040, 848)
