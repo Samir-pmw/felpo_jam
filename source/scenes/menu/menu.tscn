@@ -68,7 +68,7 @@ cena_ajustes = ExtResource("2_rcuxh")
 cena_principal = ExtResource("1_fqr1d")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=414983930]
-transform = Transform3D(1.0151167e-07, -0.7741055, 0.63305664, -8.3015365e-08, 0.63305664, 0.7741055, -1, -1.3113417e-07, -1.4210855e-14, 10.907754, 3.0030787, -16.30698)
+transform = Transform3D(1.0151167e-07, -0.7741055, 0.63305664, -8.3015365e-08, 0.63305664, 0.7741055, -1, -1.3113417e-07, -1.4210855e-14, 11.072241, 2.9088626, -16.30698)
 attributes = SubResource("CameraAttributesPractical_fqr1d")
 fov = 88.3
 
@@ -909,6 +909,7 @@ transform = Transform3D(0.4424779, 0, 0, 0, 0.8849558, 0, 1.7763568e-15, 0, 0.35
 transform = Transform3D(1, 0, 0, 0, 0.9965742, 0.08270385, 0, -0.08270385, 0.9965742, 1.840318, 1.2374139, -8.602751)
 
 [node name="MainPage" type="Node3D" parent="." unique_id=1710968854]
+visible = false
 
 [node name="StartGame" type="Area3D" parent="MainPage" unique_id=827329834]
 transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 9.929587, 1.4806757, -16.445412)

@@ -16,7 +16,7 @@ var ja_subiu: bool = false
 
 var volume: int = 100
 var brilho: int = 100
-var base_light_energy: float = 1.0 # 
+var base_light_energy: float = 1.0 
 
 var resolucoes = [Vector2i(1920, 1080), Vector2i(1600, 900), Vector2i(1366, 768), Vector2i(1280, 720)]
 var res_idx: int = 0
@@ -25,25 +25,34 @@ var tela_cheia: bool = false
 func _ready():
 	if luz_mesa:
 		base_light_energy = luz_mesa.light_energy 
+		luz_mesa.light_energy = 0.1
 		
 	if w_icon:
 		w_icon.scale = Vector2(1, 1)
 		var tween = create_tween().set_loops()
 		tween.tween_property(w_icon, "modulate:a", 0.3, 1.5).set_trans(Tween.TRANS_SINE)
 		tween.tween_property(w_icon, "modulate:a", 1.0, 1.5).set_trans(Tween.TRANS_SINE)
-
+		
 func _process(_delta):
 	if Input.is_action_just_pressed("press_w") and not ja_subiu:
 		ja_subiu = true 
 		subir_camera()
+		main_page.visible = true 
 		if w_icon:
 			w_icon.hide()
 
 func subir_camera():
 	var tween = create_tween().set_parallel(true)
 	var nova_posicao = Vector3(camera.position.x - 1, 3.2, camera.position.z)
+	
 	tween.tween_property(camera, "position", nova_posicao, 1.2).set_trans(Tween.TRANS_SINE)
 	tween.tween_property(camera, "rotation_degrees", Vector3(-90, 90, 0), 1.2).set_trans(Tween.TRANS_SINE)
+	
+	if luz_mesa:
+		tween.tween_property(luz_mesa, "light_energy", base_light_energy, 1.2).set_trans(Tween.TRANS_SINE)
+
+	if Cursor: 
+		Cursor.aparecer()
 
 func ir_para_ajustes():
 	main_page.visible = false 
