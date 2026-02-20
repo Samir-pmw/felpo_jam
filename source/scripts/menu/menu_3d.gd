@@ -4,7 +4,7 @@ extends Node3D
 @onready var main_page = $MainPage
 @onready var ajustes_page = $AjustesPage 
 @onready var camera = $Camera3D
-@onready var w_icon = $TextureRect 
+@onready var w_icon = $W_keycap
 @onready var luz_mesa = $TableLight
 
 @export var textura_ajustes: Texture2D 
@@ -43,7 +43,7 @@ func _process(_delta):
 
 func subir_camera():
 	var tween = create_tween().set_parallel(true)
-	var nova_posicao = Vector3(camera.position.x - 1, 3.2, camera.position.z)
+	var nova_posicao = Vector3(camera.position.x - 1.17, 2.8, camera.position.z)
 	
 	tween.tween_property(camera, "position", nova_posicao, 1.2).set_trans(Tween.TRANS_SINE)
 	tween.tween_property(camera, "rotation_degrees", Vector3(-90, 90, 0), 1.2).set_trans(Tween.TRANS_SINE)

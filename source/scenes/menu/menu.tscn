@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://haikd2oquhc6" path="res://assets/sprites/menu/map/masmorra_pack/coinsMedium.gltf.glb" id="9_qo0fc"]
 [ext_resource type="PackedScene" uid="uid://bvn2fumoval6g" path="res://assets/sprites/menu/map/masmorra_pack/chair.gltf.glb" id="10_k48pe"]
 [ext_resource type="PackedScene" uid="uid://cub5xqhoil5wv" path="res://assets/sprites/menu/map/hat/Top_Hat.fbx" id="11_f2fum"]
+[ext_resource type="Shader" uid="uid://17e3h6futfhs" path="res://scenes/menu/wobble.gdshader" id="15_pjdsv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_pjdsv"]
 shader = ExtResource("1_64m6r")
@@ -57,6 +58,14 @@ size = Vector3(0.2980194, 0.27441406, 0.16419983)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2j8sj"]
 size = Vector3(0.2980194, 0.27441406, 0.16419983)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2j8sj"]
+shader = ExtResource("15_pjdsv")
+shader_parameter/interval = 0.5
+shader_parameter/timeDelay = 0.0
+shader_parameter/intensityX = 5.0
+shader_parameter/intensityY = 5.0
+shader_parameter/seed = 42.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_55a8x"]
 size = Vector3(0.055562973, 0.27441406, 0.090706825)
@@ -923,13 +932,12 @@ transform = Transform3D(-0.73869866, -0.07514215, -0.66983384, -0.6649456, -0.08
 transform = Transform3D(0.46021175, -0.075142115, 0.88462317, 0.881338, -0.08141825, -0.46541858, 0.10699663, 0.9938436, 0.028756212, 1.1011314, -1.307066, -0.5447564)
 
 [node name="cadeira" parent="SubViewport/Menu/Cenário" unique_id=214993877 instance=ExtResource("10_k48pe")]
-transform = Transform3D(0.4424779, 0, 0, 0, 0.8849558, 0, 1.7763568e-15, 0, 0.35714287, -0.045935154, -0.0005913973, 0.5468874)
+transform = Transform3D(0.44247797, 0, 0, 0, 0.88495594, 0, 3.5527137e-15, 0, 0.35714287, -0.045935154, -0.0005913973, 0.5713563)
 
 [node name="Top_Hat" parent="SubViewport/Menu" unique_id=1382448515 instance=ExtResource("11_f2fum")]
 transform = Transform3D(1, 0, 0, 0, 0.9965742, 0.08270385, 0, -0.08270385, 0.9965742, 1.840318, 1.2374139, -8.602751)
 
 [node name="MainPage" type="Node3D" parent="SubViewport/Menu" unique_id=1710968854]
-visible = false
 
 [node name="StartGame" type="Area3D" parent="SubViewport/Menu/MainPage" unique_id=827329834]
 transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 9.929587, 1.4806757, -16.445412)
@@ -966,14 +974,15 @@ transform = Transform3D(1.0000002, 0, 0, 0, 0.9999999, 0, 1.2079227e-13, 0, 1, -
 shape = SubResource("BoxShape3D_2j8sj")
 debug_color = Color(18.892157, 0, 0, 1)
 
-[node name="TextureRect" type="TextureRect" parent="SubViewport/Menu" unique_id=428813361]
+[node name="W_keycap" type="TextureRect" parent="SubViewport/Menu" unique_id=428813361]
+material = SubResource("ShaderMaterial_2j8sj")
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 30.0
-offset_top = -160.0
-offset_right = 120.0
-offset_bottom = -70.0
+offset_left = 870.0
+offset_top = -658.0
+offset_right = 1050.0
+offset_bottom = -470.96875
 grow_vertical = 0
 texture = ExtResource("1_y4i35")
 expand_mode = 1
