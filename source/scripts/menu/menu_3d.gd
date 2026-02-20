@@ -82,7 +82,6 @@ func ir_para_principal():
 		viewport.add_child(menu)
 		
 func mudar_brilho(valor: int):
-	# Clamp em 10 para nunca ficar 100% escuro
 	brilho = clamp(brilho + valor, 10, 100)
 	if luz_mesa:
 		luz_mesa.light_energy = base_light_energy * (brilho / 100.0)
@@ -131,46 +130,56 @@ func atualizar_textos_ajustes():
 
 func _on_start_game_input_event(_c, event, _p, _n, _s) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		AudioManager.play_click()
 		get_tree().change_scene_to_file("res://scenes/levels/tutorial.tscn")
 
 func _on_ajustes_input_event(_c, event, _p, _n, _s) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		AudioManager.play_click()
 		ir_para_ajustes()
 
 func _on_sair_input_event(_c, event, _p, _n, _s) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		AudioManager.play_click()
 		get_tree().quit()
 
 func _on_plus_bright_input_event(_c, event, _p, _n, _s):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		AudioManager.play_click()
 		mudar_brilho(10)
 
 func _on_minus_bright_input_event(_c, event, _p, _n, _s): # Nome conforme seu script anterior
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		AudioManager.play_click()
 		mudar_brilho(-10)
 
 func _on_plus_volume_input_event(_c, event, _p, _n, _s):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		AudioManager.play_click()
 		mudar_volume(10)
 
 func _on_minus_volume_input_event(_c, event, _p, _n, _s):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		AudioManager.play_click()
 		mudar_volume(-10)
 
 func _on_resolution_input_event(_c, event, _p, _n, _s):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		AudioManager.play_click()
 		res_idx = (res_idx + 1) % resolucoes.size()
 		DisplayServer.window_set_size(resolucoes[res_idx])
 		atualizar_textos_ajustes()
 
 func _on_full_screen_input_event(_c, event, _p, _n, _s):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		AudioManager.play_click()
 		tela_cheia = !tela_cheia
 		var modo = DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN if tela_cheia else DisplayServer.WINDOW_MODE_WINDOWED
 		DisplayServer.window_set_mode(modo)
 
 func _on_voltar_input_event(_c, event, _p, _n, _s):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		AudioManager.play_click()
 		ir_para_principal()
 
 func _set_wobble(btn_node: Node, intensity: float) -> void:

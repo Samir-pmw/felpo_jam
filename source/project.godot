@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Cursor="*uid://btb3rqn7gdvqo"
+AudioManager="*uid://d1dvgxsrk342y"
 
 [display]
 
