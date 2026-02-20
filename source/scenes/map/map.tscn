@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://xgc8e6a4uuej"]
+
+[ext_resource type="Texture2D" uid="uid://wgkhfyybfvy4" path="res://assets/sprites/Parchment.jpg" id="1_sxf4j"]
+[ext_resource type="Script" uid="uid://d0ivtl06ccab3" path="res://scripts/map/map.gd" id="1_tqkkf"]
+[ext_resource type="Texture2D" uid="uid://dtb3cpuuv5xm0" path="res://assets/sprites/map/fases/caveira.png" id="2_fcby6"]
+[ext_resource type="Texture2D" uid="uid://mhqvhamnl2kp" path="res://assets/sprites/map/fases/Tesouro.png" id="3_04w0f"]
+[ext_resource type="Texture2D" uid="uid://l750uc1ev6ek" path="res://assets/sprites/map/fases/Fogueira.png" id="4_sqgf4"]
+[ext_resource type="Texture2D" uid="uid://bh80f86a5d751" path="res://assets/sprites/map/fases/loja.png" id="5_vvrx0"]
+[ext_resource type="Texture2D" uid="uid://dfj5xl6o6b25r" path="res://assets/sprites/map/fases/puzzle.png" id="6_f17u5"]
+
+[node name="map" type="Node2D" unique_id=1000523082]
+script = ExtResource("1_tqkkf")
+imagens = Array[Texture2D]([ExtResource("2_fcby6"), ExtResource("3_04w0f"), ExtResource("4_sqgf4"), ExtResource("5_vvrx0"), ExtResource("6_f17u5")])
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=488038217]
+z_index = -1
+position = Vector2(961, 541)
+scale = Vector2(2.39875, 1.8033334)
+texture = ExtResource("1_sxf4j")
+metadata/_edit_lock_ = true
+
+[node name="Fases" type="Node2D" parent="." unique_id=1094710997]
+
+[node name="Marker2D" type="Marker2D" parent="Fases" unique_id=1194149803]
+position = Vector2(469, 197)
+
+[node name="Marker2D2" type="Marker2D" parent="Fases" unique_id=533444740]
+position = Vector2(1539, 798)
+
+[node name="Marker2D3" type="Marker2D" parent="Fases" unique_id=379043187]
+position = Vector2(1558.9999, 217)
+rotation = -0.0018440352
+
+[node name="Marker2D4" type="Marker2D" parent="Fases" unique_id=1323398895]
+position = Vector2(465, 785)
+rotation = -0.0018440352
