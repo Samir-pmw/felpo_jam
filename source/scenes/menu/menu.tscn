@@ -34,12 +34,98 @@ background_mode = 2
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_fqr1d"]
 
+[sub_resource type="Shader" id="Shader_pjdsv"]
+code = "shader_type spatial;
+render_mode blend_mix, depth_draw_opaque, cull_back, diffuse_burley, specular_schlick_ggx;
+
+uniform vec4 albedo : source_color;
+uniform sampler2D texture_albedo : source_color, filter_linear_mipmap, repeat_enable;
+uniform ivec2 albedo_texture_size;
+
+uniform float roughness : hint_range(0.0, 1.0);
+uniform sampler2D texture_metallic : hint_default_white, filter_linear_mipmap, repeat_enable;
+uniform vec4 metallic_texture_channel;
+uniform sampler2D texture_roughness : hint_roughness_r, filter_linear_mipmap, repeat_enable;
+
+uniform float specular : hint_range(0.0, 1.0, 0.01);
+uniform float metallic : hint_range(0.0, 1.0, 0.01);
+
+uniform vec3 uv1_scale;
+uniform vec3 uv1_offset;
+
+/* ------------------ TRANSIÇÃO ------------------ */
+
+uniform float progress : hint_range(0.0, 1.0) = 0.0;
+uniform float zoom = 3.0;
+uniform vec4 transition_color : source_color = vec4(0.0,0.0,0.0,1.0);
+
+float rand(vec2 n) { 
+    return fract(sin(dot(n, vec2(12.9898, 4.1414))) * 43758.5453);
+}
+
+float noise(vec2 p){
+    vec2 ip = floor(p);
+    vec2 u = fract(p);
+    u = u * u * (3.0 - 2.0 * u);
+
+    float res = mix(
+        mix(rand(ip), rand(ip + vec2(1.0, 0.0)), u.x),
+        mix(rand(ip + vec2(0.0, 1.0)), rand(ip + vec2(1.0, 1.0)), u.x), u.y);
+        
+    return res * res;
+}
+
+/* ------------------ VERTEX ------------------ */
+
+void vertex() {
+    UV = UV * uv1_scale.xy + uv1_offset.xy;
+}
+
+/* ------------------ FRAGMENT ------------------ */
+
+void fragment() {
+
+    vec2 base_uv = UV;
+
+    vec4 albedo_tex = texture(texture_albedo, base_uv);
+    vec3 base_color = albedo.rgb * albedo_tex.rgb;
+
+    // Noise da transição
+    float n = noise(base_uv * zoom);
+
+    float mask = smoothstep(progress - 0.1, progress, n);
+
+    // Mistura base + transição
+    ALBEDO = mix(base_color, transition_color.rgb, mask);
+
+    float metallic_tex = dot(texture(texture_metallic, base_uv), metallic_texture_channel);
+    METALLIC = metallic_tex * metallic;
+    SPECULAR = specular;
+
+    vec4 roughness_texture_channel = vec4(1.0, 0.0, 0.0, 0.0);
+    float roughness_tex = dot(texture(texture_roughness, base_uv), roughness_texture_channel);
+    ROUGHNESS = roughness_tex * roughness;
+}"
+
 [sub_resource type="ViewportTexture" id="ViewportTexture_64m6r"]
 viewport_path = NodePath("SubViewport/Menu/mapa_menu/MapaNaMesa")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fstgh"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_55a8x"]
 resource_local_to_scene = true
-albedo_texture = SubResource("ViewportTexture_64m6r")
+render_priority = 0
+shader = SubResource("Shader_pjdsv")
+shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/texture_albedo = SubResource("ViewportTexture_64m6r")
+shader_parameter/albedo_texture_size = Vector2i(0, 0)
+shader_parameter/roughness = 1.0
+shader_parameter/metallic_texture_channel = Vector4(1, 0, 0, 0)
+shader_parameter/specular = 0.5
+shader_parameter/metallic = 0.0
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/progress = 1.0
+shader_parameter/zoom = 3.0
+shader_parameter/transition_color = Color(0, 0, 0, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rcuxh"]
 size = Vector3(0.2980194, 0.27441406, 0.16419983)
@@ -127,7 +213,7 @@ spot_angle = 52.13
 transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 9.929587, 1.4806757, -16.445412)
 cast_shadow = 0
 mesh = SubResource("PlaneMesh_fqr1d")
-surface_material_override/0 = SubResource("StandardMaterial3D_fstgh")
+surface_material_override/0 = SubResource("ShaderMaterial_55a8x")
 
 [node name="MapaNaMesa" type="SubViewport" parent="SubViewport/Menu/mapa_menu" unique_id=975325004]
 size = Vector2i(1920, 1080)

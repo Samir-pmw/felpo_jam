@@ -6,12 +6,14 @@ extends Node3D
 @onready var camera = $Camera3D
 @onready var w_icon = $W_keycap
 @onready var luz_mesa = $TableLight
+@onready var papiro_material : ShaderMaterial = $mapa_menu.get_active_material(0)
 
 @export var textura_ajustes: Texture2D 
 @export var textura_principal: Texture2D
 @export var cena_ajustes: PackedScene  
 @export var cena_principal: PackedScene 
 
+var transicao_em_andamento := false
 var ja_subiu: bool = false
 
 var volume: int = 100
@@ -57,32 +59,39 @@ func _process(_delta):
 
 		if Cursor: 
 			Cursor.aparecer()
+
 func ir_para_ajustes():
-	main_page.visible = false 
-	if ajustes_page:
-		ajustes_page.visible = true 
+	transicao_papiro(func():
+		main_page.visible = false 
 		
-	var viewport = $mapa_menu/MapaNaMesa
-	for child in viewport.get_children():
-		child.queue_free()
-	
-	if cena_ajustes:
-		var menu = cena_ajustes.instantiate()
-		viewport.add_child(menu)
-		call_deferred("atualizar_textos_ajustes")
+		if ajustes_page:
+			ajustes_page.visible = true
+		
+		var viewport = $mapa_menu/MapaNaMesa
+		for child in viewport.get_children():
+			child.queue_free()
+		
+		if cena_ajustes:
+			var menu = cena_ajustes.instantiate()
+			viewport.add_child(menu)
+			call_deferred("atualizar_textos_ajustes")
+	)
 
 func ir_para_principal():
-	if ajustes_page:
-		ajustes_page.visible = false
-	main_page.visible = true 
-	
-	var viewport = $mapa_menu/MapaNaMesa
-	for child in viewport.get_children():
-		child.queue_free()
-	
-	if cena_principal:
-		var menu = cena_principal.instantiate()
-		viewport.add_child(menu)
+	transicao_papiro(func():
+		if ajustes_page:
+			ajustes_page.visible = false
+			
+		main_page.visible = true 
+		
+		var viewport = $mapa_menu/MapaNaMesa
+		for child in viewport.get_children():
+			child.queue_free()
+		
+		if cena_principal:
+			var menu = cena_principal.instantiate()
+			viewport.add_child(menu)
+	)
 		
 func mudar_brilho(valor: int):
 	brilho = clamp(brilho + valor, 10, 100)
@@ -217,3 +226,37 @@ func _on_sair_mouse_entered() -> void:
 
 func _on_sair_mouse_exited() -> void:
 	_set_btn_wobble("btn_sair", 0.0)
+
+func transicao_papiro(troca_callback: Callable) -> void:
+	if transicao_em_andamento:
+		return
+		
+	transicao_em_andamento = true
+	
+	AudioManager.play_tinta()
+	
+	var tween = create_tween()
+	tween.tween_property(
+		papiro_material,
+		"shader_parameter/progress",
+		0.0,
+		0.7
+	).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	await tween.finished
+	
+	await get_tree().create_timer(0.35).timeout
+	
+	troca_callback.call()
+	
+	await get_tree().process_frame
+	
+	var tween2 = create_tween()
+	tween2.tween_property(
+		papiro_material,
+		"shader_parameter/progress",
+		1.0,
+		0.9
+	).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	await tween2.finished
+	
+	transicao_em_andamento = false
