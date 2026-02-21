@@ -1,0 +1,296 @@
+[gd_scene format=3 uid="uid://hy5yn00jrk88"]
+
+[ext_resource type="Texture2D" uid="uid://brj2oo5cat5hu" path="res://assets/sprites/menu/map/masmorra_pack/textura_papiro.jpg" id="1_db4c0"]
+[ext_resource type="Shader" uid="uid://1x17xb863qd7" path="res://scenes/menu/trasicao_menu.gdshader" id="3_em1wr"]
+[ext_resource type="FontFile" uid="uid://btcq5rh80tfiy" path="res://assets/fontes/This Cafe.ttf" id="4_a81g2"]
+[ext_resource type="Shader" uid="uid://17e3h6futfhs" path="res://scenes/menu/wobble.gdshader" id="4_em1wr"]
+[ext_resource type="Texture2D" uid="uid://ltowf5qjpxkj" path="res://assets/sprites/menu/botoes/spr_botao_sem_carimbo.png" id="5_a81g2"]
+[ext_resource type="Texture2D" uid="uid://ksntyve4cwh0" path="res://assets/sprites/menu/fundo/background.png" id="6_h0dte"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ri5sr"]
+shader = ExtResource("3_em1wr")
+shader_parameter/base_color = Color(0, 0, 0, 1)
+shader_parameter/node_resolution = Vector2(0, 0)
+shader_parameter/factor = 0.54
+shader_parameter/width = 0.4
+shader_parameter/gradient_fixed = false
+shader_parameter/shape_tiling = 32.0
+shader_parameter/shape_rotation = 0.0
+shader_parameter/shape_scroll = Vector2(0, 0)
+shader_parameter/shape_feathering = 0.0
+shader_parameter/shape_treshold = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e2fbg"]
+shader = ExtResource("4_em1wr")
+shader_parameter/interval = 0.5
+shader_parameter/timeDelay = 0.0
+shader_parameter/intensityX = 0.0
+shader_parameter/intensityY = 0.0
+shader_parameter/seed = 44.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cy3li"]
+shader = ExtResource("4_em1wr")
+shader_parameter/interval = 0.5
+shader_parameter/timeDelay = 0.0
+shader_parameter/intensityX = 0.0
+shader_parameter/intensityY = 0.0
+shader_parameter/seed = 44.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0iwdk"]
+shader = ExtResource("4_em1wr")
+shader_parameter/interval = 0.5
+shader_parameter/timeDelay = 0.0
+shader_parameter/intensityX = 20.0
+shader_parameter/intensityY = 20.0
+shader_parameter/seed = 42.0
+
+[node name="MenuCredits" type="Control" unique_id=294974918]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Parchment" type="Sprite2D" parent="." unique_id=1180311530]
+visible = false
+position = Vector2(944, 544)
+scale = Vector2(2.505, 1.93)
+texture = ExtResource("1_db4c0")
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=857378258]
+visible = false
+material = SubResource("ShaderMaterial_ri5sr")
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.005
+anchor_bottom = 1.0350001
+offset_right = 4.4000244
+offset_bottom = -23.800049
+
+[node name="Creditos" type="Label" parent="." unique_id=1260194670]
+layout_mode = 0
+offset_left = 850.0
+offset_top = 76.0
+offset_right = 1112.0
+offset_bottom = 147.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a81g2")
+theme_override_font_sizes/font_size = 48
+text = "Creditos"
+horizontal_alignment = 1
+
+[node name="btn_voltar" type="Sprite2D" parent="Creditos" unique_id=1212673770]
+modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_e2fbg")
+position = Vector2(149.87897, 723.83966)
+scale = Vector2(0.51999754, 0.51999754)
+texture = ExtResource("5_a81g2")
+
+[node name="sair" type="Label" parent="Creditos" unique_id=1540121363]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 696.0
+offset_right = 265.0
+offset_bottom = 767.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a81g2")
+theme_override_font_sizes/font_size = 48
+text = "VOLTAR"
+horizontal_alignment = 1
+
+[node name="sair3" type="Label" parent="." unique_id=1787343192]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 215.0
+offset_right = 379.0
+offset_bottom = 286.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a81g2")
+theme_override_font_sizes/font_size = 48
+text = "Programacao"
+horizontal_alignment = 1
+
+[node name="btn_volume" type="Sprite2D" parent="." unique_id=1064738195]
+modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_cy3li")
+position = Vector2(201.87909, 342.83966)
+scale = Vector2(0.51999754, 0.51999754)
+texture = ExtResource("5_a81g2")
+
+[node name="volume_value" type="Label" parent="." unique_id=1117244200]
+layout_mode = 0
+offset_left = 71.00006
+offset_top = 321.00006
+offset_right = 333.00006
+offset_bottom = 392.00006
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a81g2")
+theme_override_font_sizes/font_size = 36
+text = "Eros"
+horizontal_alignment = 1
+
+[node name="btn_volume2" type="Sprite2D" parent="." unique_id=1262720828]
+modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_cy3li")
+position = Vector2(203.87909, 462.83966)
+scale = Vector2(0.51999754, 0.51999754)
+texture = ExtResource("5_a81g2")
+
+[node name="volume_value2" type="Label" parent="." unique_id=444093115]
+layout_mode = 0
+offset_left = 73.00006
+offset_top = 441.00006
+offset_right = 335.00006
+offset_bottom = 512.00006
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a81g2")
+theme_override_font_sizes/font_size = 36
+text = "Samir"
+horizontal_alignment = 1
+
+[node name="btn_volume3" type="Sprite2D" parent="." unique_id=322505347]
+modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_cy3li")
+position = Vector2(201.87909, 582.83966)
+scale = Vector2(0.51999754, 0.51999754)
+texture = ExtResource("5_a81g2")
+
+[node name="volume_value3" type="Label" parent="." unique_id=258244786]
+layout_mode = 0
+offset_left = 71.00006
+offset_top = 561.00006
+offset_right = 333.00006
+offset_bottom = 632.00006
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a81g2")
+theme_override_font_sizes/font_size = 36
+text = "Matheus"
+horizontal_alignment = 1
+
+[node name="sair4" type="Label" parent="." unique_id=1748192943]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 212.0
+offset_right = 775.0
+offset_bottom = 283.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a81g2")
+theme_override_font_sizes/font_size = 48
+text = "Arte"
+horizontal_alignment = 1
+
+[node name="btn_volume4" type="Sprite2D" parent="." unique_id=1670845707]
+modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_cy3li")
+position = Vector2(606.879, 334.83966)
+scale = Vector2(0.51999754, 0.51999754)
+texture = ExtResource("5_a81g2")
+
+[node name="volume_value4" type="Label" parent="." unique_id=1063227703]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 313.00006
+offset_right = 738.0
+offset_bottom = 384.00006
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a81g2")
+theme_override_font_sizes/font_size = 36
+text = "Brendo"
+horizontal_alignment = 1
+
+[node name="sair5" type="Label" parent="." unique_id=1057639900]
+layout_mode = 0
+offset_left = 807.0
+offset_top = 204.0
+offset_right = 1153.0
+offset_bottom = 275.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a81g2")
+theme_override_font_sizes/font_size = 48
+text = "Historia"
+horizontal_alignment = 1
+
+[node name="btn_volume5" type="Sprite2D" parent="." unique_id=809220903]
+modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_cy3li")
+position = Vector2(975.87915, 331.83966)
+scale = Vector2(0.51999754, 0.51999754)
+texture = ExtResource("5_a81g2")
+
+[node name="volume_value5" type="Label" parent="." unique_id=254657418]
+layout_mode = 0
+offset_left = 845.0
+offset_top = 310.00006
+offset_right = 1107.0
+offset_bottom = 381.00006
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a81g2")
+theme_override_font_sizes/font_size = 36
+text = "Matheus"
+horizontal_alignment = 1
+
+[node name="sair6" type="Label" parent="." unique_id=271802486]
+layout_mode = 0
+offset_left = 1182.0
+offset_top = 202.0
+offset_right = 1528.0
+offset_bottom = 273.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a81g2")
+theme_override_font_sizes/font_size = 48
+text = "Sound"
+horizontal_alignment = 1
+
+[node name="btn_volume6" type="Sprite2D" parent="." unique_id=1830476063]
+modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_cy3li")
+position = Vector2(1350.8792, 329.83966)
+scale = Vector2(0.51999754, 0.51999754)
+texture = ExtResource("5_a81g2")
+
+[node name="volume_value6" type="Label" parent="." unique_id=1589811929]
+layout_mode = 0
+offset_left = 1220.0
+offset_top = 308.00006
+offset_right = 1482.0
+offset_bottom = 379.00006
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a81g2")
+theme_override_font_sizes/font_size = 36
+text = "Samir"
+horizontal_alignment = 1
+
+[node name="sair7" type="Label" parent="." unique_id=597316934]
+layout_mode = 0
+offset_left = 1526.0
+offset_top = 201.0
+offset_right = 1872.0
+offset_bottom = 272.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a81g2")
+theme_override_font_sizes/font_size = 48
+text = "Ideias"
+horizontal_alignment = 1
+
+[node name="btn_volume7" type="Sprite2D" parent="." unique_id=645779410]
+modulate = Color(1, 1, 1, 0.40784314)
+material = SubResource("ShaderMaterial_cy3li")
+position = Vector2(1694.8792, 328.83966)
+scale = Vector2(0.51999754, 0.51999754)
+texture = ExtResource("5_a81g2")
+
+[node name="volume_value7" type="Label" parent="." unique_id=1226914974]
+layout_mode = 0
+offset_left = 1564.0
+offset_top = 307.00006
+offset_right = 1826.0
+offset_bottom = 378.00006
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a81g2")
+theme_override_font_sizes/font_size = 36
+text = "Todos"
+horizontal_alignment = 1
+
+[node name="Background" type="Sprite2D" parent="." unique_id=578795956]
+material = SubResource("ShaderMaterial_0iwdk")
+position = Vector2(1199.5, 984.5)
+scale = Vector2(1.2984375, 1.0009259)
+texture = ExtResource("6_h0dte")
