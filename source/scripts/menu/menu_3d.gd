@@ -31,30 +31,34 @@ func _ready():
 		
 	if w_icon:
 		w_icon.scale = Vector2(1, 1)
-		var tween = create_tween().set_loops()
+		var tween = w_icon.create_tween().set_loops()
 		tween.tween_property(w_icon, "modulate:a", 0.3, 1.5).set_trans(Tween.TRANS_SINE)
 		tween.tween_property(w_icon, "modulate:a", 1.0, 1.5).set_trans(Tween.TRANS_SINE)
 		
 func _process(_delta):
-	if Input.is_action_just_pressed("press_w") and not ja_subiu:
-		ja_subiu = true 
-		subir_camera()
+	if Input.is_action_just_pressed("press_w") and not ja_subiu and not camera.movendo:
+		ja_subiu = true
+		camera.subir()
+		
 		main_page.visible = true 
-		if w_icon:
-			w_icon.hide()
+		if is_instance_valid(w_icon):
+			w_icon.queue_free()
+			
+		if luz_mesa:
+			var tween = create_tween()
+			tween.tween_property(luz_mesa, "light_energy", base_light_energy, 1.2).set_trans(Tween.TRANS_SINE)
+			
+		if Cursor: 
+			Cursor.aparecer()
 
-func subir_camera():
-	var tween = create_tween().set_parallel(true)
-	var nova_posicao = Vector3(camera.position.x - 1.17, 2.8, camera.position.z)
-	
-	tween.tween_property(camera, "position", nova_posicao, 1.2).set_trans(Tween.TRANS_SINE)
-	tween.tween_property(camera, "rotation_degrees", Vector3(-90, 90, 0), 1.2).set_trans(Tween.TRANS_SINE)
-	
-	if luz_mesa:
-		tween.tween_property(luz_mesa, "light_energy", base_light_energy, 1.2).set_trans(Tween.TRANS_SINE)
+	elif Input.is_action_just_pressed("press_s") and ja_subiu and not camera.movendo:
+		ja_subiu = false
+		camera.descer()
+		
+		main_page.visible = false
 
-	if Cursor: 
-		Cursor.aparecer()
+		if Cursor: 
+			Cursor.aparecer()
 
 func ir_para_ajustes():
 	transicao_papiro(func():
@@ -118,14 +122,11 @@ func atualizar_textos_ajustes():
 	var viewport = $mapa_menu/MapaNaMesa
 
 	if viewport.get_child_count() > 0:
-
 		var menu_instanciado = viewport.get_child(viewport.get_child_count() - 1)
 
 		var lbl_brilho = menu_instanciado.find_child("brilho_value", true, false)
 		var lbl_volume = menu_instanciado.find_child("volume_value", true, false)
 		var lbl_res = menu_instanciado.find_child("resolucao", true, false)
-
-		print(lbl_brilho, lbl_volume, lbl_res)
 
 		if lbl_brilho:
 			lbl_brilho.text = str(brilho) + "%"
@@ -156,7 +157,7 @@ func _on_plus_bright_input_event(_c, event, _p, _n, _s):
 		AudioManager.play_click()
 		mudar_brilho(10)
 
-func _on_minus_bright_input_event(_c, event, _p, _n, _s): # Nome conforme seu script anterior
+func _on_minus_bright_input_event(_c, event, _p, _n, _s): 
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		AudioManager.play_click()
 		mudar_brilho(-10)
@@ -190,7 +191,7 @@ func _on_voltar_input_event(_c, event, _p, _n, _s):
 		AudioManager.play_click()
 		ir_para_principal()
 
-func _set_wobble(btn_node: Node, intensity: float) -> void:
+func _set_wobble(btn_node: CanvasItem, intensity: float) -> void:
 	if btn_node and btn_node.material is ShaderMaterial:
 		btn_node.material.set_shader_parameter("intensityX", intensity)
 		btn_node.material.set_shader_parameter("intensityY", intensity)
@@ -203,16 +204,16 @@ func _set_btn_wobble(btn_name: String, intensity: float):
 		_set_wobble(btn, intensity)
 
 func _on_start_game_mouse_entered() -> void:
-	_set_btn_wobble("btn_ajustes", 20.0) 
+	_set_btn_wobble("btn_start", 20.0) 
 
 func _on_start_game_mouse_exited() -> void:
-	_set_btn_wobble("btn_ajustes", 0.0)
+	_set_btn_wobble("btn_start", 0.0)
 
 func _on_ajustes_mouse_entered() -> void:
-	_set_btn_wobble("btn_continuar", 20.0)
+	_set_btn_wobble("btn_ajustes", 20.0)
 
 func _on_ajustes_mouse_exited() -> void:
-	_set_btn_wobble("btn_continuar", 0.0)
+	_set_btn_wobble("btn_ajustes", 0.0)
 
 func _on_credits_mouse_entered() -> void:
 	_set_btn_wobble("btn_creditos", 20.0)

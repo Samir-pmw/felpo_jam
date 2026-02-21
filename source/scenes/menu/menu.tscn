@@ -3,11 +3,12 @@
 [ext_resource type="Shader" uid="uid://jc00jql1svws" path="res://assets/shaders/psx.gdshader" id="1_64m6r"]
 [ext_resource type="PackedScene" uid="uid://cisvi0epafkn6" path="res://scenes/menu/menu_principal.tscn" id="1_fqr1d"]
 [ext_resource type="Script" uid="uid://dgscdvpmnvtx1" path="res://scripts/menu/menu_3d.gd" id="1_rcuxh"]
-[ext_resource type="Texture2D" uid="uid://ciruejttbfu3i" path="res://assets/sprites/menu/fundo/w.png" id="1_y4i35"]
+[ext_resource type="Texture2D" uid="uid://ciruejttbfu3i" path="res://assets/sprites/menu/fundo/w_keycap.png" id="1_y4i35"]
 [ext_resource type="PackedScene" uid="uid://cx6dierunhul3" path="res://assets/sprites/menu/map/masmorra_pack/wall.gltf.glb" id="2_mcvr8"]
 [ext_resource type="PackedScene" uid="uid://oy48j3tyjomt" path="res://scenes/menu/menu_ajustes.tscn" id="2_rcuxh"]
 [ext_resource type="PackedScene" uid="uid://dic1h507853tv" path="res://assets/sprites/menu/map/masmorra_pack/wallCorner.gltf.glb" id="3_e0arn"]
 [ext_resource type="PackedScene" uid="uid://8bhyt7q1t6e3" path="res://assets/sprites/menu/map/masmorra_pack/wall_gateDoor.gltf.glb" id="4_037ec"]
+[ext_resource type="Script" uid="uid://b52odwunou5mj" path="res://scenes/menu/camera_controller.gd" id="5_2j8sj"]
 [ext_resource type="PackedScene" uid="uid://b6tc61750uyyc" path="res://assets/sprites/menu/map/masmorra_pack/floorDecoration_wood.gltf.glb" id="5_y1o0p"]
 [ext_resource type="PackedScene" uid="uid://bg1sk2rpyj8br" path="res://assets/sprites/menu/map/masmorra_pack/tablemetalwood01.gltf" id="6_r8yej"]
 [ext_resource type="PackedScene" uid="uid://bt71k62s8852c" path="res://assets/sprites/menu/map/masmorra_pack/chestTop_uncommon.gltf.glb" id="7_t0a87"]
@@ -16,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://bvn2fumoval6g" path="res://assets/sprites/menu/map/masmorra_pack/chair.gltf.glb" id="10_k48pe"]
 [ext_resource type="PackedScene" uid="uid://cub5xqhoil5wv" path="res://assets/sprites/menu/map/hat/Top_Hat.fbx" id="11_f2fum"]
 [ext_resource type="Shader" uid="uid://17e3h6futfhs" path="res://scenes/menu/wobble.gdshader" id="15_pjdsv"]
+[ext_resource type="Texture2D" uid="uid://cx4vor6jgmsa1" path="res://assets/sprites/menu/fundo/s_keycap.png" id="18_55a8x"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_pjdsv"]
 shader = ExtResource("1_64m6r")
@@ -183,9 +185,10 @@ cena_ajustes = ExtResource("2_rcuxh")
 cena_principal = ExtResource("1_fqr1d")
 
 [node name="Camera3D" type="Camera3D" parent="SubViewport/Menu" unique_id=414983930]
-transform = Transform3D(1.0151167e-07, -0.7741055, 0.63305664, -8.3015365e-08, 0.63305664, 0.7741055, -1, -1.3113417e-07, -1.4210855e-14, 11.072241, 2.9088626, -16.30698)
+transform = Transform3D(-4.371139e-08, -0.76604444, 0.64278764, 0, 0.64278764, 0.76604444, -1, 3.3484866e-08, -2.809714e-08, 11.072241, 2.9088626, -16.30698)
 attributes = SubResource("CameraAttributesPractical_fqr1d")
 fov = 88.3
+script = ExtResource("5_2j8sj")
 
 [node name="TableLight" type="SpotLight3D" parent="SubViewport/Menu" unique_id=1031157070]
 transform = Transform3D(1, 0, 0, 0, -0.027921667, 0.9996101, 0, -0.9996101, -0.027921667, 9.670309, 3.198349, -16.561668)
@@ -208,7 +211,7 @@ spot_range = 105.267
 spot_angle = 52.13
 
 [node name="mapa_menu" type="MeshInstance3D" parent="SubViewport/Menu" unique_id=1196624874]
-transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 9.929587, 1.4806757, -16.445412)
+transform = Transform3D(-7.430936e-08, 0, 1.01, 0, 0.581, 0, -1.7, 0, -4.4148504e-08, 9.929893, 1.480052, -16.446402)
 cast_shadow = 0
 mesh = SubResource("PlaneMesh_fqr1d")
 surface_material_override/0 = SubResource("ShaderMaterial_55a8x")
@@ -1065,12 +1068,26 @@ material = SubResource("ShaderMaterial_2j8sj")
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 113.0
-offset_top = -141.0
-offset_right = 187.0
-offset_bottom = -64.109375
+offset_left = 180.0
+offset_top = -200.0
+offset_right = 254.0
+offset_bottom = -123.109375
 grow_vertical = 0
 texture = ExtResource("1_y4i35")
+expand_mode = 1
+
+[node name="S_keycap" type="TextureRect" parent="SubViewport/Menu" unique_id=87322953]
+visible = false
+material = SubResource("ShaderMaterial_2j8sj")
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 181.0
+offset_top = -200.0
+offset_right = 267.13
+offset_bottom = -120.87402
+grow_vertical = 0
+texture = ExtResource("18_55a8x")
 expand_mode = 1
 
 [node name="AjustesPage" type="Node3D" parent="SubViewport/Menu" unique_id=1566038489]
