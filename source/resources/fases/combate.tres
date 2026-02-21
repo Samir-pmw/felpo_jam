@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FaseData" format=3 uid="uid://dt58e18klckfk"]
+
+[ext_resource type="Script" uid="uid://co1fu04yj0t4l" path="res://scripts/resources/fase_data.gd" id="1_h4iac"]
+[ext_resource type="Texture2D" uid="uid://dtb3cpuuv5xm0" path="res://assets/sprites/map/fases/caveira.png" id="2_7cjci"]
+
+[resource]
+script = ExtResource("1_h4iac")
+textura = ExtResource("2_7cjci")
+tipo = "Combate"
+limite = 2
+metadata/_custom_type_script = "uid://co1fu04yj0t4l"

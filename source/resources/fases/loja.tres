@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FaseData" format=3 uid="uid://d3mhgw00gnwi6"]
+
+[ext_resource type="Script" uid="uid://co1fu04yj0t4l" path="res://scripts/resources/fase_data.gd" id="1_yn8jc"]
+[ext_resource type="Texture2D" uid="uid://bh80f86a5d751" path="res://assets/sprites/map/fases/loja.png" id="2_qwnx3"]
+
+[resource]
+script = ExtResource("1_yn8jc")
+textura = ExtResource("2_qwnx3")
+tipo = "Loja"
+limite = 2
+metadata/_custom_type_script = "uid://co1fu04yj0t4l"
