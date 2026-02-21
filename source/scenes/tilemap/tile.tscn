@@ -2,8 +2,20 @@
 
 [ext_resource type="Script" uid="uid://cbl80d16a7msh" path="res://scenes/tilemap/tile.gd" id="1_3iwkk"]
 [ext_resource type="PackedScene" uid="uid://o37ch7xh18ax" path="res://assets/tiles/grass.glb" id="2_pk10t"]
+[ext_resource type="PackedScene" uid="uid://b2qmmo2hj4sek" path="res://assets/tiles/dirt.glb" id="3_pk10t"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_pk10t"]
+height = 0.3
 
 [node name="Tile" type="Node3D" unique_id=1126721679]
 script = ExtResource("1_3iwkk")
 
-[node name="Grass" parent="." unique_id=630081365 instance=ExtResource("2_pk10t")]
+[node name="Top" parent="." unique_id=630081365 instance=ExtResource("2_pk10t")]
+
+[node name="Stem" parent="." unique_id=581558040 instance=ExtResource("3_pk10t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.09479052, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1588869343]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1714621719]
+shape = SubResource("CylinderShape3D_pk10t")

@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://dkj58l2i45jan"]
+
+[ext_resource type="PackedScene" uid="uid://ioraumm6yhgb" path="res://scenes/tilemap/tile_grid.tscn" id="1_3iaa7"]
+[ext_resource type="Script" uid="uid://dg5n1k0p6meod" path="res://scenes/tilemap/battle.gd" id="1_7j8s0"]
+[ext_resource type="Script" uid="uid://bts7dw5ihdyvu" path="res://scenes/tilemap/camera_3d.gd" id="2_2clbh"]
+[ext_resource type="Shader" uid="uid://cyqlqjbipm0j2" path="res://assets/shaders/outline.gdshader" id="3_2clbh"]
+
+[sub_resource type="Environment" id="Environment_7j8s0"]
+background_mode = 1
+background_color = Color(0.16862746, 0.16862746, 0.18039216, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 0.9098039, 0.7529412, 1)
+ambient_light_energy = 0.4
+tonemap_mode = 2
+ssao_enabled = true
+glow_enabled = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3iaa7"]
+shader = ExtResource("3_2clbh")
+shader_parameter/outline_color = Color(0.1, 0.07, 0.05, 1)
+shader_parameter/outline_width = 1.5
+shader_parameter/alpha_threshold = 0.1
+
+[node name="Battle" type="Node3D" unique_id=44732047]
+script = ExtResource("1_7j8s0")
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=62229796]
+transparent_bg = true
+size = Vector2i(1920, 1080)
+render_target_update_mode = 4
+
+[node name="TileGrid" parent="SubViewport" unique_id=261900253 instance=ExtResource("1_3iaa7")]
+
+[node name="Camera3D" type="Camera3D" parent="SubViewport" unique_id=1620587735]
+script = ExtResource("2_2clbh")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport" unique_id=328321123]
+transform = Transform3D(0.8660254, 0.3535534, -0.3535534, 0, 0.7071068, 0.7071068, 0.5, -0.61237246, 0.61237246, 0, 0, 0)
+light_color = Color(1, 0.9098039, 0.8156863, 1)
+light_energy = 0.5
+shadow_enabled = true
+shadow_blur = 3.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport" unique_id=1045392239]
+environment = SubResource("Environment_7j8s0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=242298619]
+
+[node name="OutlineShader" type="TextureRect" parent="CanvasLayer" unique_id=1495025522]
+material = SubResource("ShaderMaterial_3iaa7")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 2
