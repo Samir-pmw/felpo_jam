@@ -106,7 +106,7 @@ void fragment() {
     ROUGHNESS = roughness_tex * roughness;
 }"
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_64m6r"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_pjdsv"]
 viewport_path = NodePath("SubViewport/Menu/mapa_menu/MapaNaMesa")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_55a8x"]
@@ -114,7 +114,7 @@ resource_local_to_scene = true
 render_priority = 0
 shader = SubResource("Shader_pjdsv")
 shader_parameter/albedo = Color(1, 1, 1, 1)
-shader_parameter/texture_albedo = SubResource("ViewportTexture_64m6r")
+shader_parameter/texture_albedo = SubResource("ViewportTexture_pjdsv")
 shader_parameter/albedo_texture_size = Vector2i(0, 0)
 shader_parameter/roughness = 1.0
 shader_parameter/metallic_texture_channel = Vector4(1, 0, 0, 0)
@@ -1149,6 +1149,7 @@ debug_color = Color(18.892157, 0, 0, 1)
 [connection signal="input_event" from="SubViewport/Menu/MainPage/Ajustes" to="SubViewport/Menu" method="_on_ajustes_input_event"]
 [connection signal="mouse_entered" from="SubViewport/Menu/MainPage/Ajustes" to="SubViewport/Menu" method="_on_ajustes_mouse_entered"]
 [connection signal="mouse_exited" from="SubViewport/Menu/MainPage/Ajustes" to="SubViewport/Menu" method="_on_ajustes_mouse_exited"]
+[connection signal="input_event" from="SubViewport/Menu/MainPage/Credits" to="SubViewport/Menu" method="_on_credits_input_event"]
 [connection signal="mouse_entered" from="SubViewport/Menu/MainPage/Credits" to="SubViewport/Menu" method="_on_credits_mouse_entered"]
 [connection signal="mouse_exited" from="SubViewport/Menu/MainPage/Credits" to="SubViewport/Menu" method="_on_credits_mouse_exited"]
 [connection signal="input_event" from="SubViewport/Menu/MainPage/Sair" to="SubViewport/Menu" method="_on_sair_input_event"]
