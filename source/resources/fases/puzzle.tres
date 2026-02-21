@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FaseData" format=3 uid="uid://usdecrbo7bmh"]
+
+[ext_resource type="Script" uid="uid://co1fu04yj0t4l" path="res://scripts/resources/fase_data.gd" id="1_rla6r"]
+[ext_resource type="Texture2D" uid="uid://dfj5xl6o6b25r" path="res://assets/sprites/map/fases/puzzle.png" id="2_trv03"]
+
+[resource]
+script = ExtResource("1_rla6r")
+textura = ExtResource("2_trv03")
+tipo = "Puzzle"
+limite = 2
+metadata/_custom_type_script = "uid://co1fu04yj0t4l"

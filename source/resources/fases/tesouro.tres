@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FaseData" format=3 uid="uid://dds4qfwyuajl6"]
+
+[ext_resource type="Script" uid="uid://co1fu04yj0t4l" path="res://scripts/resources/fase_data.gd" id="1_8blxl"]
+[ext_resource type="Texture2D" uid="uid://mhqvhamnl2kp" path="res://assets/sprites/map/fases/Tesouro.png" id="2_qu08w"]
+
+[resource]
+script = ExtResource("1_8blxl")
+textura = ExtResource("2_qu08w")
+tipo = "Tesouro"
+limite = 2
+metadata/_custom_type_script = "uid://co1fu04yj0t4l"

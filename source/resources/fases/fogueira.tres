@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FaseData" format=3 uid="uid://bboaqu0yauef"]
+
+[ext_resource type="Script" uid="uid://co1fu04yj0t4l" path="res://scripts/resources/fase_data.gd" id="1_bvidg"]
+[ext_resource type="Texture2D" uid="uid://l750uc1ev6ek" path="res://assets/sprites/map/fases/Fogueira.png" id="2_o3bdk"]
+
+[resource]
+script = ExtResource("1_bvidg")
+textura = ExtResource("2_o3bdk")
+tipo = "Fogueira"
+limite = 2
+metadata/_custom_type_script = "uid://co1fu04yj0t4l"
