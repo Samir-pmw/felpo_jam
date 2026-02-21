@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://bs6hbtghkg2al"]
+
+[ext_resource type="Script" uid="uid://1tjtm2ix6v0g" path="res://scripts/combat/combatUI/combat_ui.gd" id="1_atru4"]
+
+[node name="CombatUI" type="Control" unique_id=101891486]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -77.0
+offset_top = -21.0
+offset_right = -77.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_atru4")
+
+[node name="ManaBar" type="ProgressBar" parent="." unique_id=1478141380]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 497.0
+offset_right = 566.0
+offset_bottom = 632.0
+max_value = 10.0
+
+[node name="InfoPanel" type="Panel" parent="." unique_id=1570149218]
+layout_mode = 0
+offset_left = 726.0
+offset_top = 115.0
+offset_right = 1286.0
+offset_bottom = 479.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="InfoPanel" unique_id=1521620579]
+layout_mode = 0
+offset_right = 274.0
+offset_bottom = 245.0
+
+[node name="JobNameLabel" type="Label" parent="InfoPanel/VBoxContainer" unique_id=764464143]
+layout_mode = 2
+
+[node name="StatsHBox" type="HBoxContainer" parent="InfoPanel/VBoxContainer" unique_id=1386993547]
+layout_mode = 2
+
+[node name="HPLabel" type="Label" parent="InfoPanel/VBoxContainer/StatsHBox" unique_id=1986680951]
+layout_mode = 2
+
+[node name="MoveLabel" type="Label" parent="InfoPanel/VBoxContainer/StatsHBox" unique_id=1462176860]
+layout_mode = 2
+
+[node name="AbilityList" type="VBoxContainer" parent="InfoPanel/VBoxContainer" unique_id=1619615171]
+layout_mode = 2

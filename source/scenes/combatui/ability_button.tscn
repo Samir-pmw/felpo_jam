@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cgy13mo7fvgve"]
+
+[ext_resource type="Script" uid="uid://bxx34uh6rp37y" path="res://scripts/combat/combatUI/ability_button.gd" id="1_mm0k6"]
+
+[node name="AbilityButton" type="Button" unique_id=575488070]
+script = ExtResource("1_mm0k6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=186789877]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NameLabel" type="Label" parent="HBoxContainer" unique_id=965689706]
+layout_mode = 2
+
+[node name="DmgLabel" type="Label" parent="HBoxContainer" unique_id=260455246]
+layout_mode = 2
+
+[node name="RangeLabel" type="Label" parent="HBoxContainer" unique_id=975049504]
+layout_mode = 2
+
+[node name="TypeLabel" type="Label" parent="HBoxContainer" unique_id=608271859]
+layout_mode = 2
+
+[node name="CostLabel" type="Label" parent="HBoxContainer" unique_id=2027618063]
+layout_mode = 2
